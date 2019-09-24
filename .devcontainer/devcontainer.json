@@ -1,6 +1,5 @@
 {
     "extensions": [
-        "docsmsft.docs-authoring-pack",
-        "acrolinx.vscode-sidebar"
+        "docsmsft.docs-authoring-pack"
     ]
 }

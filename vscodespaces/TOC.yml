@@ -1,2 +1,51 @@
-- name: Index
+- name: Visual Studio Online
   href: index.md
+- name: Overview
+  items:
+  - name: What is Visual Studio Online?
+    href: overview/what-is-vsonline.md
+- name: Quickstarts
+  items:
+  - name: VS Online in the browser
+    href: quickstarts/vsonline.md
+  - name: VS Online in VS Code
+    href: quickstarts/vscode.md
+#- name: Tutorials
+#- name: Samples
+#- name: Concepts
+- name: "How-to guides: Browser"
+  items:
+  - name: Create an environment
+    href: how-to/browser.md#create
+  - name: Connect to an environment
+    href: how-to/browser.md#connect
+  - name: Pause an environment
+    href: how-to/browser.md#pause
+  - name: Delete an environment
+    href: how-to/browser.md#delete
+  - name: Configuration and Settings
+    href: how-to/browser.md#settings
+  - name: Using the Terminal
+    href: how-to/browser.md#terminal
+  - name: Port Forwarding
+    href: how-to/browser.md#ports
+- name: "How-to guides: VS Code"
+  items:
+  - name: Install
+    href: how-to/vscode.md#install
+  - name: Create an environment
+    href: how-to/vscode.md#create
+  - name: Connect to an environment
+    href: how-to/vscode.md#connect
+  - name: Pause an environment
+    href: how-to/vscode.md#pause
+  - name: Delete an environment
+    href: how-to/vscode.md#delete
+  - name: Configuration and Settings
+    href: how-to/vscode.md#settings
+  - name: Using the Terminal
+    href: how-to/vscode.md#terminal
+  - name: Port Forwarding
+    href: how-to/vscode.md#ports
+#- name: Reference
+#- name: Resources

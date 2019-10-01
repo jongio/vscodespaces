@@ -8,6 +8,8 @@
     href: quickstarts/vsonline.md
   - name: VS Online in VS Code
     href: quickstarts/vscode.md
+  - name: VS Online in Visual Studio
+    href: quickstarts/vs.md
 #- name: Tutorials
 #- name: Samples
 #- name: Concepts

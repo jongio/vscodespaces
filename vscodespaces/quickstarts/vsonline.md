@@ -1,1 +1,1 @@
-# Visual Studio Online VS Code Quickstart
+# Visual Studio Online Quickstart

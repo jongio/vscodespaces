@@ -53,5 +53,9 @@
     href: reference/configuring.md
 - name: Resources
   items:
-    - name: Troubleshooting
-      href: resources/troubleshooting.md
+  - name: Troubleshooting
+    href: resources/troubleshooting.md
+  - name: Feedback
+    href: resources/feedback.md
+  - name: FAQ
+    href: resources/faq.md

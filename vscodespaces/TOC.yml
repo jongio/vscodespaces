@@ -34,18 +34,18 @@
   - name: Install
     href: how-to/vscode.md#install
   - name: Create an environment
-    href: how-to/vscode.md#create
+    href: how-to/vscode.md#create-an-environment
   - name: Connect to an environment
-    href: how-to/vscode.md#connect
+    href: how-to/vscode.md#connect-to-an-environment
   - name: Pause an environment
-    href: how-to/vscode.md#pause
+    href: how-to/vscode.md#pause-an-environment
   - name: Delete an environment
-    href: how-to/vscode.md#delete
+    href: how-to/vscode.md#delete-an-environment
   - name: Configuration and Settings
-    href: how-to/vscode.md#settings
+    href: how-to/vscode.md#configuration-and-settings
   - name: Using the Terminal
-    href: how-to/vscode.md#terminal
+    href: how-to/vscode.md#using-the-terminal
   - name: Port Forwarding
-    href: how-to/vscode.md#ports
+    href: how-to/vscode.md#port-forwarding
 #- name: Reference
 #- name: Resources

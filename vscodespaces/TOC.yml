@@ -16,19 +16,19 @@
 - name: "How-to guides: Browser"
   items:
   - name: Create an environment
-    href: how-to/browser.md#create
+    href: how-to/browser.md#create-an-environment
   - name: Connect to an environment
-    href: how-to/browser.md#connect
+    href: how-to/browser.md#connect-to-an-environment
   - name: Pause an environment
-    href: how-to/browser.md#pause
+    href: how-to/browser.md#pause-an-environment
   - name: Delete an environment
-    href: how-to/browser.md#delete
+    href: how-to/browser.md#delete-an-environment
   - name: Configuration and Settings
-    href: how-to/browser.md#settings
+    href: how-to/browser.md#configuration-and-settings
   - name: Using the Terminal
-    href: how-to/browser.md#terminal
+    href: how-to/browser.md#using-the-terminal
   - name: Port Forwarding
-    href: how-to/browser.md#ports
+    href: how-to/browser.md#port-forwarding
 - name: "How-to guides: VS Code"
   items:
   - name: Install

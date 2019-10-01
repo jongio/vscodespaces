@@ -1,3 +1,12 @@
+---
+author: nikmd23
+ms.author: nimolnar
+ms.service: visual-studio-online
+title: How to use Visual Studio Online with a browser
+ms.topic: overview
+ms.date: 09/20/2019
+---
+
 # Visual Studio Online Browser How-to
 
 ## Sign Up

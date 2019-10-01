@@ -47,5 +47,11 @@
     href: how-to/vscode.md#using-the-terminal
   - name: Port Forwarding
     href: how-to/vscode.md#port-forwarding
-#- name: Reference
-#- name: Resources
+- name: Reference
+  items: 
+  - name: Configuring environments
+    href: reference/configuring.md
+- name: Resources
+  items:
+    - name: Troubleshooting
+      href: resources/troubleshooting.md

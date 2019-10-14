@@ -9,17 +9,47 @@ ms.date: 09/20/2019
 
 # Visual Studio Online VS Code How-to
 
-## Install
-
-- Download from Marketplace (web)
-- Download from Marketplace (VSC)
-- Explorer GUI overview?
-- Remote indicator
-
 ## Sign Up
 
+A Microsoft Account and Azure Subscription are required to use Visual Studio Online.
+
+You can sign up for both, as well as receive various Azure incentives at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/).
+
+<!-- 
 - Create Azure Identity
 - Create Azure Subscription
+-->
+
+## Install
+
+> [!TIP]
+> If you don't have [Visual Studio Code](https://code.visualstudio.com/) installed already, you can download it [here](https://code.visualstudio.com/download).
+
+If you'd like to use Visual Studio Online from within Visual Studio Code, you'll have to install the Visual Studio Online extension. There's two ways to do that:
+
+### Install from Visual Studio Code Marketplace
+
+You can install the [Visual Studio Online extension](https://aka.ms/vso-dl) from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/VSCode) by clicking on the green install button near the top of the page and following the prompts.
+
+<!-- SCREENSHOT NEEDED -->
+
+### Install from within Visual Studio Code
+
+Alternatively, from within Visual Studio Code search for '*Visual Studio Online*' within the **Extensions** panel, select the extension from the list, and press the **Install** button.
+
+<!-- SCREENSHOT NEEDED -->
+
+### Post installation
+
+When successfully installed, the Visual Studio Online panel will be available in the **Remote Explorer** pane.
+
+<!-- SCREENSHOT NEEDED -->
+
+This panel provides a management interface for interacting with Visual Studio Online environments, and is covered in full detail in the remainder of this document.
+
+In addition to the panel, Visual Studio Code will also show the remote indicator when the Visual Studio Online extension is installed. The remote indicator signals your connection status, and provides a list of available Visual Studio Online commands when clicked.
+
+<!-- SCREENSHOT NEEDED -->
 
 ## Sign In
 

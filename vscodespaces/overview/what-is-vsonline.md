@@ -60,12 +60,64 @@ Environments can be created with a user specific collection of custom dotfiles (
 
 ## Features
 
-- App remoting
-- Includes productive editing and collaboration features like AI-powered completions and real-time co-editing 
-- any language
-- anywhere
-- VS or VS Code
-- extension marketplace
+### Managed Azure-hosted environments
 
+- Create environments from Git repos (public, private, GitHub, AzDp, BitBucket)
+  - Post create command\Oryx 
+  - regions
+  - disposable
+
+### Self-hosted environments
+
+### Editor choice
+
+- Open in browser\vscode\new window\ disconnect 
+- Integrated terminal
+- browser for anywhere
+
+### Environment customization
+
+- Configurable
+  - Custom images & dockerfiles (turn on feature flag) 
+
+### App remoting
+
+- App remoting
+  - Port forwarding (UI, devcontainer and automatic) 
+
+### Environment personalization
+
+- Dotfiles 
+- Git identity 
+
+### Suspend
+
+- Shutdown environments\auto-shutdown 
+
+### Extensible and open
+
+- Install extensions from devcontainer.json\settings\auto-infer 
+- Live Share and IntelliCode work out-of-the-box 
+- any language
 
 ## See also
+
+### Quickstarts:
+
+- Visual Studio Online in Visual Studio Code
+- Visual Studio Online in the browser
+- Visual Studio Online in Visual Studio
+
+### How-tos:
+
+- Visual Studio Online in Visual Studio Code
+- Visual Studio Online in the browser 
+
+
+### Reference & Resources:
+
+- Configuration
+- Troubleshooting
+- FAQ
+
+Having problems? Submit an issue or provide feedback.

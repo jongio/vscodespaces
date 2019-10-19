@@ -31,34 +31,37 @@ If you'd like to use Visual Studio Online from within Visual Studio Code, you'll
 
 You can install the [Visual Studio Online extension](https://aka.ms/vso-dl) from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/VSCode) by clicking on the green install button near the top of the page and following the prompts.
 
-<!-- SCREENSHOT NEEDED -->
+<!-- TODO: SCREENSHOT NEEDED -->
 
 ### Install from within Visual Studio Code
 
 Alternatively, from within Visual Studio Code search for '*Visual Studio Online*' within the **Extensions** panel, select the extension from the list, and press the **Install** button.
 
-<!-- SCREENSHOT NEEDED -->
+<!-- TODO: SCREENSHOT NEEDED -->
 
 ### Post installation
 
 When successfully installed, the Visual Studio Online panel will be available in the **Remote Explorer** pane.
 
-<!-- SCREENSHOT NEEDED -->
+<!-- TODO: SCREENSHOT NEEDED -->
 
 This panel provides a management interface for interacting with Visual Studio Online environments, and is covered in full detail in the remainder of this document.
 
 In addition to the panel, Visual Studio Code will also show the remote indicator when the Visual Studio Online extension is installed. The remote indicator signals your connection status, and provides a list of available Visual Studio Online commands when clicked.
 
-<!-- SCREENSHOT NEEDED -->
+<!-- TODO: SCREENSHOT NEEDED -->
 
 ## Sign In
 
 To sign into Visual Studio Online, you can either use the *VS Online: Sign In* command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by choosing *Sign in to view environments...* in the **Remote Explorer** side bar, under the VS Online panel.
 
-[!div class="mx-imgBorder"]
+<!-- TODO: "Create new environment shouldn't be in this screenshot -->
 ![Sign In to Visual Studio Online](../images/sign-in-vsc.png)
 
+<!-- TODO: 
+Add content for:
 - Filtering Azure Subscription
+-->
 
 ## Create a Plan
 

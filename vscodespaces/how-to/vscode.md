@@ -53,8 +53,11 @@ In addition to the panel, Visual Studio Code will also show the remote indicator
 
 ## Sign In
 
-- From Command Pallet
-- From Remote Explorer
+To sign into Visual Studio Online, you can either use the *VS Online: Sign In* command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by choosing *Sign in to view environments...* in the **Remote Explorer** side bar, under the VS Online panel.
+
+[!div class="mx-imgBorder"]
+![Sign In to Visual Studio Online](../images/sign-in-vsc.png)
+
 - Filtering Azure Subscription
 
 ## Create a Plan

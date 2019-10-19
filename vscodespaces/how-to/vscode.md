@@ -56,7 +56,11 @@ In addition to the panel, Visual Studio Code will also show the remote indicator
 To sign into Visual Studio Online, you can either use the *VS Online: Sign In* command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by choosing *Sign in to view environments...* in the **Remote Explorer** side bar, under the VS Online panel.
 
 <!-- TODO: "Create new environment shouldn't be in this screenshot -->
-![Sign In to Visual Studio Online](../images/sign-in-vsc.png)
+![Sign In to Visual Studio Online](../images/sign-in-vsc-01.png)
+
+From there, press the *Sign In* button on the notification toast that appears, and follow the prompts in your browser.
+
+![Sign In to Visual Studio Online](../images/sign-in-vsc-02.png)
 
 <!-- TODO: 
 Add content for:

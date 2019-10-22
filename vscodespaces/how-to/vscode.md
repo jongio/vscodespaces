@@ -135,6 +135,7 @@ To connect to already existing environment, that you're not currently connected 
 
 Lastly, you can inspect details about the currently environment in the **Environment Details** panel in the **Remote Explorer** side bar.
 
+<!-- TODO: Fix "connected" icon next to "My Environment" -->
 ![Environment Details in Visual Studio Code](../images/connect-env-vsc-03.png)
 
 ## Disconnect from an environment
@@ -145,7 +146,8 @@ Once connected to an environment, there's three ways to disconnect:
 2. Right-click the name of the connected environment in the **VS Online** panel to reveal a context menu with a **Disconnect** option.
 3. Selecting the **Disconnect** button on the **Environment Details** title bar in the **Remote Explorer** side bar.
 
-![Disconnect in Visual Studio Code](../images/DISconnect-env-vsc-01.png)
+<!-- TODO: Fix "connected" icon next to "My Environment" -->
+![Disconnect in Visual Studio Code](../images/disconnect-env-vsc-01.png)
 
 ## Suspend an environment
 
@@ -155,13 +157,27 @@ Once connected to an environment, there's three ways to disconnect:
 
 ## Delete an environment
 
-- From Command Pallet
-- From Remote Explorer
+The actively connected environment cannot be deleted, however while [disconnected from an environment](#disconnect-from-an-environment) there's two ways to permanently delete it:
 
-## Using the Terminal
+1. Use the **VS Online: Delete Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) to select the environment to be deleted then press the **Delete** button on the confirmation prompt.
+2. Right-click the name of the disconnected environment in the **VS Online** panel to reveal a context menu with a **Delete** option. Select it and press the **Delete** button on the confirmation prompt.
 
-- Not local, concept
-- Dotfiles integration
+## Using the integrated terminal
+
+VS Code's integrated terminal and all of its features are fully supported in VS Online. It is important to note, however, that while connected to VS Online commands issued in the terminal are executed against the environment, not the user's local machine. This provides VS Online users full control over their development environment and how it's configured.
+
+> [!TIP]
+> The [integrated terminal is fully documented on the VS Code site](https://code.visualstudio.com/docs/editor/integrated-terminal).
+
+VS Online exposes information about the configuration and creation of an environment in the **VS Online** terminal. This terminal is read-only, and is meant to be used for troubleshooting purposes.
+
+![VS Online Terminal in Visual Studio Code](../images/terminal-vsc-01.png)
+
+Attempts to type in the **VS Online** terminal window will issue a warning notification toast. Press the **Open in New Terminal** button in the toast, or the **New Terminal** icon in the **Terminal** panel to create a new, writable terminal instance.
+
+![VS Online Terminal Warning in Visual Studio Code](../images/terminal-vsc-02.png)
+
+In addition to the standard integrated terminal features of VS Code, VS Online also allows for the terminal to be personalized using custom dotfiles. See [Personalizing environments](../reference/personalizing.md) for more information.
 
 ## Port Forwarding
 

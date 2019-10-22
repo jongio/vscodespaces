@@ -51,6 +51,8 @@
   items: 
   - name: Configuring environments
     href: reference/configuring.md
+  - name: Personalizing environments
+    href: reference/personalizing.md
 - name: Resources
   items:
   - name: Troubleshooting

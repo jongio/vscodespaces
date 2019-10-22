@@ -15,11 +15,6 @@ A Microsoft Account and Azure Subscription are required to use Visual Studio Onl
 
 You can sign up for both, as well as receive various Azure incentives at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/).
 
-<!-- 
-- Create Azure Identity
-- Create Azure Subscription
--->
-
 ## Install
 
 > [!TIP]
@@ -31,29 +26,29 @@ If you'd like to use VS Online from within Visual Studio Code, you'll have to in
 
 You can install the [VS Online extension](https://aka.ms/vso-dl) from the [VS Code Marketplace](https://marketplace.visualstudio.com/VSCode) by clicking on the green install button near the top of the page and following the prompts.
 
-<!-- TODO: SCREENSHOT NEEDED -->
+<!-- TODO: SCREENSHOT NEEDED 1 -->
 
 ### Install from within Visual Studio Code
 
 Alternatively, from within VS Code search for '*Visual Studio Online*' within the **Extensions** side bar, select the extension from the list, and press the **Install** button.
 
-<!-- TODO: SCREENSHOT NEEDED -->
+<!-- TODO: SCREENSHOT NEEDED 2 -->
 
 ### Post installation
 
 When successfully installed, the **VS Online** panel will be available in the **Remote Explorer** pane.
 
-<!-- TODO: SCREENSHOT NEEDED -->
+![Visual Studio Online Remote Explorer](../images/install-vsc-03.png)
 
 This panel provides a management interface for interacting with VS Online environments, and is covered in full detail in the remainder of this document.
 
 In addition to the panel, VS Code will also show the remote indicator when the VS Online extension is installed. The remote indicator signals your connection status, and provides a list of available VS Online commands when clicked.
 
-<!-- TODO: SCREENSHOT NEEDED -->
+![Visual Studio Online Remote Indicator](../images/install-vsc-04.png)
 
 ## Sign In
 
-To sign into VS Online, you can either use the **VS Online: Sign In** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by choosing **Sign in to view environments...** in **VS Online** panel of the **Remote Explorer** side bar.
+To sign into VS Online, you can either press `F1` and select the **VS Online: Sign In** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or click **Sign in to view environments...** in **VS Online** panel of the **Remote Explorer** side bar.
 
 ![Sign In to Visual Studio Online](../images/sign-in-vsc-01.png)
 
@@ -66,17 +61,39 @@ Add content for:
 - Filtering Azure Subscription
 -->
 
-## Create a Plan
+## Create a plan
 
-- Create a VSO Plan
-  - Subscription
-  - Resource Group
-  - Region
-- Swapping Plan
+Once you've [signed up](#sign-up) and created an Azure subscription, you can access VS Online by creating a VS Online Plan. You can create more than one plan, and plans can be used to group related environments together. They are also the unit of billing, and as such you'll see a line item on your Azure bill for each plan you create.
+
+More information about plans and pricing is available on [the VS Online pricing page](https://aka.ms/vso-pricing).
+
+The first time you [create an environment ](#create-an-environment), VS Code will automatically walk you through the steps required to create a plan. To explicitly create a new plan, you can either use the **VS Online: Create Plan** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by clicking the **Select Plan** button on the **VS Online** title bar in the **Remote Explorer** side bar, then selecting **Create new plan...** from the quick pick list.
+
+![Create Visual Studio Online plan](../images/create-plan-vsc-01.png)
+
+Follow the prompts to select an Azure subscription to associate the plan with, an Azure region to create the plan in, a name for the Azure resource group to create the plan in, and a name for the plan itself. 
+
+- **Azure subscription**: You can choose from any Azure subscriptions that was previously selected. To add or remove options from the list, use the **Azure: Select Subscriptions** command in the command palette.
+- **Azure region**: Choose an [Azure region](https://azure.microsoft.com/global-infrastructure/regions/) to create the VS Online plan in. All environments created within this plan, will be provisioned in the region selected. Supported regions are:
+  - East US
+  - Southeast Asia
+  - West Europe
+  - West US 2
+- **Azure resource group name**: Your VS Online plan will be created in a new Azure resource group with the name provided in this step.
+- **VS Online plan name**: The name of the created VS Online plan. This name is displayed in the **Remote Explorer** for organization purposes.
+
+Once a plan is created, it will be the selected plan in the **Remote Explorer**. 
+
+![Selected Visual Studio Online plan](../images/create-plan-vsc-02.png)
+
+Only environments contained within the selected plan will be displayed. To select a different plan, you can either use the **VS Online: Select Plan** command in the command palette, or by clicking the **Select Plan** button on the **VS Online** title bar.
 
 ## Create an environment
 
 ### Cloud-hosted
+
+> [!NOTE]
+> Cloud-hosted environments are extremely configurable. See [configuring environments](../reference/configuring.md) for advanced information about how to configure your environments.
 
 To create a new cloud-hosted environment in VS Online, you can either use the **VS Online: Create New Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by selecting the **Create New Environment** button on the **VS Online** title bar in the **Remote Explorer** side bar.
 

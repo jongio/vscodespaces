@@ -41,7 +41,7 @@ Alternatively, from within VS Code search for '*Visual Studio Online*' within th
 
 ### Post installation
 
-When successfully installed, the **VS ONLINE** panel will be available in the **Remote Explorer** pane.
+When successfully installed, the **VS Online** panel will be available in the **Remote Explorer** pane.
 
 <!-- TODO: SCREENSHOT NEEDED -->
 
@@ -53,7 +53,7 @@ In addition to the panel, VS Code will also show the remote indicator when the V
 
 ## Sign In
 
-To sign into VS Online, you can either use the **VS Online: Sign In** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by choosing **Sign in to view environments...** in **VS ONLINE** panel of the **Remote Explorer** side bar.
+To sign into VS Online, you can either use the **VS Online: Sign In** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by choosing **Sign in to view environments...** in **VS Online** panel of the **Remote Explorer** side bar.
 
 ![Sign In to Visual Studio Online](../images/sign-in-vsc-01.png)
 
@@ -78,7 +78,7 @@ Add content for:
 
 ### Cloud-hosted
 
-To create a new cloud-hosted environment in VS Online, you can either use the **VS Online: Create New Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by selecting the **Create New Environment** button on the **VS ONLINE** title bar in the **Remote Explorer** side bar.
+To create a new cloud-hosted environment in VS Online, you can either use the **VS Online: Create New Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by selecting the **Create New Environment** button on the **VS Online** title bar in the **Remote Explorer** side bar.
 
 <!-- TODO: "Create new environment" should be in this screenshot -->
 ![Create environment in Visual Studio Code](../images/create-env-vsc-01.png)
@@ -113,20 +113,41 @@ In addition to cloud-hosted environments, you can also "bring your own" self-hos
 
 ## Connect to an environment
 
-- From Command Pallet
-- From Remote Explorer
-- From environment details
-- In New Window
-- In Browser
-- Environment details panel
-- Install extension
+VS Code makes connecting to environments quick and easy. If you were already connected to an environment when you last shut down VS Code, it will automatically try to re-connect to that environment when you launch it.
+
+If you're [creating an environment](#create-an-environment), a notification toast will appear as soon as the environment is ready. Simply select the **Connect** button to connect to the new environment.
+
+![Connect to a new environment in Visual Studio Code](../images/connect-env-vsc-01.png)
+
+No matter what, when you're in the process of connecting, VS Code's **Remote Indicator** will animate during the connection process, and will display the name of the environment once the connection has completed.
+
+![Connect to a new environment in Visual Studio Code](../images/connect-env-vsc-02.gif)
+
+To connect to already existing environment, that you're not currently connected to, there's several options:
+
+1. Use the **VS Online: Connect to Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) to be displayed with a quick pick list of environments to connect to.
+2. Alternatively, the quick pick list is displayed by left-clicking the name of any environment in the **VS Online** panel in the **Remote Explorer** side bar.
+3. For more advanced options, right-click the name of the environment in the **VS Online** panel to reveal a context menu with the following options:
+   - **Connect to Environment**: Click to immediately connect to the selected environment.
+   - **Open Environment in New Window**: Click to launch a new VS Code instance that will connect to the selected environment. This is useful for being connected to multiple environments at once.
+   - **Open in Browser**: Click to launch the environment in VS Online's browser-based editor.
+
+
+Lastly, you can inspect details about the currently environment in the **Environment Details** panel in the **Remote Explorer** side bar.
+
+![Environment Details in Visual Studio Code](../images/connect-env-vsc-03.png)
 
 ## Disconnect from an environment
 
-- From Command Pallet
-- From Remote Explorer
+Once connected to an environment, there's three ways to disconnect:
 
-## Pause an environment
+1. Use the **VS Online: Disconnect** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
+2. Right-click the name of the connected environment in the **VS Online** panel to reveal a context menu with a **Disconnect** option.
+3. Selecting the **Disconnect** button on the **Environment Details** title bar in the **Remote Explorer** side bar.
+
+![Disconnect in Visual Studio Code](../images/DISconnect-env-vsc-01.png)
+
+## Suspend an environment
 
 - From Command Pallet
 - From Remote Explorer

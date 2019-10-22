@@ -60,7 +60,7 @@ ms.date: 09/20/2019
 - From Command Pallet
 - From Remote Explorer
 
-## Pause an environment
+## Suspend an environment
 
 - From o.vs.com
 - From Command Pallet

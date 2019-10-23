@@ -7,6 +7,8 @@ ms.topic: overview
 ms.date: 09/20/2019
 ---
 
-# Visual Studio Online Visual Studio Quickstart
+# Visual Studio Online in Visual Studio Quickstart
 
-- Link to VSO Private Preview signup page
+Visual Studio's support for Visual Studio Online is currently in Private Preview.
+
+If you'd like to access to the Private Preview, please [sign up](https://aka.ms/vsfutures-signup).

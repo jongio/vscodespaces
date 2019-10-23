@@ -202,15 +202,43 @@ In addition to the standard integrated terminal features of VS Code, VS Online a
 
 ## Port Forwarding
 
-- From Command Pallet
-- From Remote Explorer
-- Auto forward from terminal output
-- Disable forwaring a port
-- Get Port URL
+VS Online provides access to the applications and services running in remote environments by means of port forwarding. By default, no ports are forwarded for security concerns, however, there are several ways to open ports in the remote environment.
+
+### Auto port forwarding
+
+If your application, or any other, indicates that it is serving content from a local port in the integrated terminal, VS Online will automatically forward that port and add it to the list of **Forwarded Ports** under **Environment Details**.
+
+In the example below, `npx` is used to run `http-server`, which opens port `8080`. VS Online correspondingly and automatically forwards port `8080` so it can be accessed from your local environment. 
+
+![VS Online Auto Port Forwarding](../images/auto-port-forwarding-vsc-01.gif)
+
+### Port forwarding interface
+
+As with all operations in VS Online, you can use the command palette to forward a port. Select the **VS Online: Forward Port** command and follow its prompts: typing in a port number to forward, and to assign an optional name to the port forwarding rule.
+
+Additionally, you can click the **Forward Port** button on the **Forwarded Ports** title bar in the **Environment Details** panel.
+
+![VS Online Port Forwarding Interface](../images/port-forwarding-interface-vsc-01.png)
+
+### Configured port forwarding
+
+If there's one or more ports that should be forwarded by default for a given repository, that can be configured in `devcontainer.json`. See the [configuring environments](../reference/configuring.md) reference for more info.
+
+### Accessing forwarded ports
+
+Once a port has been forwarded, you can click the **Copy Port URL** button on the port's title bar in the **Environment Details** panel. This will copy the full URL to the port into your clipboard so you can paste it into a browser, CLI or the API exploration tool of your choice.
+
+![Accessing Forwarded Ports](../images/accessing-forwarded-ports-vsc-01.png)
+
+### Stop forwarding ports
+
+There's two ways to stop a forwarded port, regardless of which mechanism was used to create it. You can either use the **VS Online: Stop Forwarding Port** command in the command palette, or click the **Stop Forwarding Port** button on the port's title bar in the **Environment Details** panel.
+
+![Stop Port Forwarding](../images/stop-forwarding-ports-vsc-01.png)
 
 ## Configuration and personalization
 
-VS Online provides flexible mechanisms to customize environments on a per repo basis, as well as personalize them on a per user basis. Find out more in the reference documentation:
+In addition to the above documentation that's specific to VS Code's VS Online extension, VS Online also provides flexible mechanisms to customize environments on a per repo basis, as well as to personalize them on a per user basis. Find out more in the reference documentation:
 
 - [Configuring environments](../reference/configuring.md)
 - [Personalizing environments](../reference/personalizing.md)

@@ -15,11 +15,11 @@ ms.date: 10/21/2019
   - install command
 
     The optional install command is executed.
-    if there's no command specified, on of the following scripts run (if available in cloned repo)
-    "install.sh",
-    "install",
-    "bootstrap.sh",
-    "bootstrap",
-    "setup.sh",
-    "setup",
-    if neither of those things are available, files and folders starting with "." are symlinked to home (~ or $HOME on linux, e.g. /home/cloudenv for default kitchensink images) directory.
+    If there's no command specified, one of the following scripts is executed, if available in the cloned dotfiles repo:
+    `install.sh`,
+    `install`,
+    `bootstrap.sh`,
+    `bootstrap`,
+    `setup.sh`,
+    `setup`,
+    if neither of those things are available, files and folders starting with `.` are symlinked to home (`~` or `$HOME` on linux, e.g. `/home/vsonline` for default kitchensink images) directory.

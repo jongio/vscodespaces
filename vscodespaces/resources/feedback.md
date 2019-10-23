@@ -9,6 +9,6 @@ ms.date: 09/20/2019
 
 # Feedback
 
-- Links to issue tracker
-- Twitter hashtag
-- email address?
+- GitHub Issues
+- Developer Community
+- Azure support

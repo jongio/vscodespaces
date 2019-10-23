@@ -163,14 +163,18 @@ Once connected to an environment, there's three ways to disconnect:
 2. Right-click the name of the connected environment in the **VS Online** panel to reveal a context menu with a **Disconnect** option.
 3. Selecting the **Disconnect** button on the **Environment Details** title bar in the **Remote Explorer** side bar.
 
-<!-- TODO: Fix "connected" icon next to "My Environment" -->
+<!-- TODO: Fix "connected" icon next to "My Environment" and add My-VSO-Plan in title bar -->
 ![Disconnect in Visual Studio Code](../images/disconnect-env-vsc-01.png)
 
 ## Suspend an environment
 
-- From Command Pallet
-- From Remote Explorer
-- Implications of Pausing
+As described on the [VS Online pricing page](https://aka.ms/vso-pricing), you pay for active VS Online usage, with a nominal fee for when an environment is suspended. 
+
+VS Online will automatically suspend an inactive environment according to the auto-suspend setting used when the environment was created. This helps keep the costs of VS Online as low as possible.
+
+In addition to auto-suspending, you can manually suspend an environment at any time by using the **VS Online: Suspend Environment** command in the command palette, or by selecting **Suspend Environment** in the right-click context menu on any environment listed in the **VS Online** panel of the **Remote Explorer** side bar.
+
+<!-- TODO: Add context menu screenshot -->
 
 ## Delete an environment
 

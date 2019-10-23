@@ -150,18 +150,19 @@ To connect to already existing environment, that you're not currently connected 
    - **Open in Browser**: Click to launch the environment in VS Online's browser-based editor.
 
 
-Lastly, you can inspect details about the currently environment in the **Environment Details** panel in the **Remote Explorer** side bar.
+Lastly, you can inspect details about the currently selected environment in the **Environment Details** panel in the **Remote Explorer** side bar.
 
 <!-- TODO: Fix "connected" icon next to "My Environment" -->
 ![Environment Details in Visual Studio Code](../images/connect-env-vsc-03.png)
 
 ## Disconnect from an environment
 
-Once connected to an environment, there's three ways to disconnect:
+Once connected to an environment, there's four ways to disconnect:
 
 1. Use the **VS Online: Disconnect** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
 2. Right-click the name of the connected environment in the **VS Online** panel to reveal a context menu with a **Disconnect** option.
 3. Selecting the **Disconnect** button on the **Environment Details** title bar in the **Remote Explorer** side bar.
+4. Close the VS Code window
 
 <!-- TODO: Fix "connected" icon next to "My Environment" and add My-VSO-Plan in title bar -->
 ![Disconnect in Visual Studio Code](../images/disconnect-env-vsc-01.png)
@@ -178,14 +179,14 @@ In addition to auto-suspending, you can manually suspend an environment at any t
 
 ## Delete an environment
 
-The actively connected environment cannot be deleted, however while [disconnected from an environment](#disconnect-from-an-environment) there's two ways to permanently delete it:
+The actively connected environment cannot be deleted from within VS Code, however while [disconnected from an environment](#disconnect-from-an-environment), there's two ways to permanently delete it:
 
 1. Use the **VS Online: Delete Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) to select the environment to be deleted then press the **Delete** button on the confirmation prompt.
 2. Right-click the name of the disconnected environment in the **VS Online** panel to reveal a context menu with a **Delete** option. Select it and press the **Delete** button on the confirmation prompt.
 
 ## Using the integrated terminal
 
-VS Code's integrated terminal and all of its features are fully supported in VS Online. It is important to note, however, that while connected to VS Online commands issued in the terminal are executed against the environment, not the user's local machine. This provides VS Online users full control over their development environment and how it's configured.
+VS Code's integrated terminal and all of its features are fully supported in VS Online. It is important to note, however, that while connected to VS Online, commands issued in the terminal are executed against the environment, not the user's local machine. This provides VS Online users full control over their development environment and how it's configured.
 
 > [!TIP]
 > The [integrated terminal is fully documented on the VS Code site](https://code.visualstudio.com/docs/editor/integrated-terminal).

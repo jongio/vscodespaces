@@ -44,7 +44,7 @@ In addition to Cloud-hosted environments, Visual Studio Online also allows you t
 
 ### Editors
 
-To go along with "backend" environments, Visual Studio Online also supports three "front end" editors: Visual Studio Code, Visual Studio IDE (Private Preview) and our Visual Studio Code-based editor in the browser. Linux environments (Public Preview) are accessible from Visual Studio Code and our Visual Studio Code-based editor in the browser. Windows environments (Private Preview) are accessible from all three "front end" editors. This allows you to use the tool best suited for the job at hand, and the ability do that job from anywhere, with any language or framework. Even better, the experience is super-charged with our support for extensions from [the Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+To go along with "backend" environments, Visual Studio Online also supports three "frontend" editors: Visual Studio Code, Visual Studio IDE (Private Preview) and our Visual Studio Code-based editor in the browser. Linux environments (Public Preview) are accessible from Visual Studio Code and our Visual Studio Code-based editor in the browser. Windows environments (Private Preview) are accessible from all three "frontend" editors. This allows you to use the tool best suited for the job at hand, and the ability do that job from anywhere, with any language or framework. Even better, the experience is super-charged with our support for extensions from [the Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ### Customized for your project
 

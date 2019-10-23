@@ -11,9 +11,9 @@ ms.date: 09/20/2019
 
 Welcome to Visual Studio Online! We're glad you're here.
 
-Visual Studio Online provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio ([sign up for private preview](http://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Online at no cost.
+Visual Studio Online provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio ([sign up for the Private Preview](http://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Online at no cost.
 
-Additionally, Visual Studio Online brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Online personaliazable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
+Additionally, Visual Studio Online brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Online is also personaliazable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
 
 Ready to get going? This document will run you through some concepts and introduce you to our features. If you're looking for an abridged version, check out [the quickstarts](../quickstarts/vsonline.md).
 
@@ -31,20 +31,20 @@ If you're the do-it-yourself type of person and like to manage your own machines
 
 ### Environments
 
-An environment is the "backend" half of Visual Studio Online. It's where all of the compute associated with software development happens: compiling, debugging, restoring, etc. When you need to work on a new project, pick up a new task, or review a PR, you can simply spin up an Azure-hosted environment, and Visual Studio Online takes care of configuring it correctly. It automatically configures everything you need to work on your project: the source code, runtime, compiler, debugger, editor, custom dotfile configurations, relevant editor extensions and more. 
+An environment is the "backend" half of Visual Studio Online. It's where all of the compute associated with software development happens: compiling, debugging, restoring, etc. When you need to work on a new project, pick up a new task, or review a PR, you can simply spin up an Cloud-hosted environment, and Visual Studio Online takes care of configuring it correctly. It automatically configures everything you need to work on your project: the source code, runtime, compiler, debugger, editor, custom dotfile configurations, relevant editor extensions and more. 
 
-Azure-hosted development environments come with all of the benefits of Azure:
+Cloud-hosted development environments come with all of the benefits of the cloud, powered by Azure:
 
-  - They are fast to create and disposable. Create as many as you want, and throw them away when you're done. It's just that easy.
+  - They are fast to create and disposable. Create as many as you want (up to subscription limits), and throw them away when you're done. It's just that easy.
   - They are managed, reducing overall maintenance for you.
-  - They have predictable pricing and you only pay for what you use, with built in auto-sleep to eliminate runoff costs.
+  - They have predictable pricing and you only pay for what you use, with built in auto-suspend to eliminate runoff costs.
   - Moving your development workload to the cloud frees up resources on your personal machine to email, chat, stream music, or even to simultaneously work on more projects. 
 
-In addition to Azure-hosted environments, Visual Studio Online also allows you to register and connect your own self-hosted environments. This allows you to use an environment you may have already perfectly tuned and experience some of the benefits of Visual Studio Online, for free!
+In addition to Cloud-hosted environments, Visual Studio Online also allows you to register and connect your own self-hosted environments. This allows you to use an environment you may have already perfectly tuned and experience some of the benefits of Visual Studio Online, for free!
 
 ### Editors
 
-To go along with "backend" environments, Visual Studio Online also supports three "front end" editors: Visual Studio Code, Visual Studio IDE (private preview) and our Visual Studio Code-based editor in the browser. You can connect any of these "front ends" to any "backend" environment. This allows you to use the tool best suited for the job at hand, and the ability do that job from anywhere, with any language or framework. Even better, the experience is super-charged with our support for extensions from [the Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+To go along with "backend" environments, Visual Studio Online also supports three "front end" editors: Visual Studio Code, Visual Studio IDE (Private Preview) and our Visual Studio Code-based editor in the browser. Linux environments (Public Preview) are accessible from Visual Studio Code and our Visual Studio Code-based editor in the browser. Windows environments (Private Preview) are accessible from all three "front end" editors. This allows you to use the tool best suited for the job at hand, and the ability do that job from anywhere, with any language or framework. Even better, the experience is super-charged with our support for extensions from [the Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ### Customized for your project
 
@@ -54,15 +54,15 @@ Quickly created development environments enable easy onboarding for team members
 
 ### Personalized for you
 
-Developers are highly opinionated about their editor and terminal configurations, and commonly spend countless hours customizing them. As a result, Visual Studio Online not only allows for development environments customized per project, but also layers on individual personalizations so that our Azure-hosted environments feel immediately natural to use no matter how you like to work. 
+Developers are highly opinionated about their editor and terminal configurations, and commonly spend countless hours customizing them. As a result, Visual Studio Online not only allows for development environments customized per project, but also layers on individual personalizations so that our Cloud-hosted environments feel immediately natural to use no matter how you like to work. 
 
 Environments can be created with a user specific collection of custom dotfiles (e.g. `.bashrc`, `.gitconfig`, etc.), and we automatically roam your Git identity, themes and settings so every environment you create looks and feels the way you like, regardless of the project specific environment capabilities. 
 
 ## Features
 
-### Managed Azure-hosted environments
+### Managed Cloud-hosted environments
 
-- Create environments from Git repos (public, private, GitHub, AzDp, BitBucket)
+- Create environments from Git repos (public, private, GitHub, Azure DevOps, BitBucket)
   - Post create command\Oryx 
   - regions
   - disposable

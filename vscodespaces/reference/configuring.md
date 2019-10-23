@@ -17,3 +17,12 @@ ms.date: 09/20/2019
   - portCreateCommand
     - default bahavior
 - link to dockerfile reference
+
+- Extension Config
+  - Dotfiles
+- devContainer.json
+  - placement
+  - link to reference doc
+- Dockerfile
+  - placement
+  - link to reference doc

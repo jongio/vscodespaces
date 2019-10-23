@@ -208,13 +208,9 @@ In addition to the standard integrated terminal features of VS Code, VS Online a
 - Disable forwaring a port
 - Get Port URL
 
-## Configuration and Settings
+## Configuration and personalization
 
-- Extension Config
-  - Dotfiles
-- devContainer.json
-  - placement
-  - link to reference doc
-- Dockerfile
-  - placement
-  - link to reference doc
+VS Online provides flexible mechanisms to customize environments on a per repo basis, as well as personalize them on a per user basis. Find out more in the reference documentation:
+
+- [Configuring environments](../reference/configuring.md)
+- [Personalizing environments](../reference/personalizing.md)

@@ -52,7 +52,7 @@ The following tables lists the configuration properties supported by VS Online. 
 ## Visual Studio Online configuration sample
 
 > [!TIP]
-> `devcontainer.json` files support commenting!
+> `devcontainer.json` files support JSON with Comments (jsonc)!
 
 ```js
 /* Contents of {repository-root}/.devcontainer/devcontainer.json */

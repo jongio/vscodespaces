@@ -25,7 +25,7 @@ The `devcontainer.json` file can be placed in one of two places in a repository:
 2. `{repository-root}/.devcontainer/devcontainer.json`
 
 > [!WARNING]
-> `devcontainer.json` files are also used to support Visual Studio Code Remote, and has [additional properties not covered in this document](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference). These additional properties are safe to add to the file, but will be ignored by VS Online.
+> `devcontainer.json` files are also used to support Visual Studio Code Remote Development, and has [additional properties not covered in this document](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference). These additional properties are safe to add to the file, but will be ignored by VS Online.
 
 ## Visual Studio Online configuration reference
 

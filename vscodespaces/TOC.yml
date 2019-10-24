@@ -33,20 +33,26 @@
   items:
   - name: Install
     href: how-to/vscode.md#install
+  - name: Sign in
+    href: how-to/vscode.md#sign-in
+  - name: Create a plan
+    href: how-to/vscode.md#create-a-plan
   - name: Create an environment
     href: how-to/vscode.md#create-an-environment
   - name: Connect to an environment
     href: how-to/vscode.md#connect-to-an-environment
+  - name: Disconnect from an environment
+    href: how-to/vscode.md#disconnect-from-an-environment
   - name: Suspend an environment
     href: how-to/vscode.md#suspend-an-environment
   - name: Delete an environment
     href: how-to/vscode.md#delete-an-environment
-  - name: Configuration and Settings
-    href: how-to/vscode.md#configuration-and-settings
-  - name: Using the Terminal
-    href: how-to/vscode.md#using-the-terminal
+  - name: Using the integrated terminal
+    href: how-to/vscode.md#using-the-integrated-terminal
   - name: Port Forwarding
     href: how-to/vscode.md#port-forwarding
+  - name: Configuration and personalization
+    href: how-to/vscode.md#configuration-and-personalization
 - name: Reference
   items: 
   - name: Configuring environments

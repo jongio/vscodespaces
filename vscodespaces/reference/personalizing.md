@@ -25,7 +25,7 @@ In the **Settings** tab that opens, select the **Extensions** node in the naviga
 
 You can also configure dotfiles in from [online.visualstudio.com](http://online.visualstudio.com). Press the **Create environment** button, and expand the **Dotfiles (optional)** settings.
 
-![Visual Studio Online Dotfiles Settings](../images/personalizing-dotfiles-vsc.png)
+![Visual Studio Online Dotfiles Settings](../images/personalizing-dotfiles-vso.png)
 
 In both experiences, there's three options that can be configured:
 

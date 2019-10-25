@@ -11,7 +11,7 @@ ms.date: 09/20/2019
 
 ## General questions
 
-## How does Visual Studio Online relate to Visual Studio Code Remote?
+## How does Visual Studio Online relate to Visual Studio Code Remote Development?
 
 
 ## Billing questions

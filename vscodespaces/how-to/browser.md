@@ -33,7 +33,7 @@ To create a new plan, browse to the [environments listing page](https://online.v
 
 ![Create Visual Studio Online plan](../images/create-plan-vso-01.png)
 
-Follow the prompts to select an Azure subscription to associate the plan with, an Azure resource group to create the plan in, an Azure region to geo-locate the plan in, and specify a name for the plan itself. 
+Fill in the form to select an Azure subscription to associate the plan with, an Azure resource group to create the plan in, an Azure region to geo-locate the plan in, and specify a name for the plan itself. 
 
 - **Subscription**: You can choose from any existing Azure subscription.
 - **Resource Group**: Your VS Online plan will be created in the existing Azure resource group selected.
@@ -52,8 +52,6 @@ Only environments contained within the selected plan will be displayed. To selec
 
 ## Create an environment
 
-### Cloud-hosted
-
 > [!NOTE]
 > Cloud-hosted environments are extremely configurable. See [configuring environments](../reference/configuring.md) for advanced information about how to configure your environments.
 
@@ -61,7 +59,7 @@ To create a new cloud-hosted environment in VS Online, from the [environments li
 
 ![Create environment in Visual Studio Code](../images/create-env-vso-01.png)
 
-COmplete the form to provide an environment name, path to Git repository (optional), auto-suspend settings, and an instance type.
+Complete the form to provide an environment name, path to Git repository (optional), auto-suspend settings, and an instance type.
 
 ![Create environment in Visual Studio Code](../images/create-env-vso-02.png)
 

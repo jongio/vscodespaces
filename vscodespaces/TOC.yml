@@ -5,7 +5,7 @@
 - name: Quickstarts
   items:
   - name: VS Online in the browser
-    href: quickstarts/vsonline.md
+    href: quickstarts/browser.md
   - name: VS Online in VS Code
     href: quickstarts/vscode.md
   - name: VS Online in Visual Studio

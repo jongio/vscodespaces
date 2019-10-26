@@ -130,7 +130,13 @@ Follow the prompts to provide an environment name, path to Git repository (optio
 
 ### Self-hosted
 
-In addition to cloud-hosted environments, you can also "bring your own" self-hosted environments, registering them with VS Online. To do so, first [install VS Code and the VS Online extension](#install) on the environment you'd like to register. Then use the **VS Online: Register Local Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
+In addition to cloud-hosted environments, you can also "bring your own" self-hosted environments, registering them with VS Online.
+
+1. On the host machine, [install VS Code and the VS Online extension](#install).
+2. Use the **VS Online: Register Local Environment** command from the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
+3. If no folders are currently open, you will be prompted to select one. This folder will be opened every time you connect to this environment from another machine. However, you can open any folder on the machine after connecting.
+4. If no plan is selected, you will be prompted to select or create a plan. No charge is incurred for Self-hosted environments.
+5. After registering, your self-hosted environment will show up in the environments explorer. You can now connect from any machine with the VS Online extension installed. The first time you connect will take longer than usual.
 
 ## Connect to an environment
 
@@ -181,12 +187,21 @@ In addition to auto-suspending, you can manually suspend an environment at any t
 
 <!-- TODO: Add context menu screenshot -->
 
-## Delete an environment
+## Delete a cloud-hosted environment
 
 The actively connected environment cannot be deleted from within VS Code, however while [disconnected from an environment](#disconnect-from-an-environment), there's two ways to permanently delete it:
 
 1. Use the **VS Online: Delete Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) to select the environment to be deleted then press the **Delete** button on the confirmation prompt.
 2. Right-click the name of the disconnected environment in the **VS Online** panel to reveal a context menu with a **Delete** option. Select it and press the **Delete** button on the confirmation prompt.
+
+## Unregister a self-hosted environment
+
+A self-hosted environment can be unregistered from any machine in one of two ways:
+
+1. Use the **VS Online: Unregister Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) to select the environment to be unregistered then press the **Unregister** button on the confirmation prompt.
+2. Right-click the name of the disconnected environment in the **VS Online** panel to reveal a context menu with an **Unregister** option. Select it and press the **Unregister** button on the confirmation prompt.
+
+You can alway [re-register](#Self-hosted) the same machine in the future.
 
 ## Using the integrated terminal
 

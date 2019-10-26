@@ -17,55 +17,38 @@ You can sign up for both, as well as receive various Azure incentives at [https:
 
 ## Sign In
 
-<!-- 
-TODO: FIX ME, add
-- From o.vs.com
--->
+To sign into VS Online, browse to the [login page](https://online.visualstudio.com/login) and click the **Sign in** button.
 
-To sign into VS Online, you can either press `F1` and select the **VS Online: Sign In** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or click **Sign in to view environments...** in **VS Online** panel of the **Remote Explorer** side bar.
+![Sign In to Visual Studio Online](../images/sign-in-vso-01.png)
 
-![Sign In to Visual Studio Online](../images/sign-in-vsc-01.png)
-
-From there, press the **Sign In** button on the notification toast that appears, and follow the prompts in your browser.
-
-![Sign In to Visual Studio Online](../images/sign-in-vsc-02.png)
-
-<!-- TODO: 
-Add content for:
-- Filtering Azure Subscription
--->
+Follow the prompts in the pop-up dialog to complete sign in.
 
 ## Create a plan
-
-<!-- 
-TODO: FIX ME, add
-- From o.vs.com
--->
 
 Once you've [signed up](#sign-up) and created an Azure subscription, you can access VS Online by creating a VS Online Plan. You can create more than one plan, and plans can be used to group related environments together. They are also the unit of billing, and as such you'll see a line item on your Azure bill for each plan you create.
 
 More information about plans and pricing is available on [the VS Online pricing page](https://aka.ms/vso-pricing).
 
-The first time you [create an environment ](#create-an-environment), VS Code will automatically walk you through the steps required to create a plan. To explicitly create a new plan, you can either use the **VS Online: Create Plan** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by clicking the **Select Plan** button on the **VS Online** title bar in the **Remote Explorer** side bar, then selecting **Create new plan...** from the quick pick list.
+To create a new plan, browse to the [environments listing page](https://online.visualstudio.com/environments) and either using the blue **Create new plan** button (if it's available), or by clicking the **Create new plan** in the **Plan Selector** dropdown in the header bar.
 
-![Create Visual Studio Online plan](../images/create-plan-vsc-01.png)
+![Create Visual Studio Online plan](../images/create-plan-vso-01.png)
 
-Follow the prompts to select an Azure subscription to associate the plan with, an Azure region to create the plan in, a name for the Azure resource group to create the plan in, and a name for the plan itself. 
+Follow the prompts to select an Azure subscription to associate the plan with, an Azure resource group to create the plan in, an Azure region to geo-locate the plan in, and specify a name for the plan itself. 
 
-- **Azure subscription**: You can choose from any Azure subscriptions that was previously selected. To add or remove options from the list, use the **Azure: Select Subscriptions** command in the command palette.
-- **Azure region**: Choose an [Azure region](https://azure.microsoft.com/global-infrastructure/regions/) to create the VS Online plan in. All environments created within this plan, will be provisioned in the region selected. Supported regions are:
+- **Subscription**: You can choose from any existing Azure subscription.
+- **Resource Group**: Your VS Online plan will be created in the existing Azure resource group selected.
+- **Region**: Choose an [Azure region](https://azure.microsoft.com/global-infrastructure/regions/) to create the VS Online plan in. All environments created within this plan, will be provisioned in the region selected. Supported regions are:
   - East US
   - Southeast Asia
   - West Europe
   - West US 2
-- **Azure resource group name**: Your VS Online plan will be created in a new Azure resource group with the name provided in this step.
-- **VS Online plan name**: The name of the created VS Online plan. This name is displayed in the **Remote Explorer** for organization purposes.
+- **Plan Name**: The name of the created VS Online plan. This name is displayed in the **Plan Selector** for organization purposes.
 
-Once a plan is created, it will be the selected plan in the **Remote Explorer**. 
+Once a plan is created, it will be the selected plan in the **Plan Selector**. 
 
-![Selected Visual Studio Online plan](../images/create-plan-vsc-02.png)
+![Selected Visual Studio Online plan](../images/create-plan-vso-02.png)
 
-Only environments contained within the selected plan will be displayed. To select a different plan, you can either use the **VS Online: Select Plan** command in the command palette, or by clicking the **Select Plan** button on the **VS Online** title bar.
+Only environments contained within the selected plan will be displayed. To select a different plan, use the **Plan Selector** menu.
 
 ## Create an environment
 
@@ -74,65 +57,46 @@ Only environments contained within the selected plan will be displayed. To selec
 > [!NOTE]
 > Cloud-hosted environments are extremely configurable. See [configuring environments](../reference/configuring.md) for advanced information about how to configure your environments.
 
-To create a new cloud-hosted environment in VS Online, you can either use the **VS Online: Create New Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by selecting the **Create New Environment** button on the **VS Online** title bar in the **Remote Explorer** side bar.
+To create a new cloud-hosted environment in VS Online, from the [environments listing page](https://online.visualstudio.com/environments) page click the **Create environment** button.
 
-<!-- TODO: "Create new environment" should be in this screenshot -->
-![Create environment in Visual Studio Code](../images/create-env-vsc-01.png)
+![Create environment in Visual Studio Code](../images/create-env-vso-01.png)
 
-Follow the prompts to provide an environment name, path to Git repository (optional) and auto-suspend settings.
+COmplete the form to provide an environment name, path to Git repository (optional), auto-suspend settings, and an instance type.
 
-![Create environment in Visual Studio Code](../images/create-env-vsc-02.gif)
+![Create environment in Visual Studio Code](../images/create-env-vso-02.png)
 
-- **Name**: You can name your environment anything you'd like, but we recommend naming it after the project or task that you'll be using it for. (e.g. 'Todo App Environment', 'PR Review', 'Shopping Cart Feature')
+- **Environment Name**: You can name your environment anything you'd like, but we recommend naming it after the project or task that you'll be using it for. (e.g. 'Todo App Environment', 'PR Review', 'Shopping Cart Feature')
 - **Git Repository**: If a path to a Git repository is provided, VS Online will automatically clone that repository into the environment. You can specify a Git repository in one of many formats:
-  - **Absolute Http(s) Git URL**: A complete Http or Https Url. It may end in a `.git` extension. Examples include:
-    - https://github.com/organization/repo.git
-    - https://organization@dev.azure.com/organization/repo/_git/repo
-    - https://username@bitbucket.org/organization/repo.git
   - **GitHub Project URL**: The Https Url used to navigate to the homepage of a project on GitHub. (e.g. https://github.com/organization/repo)
   - **GitHub Short Form**: The forward slash delimited `organization/repo` format used to refer to projects on GitHub.
-  - **GitHub Pull Request URL**: The Https Url used to navigate to a pull request in GitHub. (e.g. https://github.com/organization/repo/pull/123)
 - **Auto-suspend Setting**: The length of disconnected time before a VS Online environment will be automatically suspended. Choose between:
   - 5 minutes
   - 30 minutes
   - 2 hours
   - Never auto-suspend the environment. (Manual suspension still available)
+- **Instance Type**: The CPU and memory configuration that will be provisioned for your environment. Choose **Standard Environment (Linux)** for most projects, and **Premium Environment (Linux)** for those that require a little extra power. More information about instance types is available at our [pricing page](https://aka.ms/vso-pricing).
+
+> [!NOTE]
+> Windows based instance types are available as part of our VS Online for Visual Studio Private Preview. [Sign up](https://aka.ms/vsfutures-signup) to receive access.
 
 > [!TIP]
 > The guided environment creation experience described above supports Git repositories over the HTTP(S) scheme. To use another source control provider, or Git over SSH, simply leave the **Git Repository** setting blank, and use the environment's terminal support to clone your source code.
 
-<!-- TODO: Add information about instance type/SKU -->
-
-### Self-hosted
-
-In addition to cloud-hosted environments, you can also "bring your own" self-hosted environments, registering them with VS Online. To do so, first [install VS Code and the VS Online extension](#install) on the environment you'd like to register. Then use the **VS Online: Register Local Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
+> [!NOTE]
+> Optional dotfiles configuration options are covered in the [Personalizing environments](../reference/personalizing.md) reference document.
 
 ## Connect to an environment
 
-VS Code makes connecting to environments quick and easy. If you were already connected to an environment when you last shut down VS Code, it will automatically try to re-connect to that environment when you launch it.
+Once you finish [creating an environment](#create-an-environment), an **Available** badge will appear when the environment is ready. 
 
-If you're [creating an environment](#create-an-environment), a notification toast will appear as soon as the environment is ready. Simply select the **Connect** button to connect to the new environment.
+![Connect to a new environment in Visual Studio Code](../images/connect-env-vso-01.png)
 
-![Connect to a new environment in Visual Studio Code](../images/connect-env-vsc-01.png)
+From there, you can either click on the name of the environment (**My Environment** in this screenshot) or, click the context menu and select **Connect**. Taking either of these actions will cause your browser to navigate to VS Online's browser-based editor and begin the connection sequence. When the connection is complete you'll be able to inspect details about the currently selected environment in the **Environment Details** panel in the **Remote Explorer** side bar.
 
-No matter what, when you're in the process of connecting, VS Code's **Remote Indicator** will animate during the connection process, and will display the name of the environment once the connection has completed.
-
-![Connect to a new environment in Visual Studio Code](../images/connect-env-vsc-02.gif)
-
-To connect to already existing environment, that you're not currently connected to, there's several options:
-
-1. Use the **VS Online: Connect to Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) to be displayed with a quick pick list of environments to connect to.
-2. Alternatively, the quick pick list is displayed by left-clicking the name of any environment in the **VS Online** panel in the **Remote Explorer** side bar.
-3. For more advanced options, right-click the name of the environment in the **VS Online** panel to reveal a context menu with the following options:
-   - **Connect to Environment**: Click to immediately connect to the selected environment.
-   - **Open Environment in New Window**: Click to launch a new VS Code instance that will connect to the selected environment. This is useful for being connected to multiple environments at once.
-   - **Open in Browser**: Click to launch the environment in VS Online's browser-based editor.
-
-
-Lastly, you can inspect details about the currently selected environment in the **Environment Details** panel in the **Remote Explorer** side bar.
-
-<!-- TODO: Fix "connected" icon next to "My Environment" -->
 ![Environment Details in Visual Studio Code](../images/connect-env-vsc-03.png)
+
+> [!NOTE]
+> If you are already connected to an environment in VS Online's browser based editor, you can connect to another environment using any of the techniques covered in the [Visual Studio Code how-to](vscode.md#connect-to-an-environment) document.
 
 ## Disconnect from an environment
 
@@ -141,9 +105,8 @@ Once connected to an environment, there's four ways to disconnect:
 1. Use the **VS Online: Disconnect** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
 2. Right-click the name of the connected environment in the **VS Online** panel to reveal a context menu with a **Disconnect** option.
 3. Selecting the **Disconnect** button on the **Environment Details** title bar in the **Remote Explorer** side bar.
-4. Close the VS Code window
+4. Close the browser tab
 
-<!-- TODO: Fix "connected" icon next to "My Environment" and add My-VSO-Plan in title bar -->
 ![Disconnect in Visual Studio Code](../images/disconnect-env-vsc-01.png)
 
 ## Suspend an environment
@@ -154,18 +117,25 @@ VS Online will automatically suspend an inactive environment according to the au
 
 In addition to auto-suspending, you can manually suspend an environment at any time by using the **VS Online: Suspend Environment** command in the command palette, or by selecting **Suspend Environment** in the right-click context menu on any environment listed in the **VS Online** panel of the **Remote Explorer** side bar.
 
+Environments can also be suspended in VS Online's management panel by clicking the context menu and selecting **Suspend**. 
+
+![Suspend in Visual Studio Online](../images/suspend-vso-01.png)
+
 <!-- TODO: Add context menu screenshot -->
 
 ## Delete an environment
 
-The actively connected environment cannot be deleted from within VS Code, however while [disconnected from an environment](#disconnect-from-an-environment), there's two ways to permanently delete it:
+The actively connected environment cannot be deleted from within VS Online's browser-based editor, instead, it can be deleted in the management portal by clicking the context menu and selecting **Delete**. 
 
-1. Use the **VS Online: Delete Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) to select the environment to be deleted then press the **Delete** button on the confirmation prompt.
-2. Right-click the name of the disconnected environment in the **VS Online** panel to reveal a context menu with a **Delete** option. Select it and press the **Delete** button on the confirmation prompt.
+![Delete in Visual Studio Online](../images/delete-env-vso-01.png)
+
+
+> [!NOTE]
+> If you are already connected to an environment in VS Online's browser based editor, you can delete other environments using any of the techniques covered in the [Visual Studio Code how-to](vscode.md#delete-an-environment) document.
 
 ## Using the integrated terminal
 
-VS Code's integrated terminal and all of its features are fully supported in VS Online. It is important to note, however, that while connected to VS Online, commands issued in the terminal are executed against the environment, not the user's local machine. This provides VS Online users full control over their development environment and how it's configured.
+VS Online's browser based version of VS Code includes support for VS Code's integrated terminal and all of its features. It is important to note, however, that while connected to VS Online, commands issued in the terminal are executed against the environment, not the user's local machine. This provides VS Online users full control over their development environment and how it's configured.
 
 > [!TIP]
 > The [integrated terminal is fully documented on the VS Code site](https://code.visualstudio.com/docs/editor/integrated-terminal).
@@ -218,7 +188,7 @@ There's two ways to stop a forwarded port, regardless of which mechanism was use
 
 ## Configuration and personalization
 
-In addition to the above documentation that's specific to VS Code's VS Online extension, VS Online also provides flexible mechanisms to customize environments on a per repo basis, as well as to personalize them on a per user basis. Find out more in the reference documentation:
+In addition to the above documentation that's specific to VS Online's browser-based experience, VS Online also provides flexible mechanisms to customize environments on a per repo basis, as well as to personalize them on a per user basis. Find out more in the reference documentation:
 
 - [Configuring environments](../reference/configuring.md)
 - [Personalizing environments](../reference/personalizing.md)

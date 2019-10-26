@@ -17,6 +17,10 @@ Additionally, Visual Studio Online brings many of the benefits of DevOps, like r
 
 Ready to get going? This document will walk you through how to install VS Online, create a cloud-hosted environment, connect to it, run and debug the environment's application, disconnect and delete the environment.
 
+> [!IMPORTANT]
+> A Microsoft Account and Azure Subscription are required for this quickstart. You can sign up for both, as well as receive various Azure incentives at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/).
+
+
 ## 1. Install
 
 > [!TIP]
@@ -44,7 +48,7 @@ Answer the prompts with the following information:
 - **Azure Subscription**: Select any Azure subscription to create a VS Online plan in
 - **Instance Type**: Standard Environment (Linux)
 
-A **Creating environment: My Quick Environment** notification will appear in the bottom right corner. When that notification is replaced with on that says **Environment created: My Quick EEnvironment**, press the **Connect** button.
+A **Creating environment: My Quick Environment** notification will appear in the bottom right corner. When that notification is replaced with on that says **Environment created: My Quick Environment**, press the **Connect** button.
 
 
 ## 4. Connect To and Use the Environment

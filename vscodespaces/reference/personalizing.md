@@ -23,7 +23,7 @@ In the **Settings** tab that opens, select the **Extensions** node in the naviga
 
 ![Visual Studio Online Settings in Visual Studio Code](../images/personalizing-dotfiles-vsc.png)
 
-You can also configure dotfiles in from [online.visualstudio.com](http://online.visualstudio.com). Press the **Create environment** button, and expand the **Dotfiles (optional)** settings.
+You can also configure dotfiles in from [online.visualstudio.com](https://online.visualstudio.com). Press the **Create environment** button, and expand the **Dotfiles (optional)** settings.
 
 ![Visual Studio Online Dotfiles Settings](../images/personalizing-dotfiles-vso.png)
 

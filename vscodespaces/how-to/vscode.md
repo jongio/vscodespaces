@@ -132,11 +132,23 @@ Follow the prompts to provide an environment name, path to Git repository (optio
 
 In addition to cloud-hosted environments, you can also "bring your own" self-hosted environments, registering them with VS Online.
 
-1. On the host machine, [install VS Code and the VS Online extension](#install).
-2. Use the **VS Online: Register Local Environment** command from the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
-3. If no folders are currently open, you will be prompted to select one. This folder will be opened every time you connect to this environment from another machine. However, you can open any folder on the machine after connecting.
-4. If no plan is selected, you will be prompted to select or create a plan. No charge is incurred for Self-hosted environments.
-5. After registering, your self-hosted environment will show up in the environments explorer. You can now connect from any machine with the VS Online extension installed. The first time you connect will take longer than usual.
+On the host machine, [install VS Code and the VS Online extension](#install).
+
+Use the **VS Online: Register Local Environment** command from the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), and follow the prompts:
+
+- If no folders are currently open, you will be prompted to select one. This folder will be opened every time you connect to this environment from another machine. However, you can open any folder on the machine after connecting.
+![Register a static environment in Visual Studio Code](../images/register-local-env-vsc-01.png)
+
+- If no plan is selected, you will be prompted to select or create a plan. No charge is incurred for Self-hosted environments.
+
+After registering, your self-hosted environment will appear under a new tree view in the **VS Online** panel of the **Remote Explorer** side bar.
+
+![Register a static environment in Visual Studio Code](../images/register-local-env-vsc-02.png)
+
+You can now connect from any machine with the VS Online extension installed. The first time you connect will take longer than usual.
+
+
+If your self-hosted environment becomes unavailable for any reason, you can attempt to [restore](#restore-a-self-hosted-environment) it.
 
 ## Connect to an environment
 
@@ -192,16 +204,22 @@ In addition to auto-suspending, you can manually suspend an environment at any t
 The actively connected environment cannot be deleted from within VS Code, however while [disconnected from an environment](#disconnect-from-an-environment), there's two ways to permanently delete it:
 
 1. Use the **VS Online: Delete Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) to select the environment to be deleted then press the **Delete** button on the confirmation prompt.
-2. Right-click the name of the disconnected environment in the **VS Online** panel to reveal a context menu with a **Delete** option. Select it and press the **Delete** button on the confirmation prompt.
+2. Right-click the name of the disconnected environment in the **VS Online** panel to reveal a context menu with a **Delete Environment** option. Select it and press the **Delete** button on the confirmation prompt.
+
+## Restore a self-hosted environment
+
+If your self-hosted environment becomes unavailable, you can attempt to restore it on the registered machine. 
+
+Right-click the self-hosted environment in the **VS Online** panel to reveal a context menu with a **Restore Local Environment** option. This option is only visible if you are currently working on the machine registered as a self-hosted environment.
+
+Select the **Restore Local Environment** option and wait for a notification toast indicating that the environment has been restored.
 
 ## Unregister a self-hosted environment
 
 A self-hosted environment can be unregistered from any machine in one of two ways:
 
 1. Use the **VS Online: Unregister Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) to select the environment to be unregistered then press the **Unregister** button on the confirmation prompt.
-2. Right-click the name of the disconnected environment in the **VS Online** panel to reveal a context menu with an **Unregister** option. Select it and press the **Unregister** button on the confirmation prompt.
-
-You can alway [re-register](#Self-hosted) the same machine in the future.
+2. Right-click the name of the disconnected environment in the **VS Online** panel to reveal a context menu with an **Unregister Environment** option. Select it and press the **Unregister** button on the confirmation prompt.
 
 ## Using the integrated terminal
 

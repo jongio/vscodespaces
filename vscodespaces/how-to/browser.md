@@ -129,7 +129,7 @@ The actively connected environment cannot be deleted from within VS Online's bro
 
 
 > [!NOTE]
-> If you are already connected to an environment in VS Online's browser based editor, you can delete other environments using any of the techniques covered in the [Visual Studio Code how-to](vscode.md#delete-an-environment) document.
+> If you are already connected to an environment in VS Online's browser based editor, you can delete other environments using any of the techniques covered in the [Visual Studio Code how-to](vscode.md#delete-a-cloud-hosted-environment) document.
 
 ## Using the integrated terminal
 

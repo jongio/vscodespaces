@@ -41,6 +41,9 @@ The following tables lists the configuration properties supported by VS Online. 
 | `workspaceFolder` | string | Sets the path that VS Online should clone a source repo into. Defaults to `/home/vsonline/workspace`. |
 | `postCreateCommand` | string or array | A command string or list of command arguments to run after the environment is created. Use `&&` in a string to execute multiple commands. For example, `"yarn install"`, `["yarn", "install"]`, or `"apt-get update && apt-get install -y git"`. It fires after your source code has been cloned, so you can also run shell scripts from your source repo. For example: `bash .devcontainer/install-dev-tools.sh`. By default, `oryx build` is run. To disable [Oryx](https://github.com/microsoft/Oryx) behavior, set the value to empty string (`""`) or empty array (`[]`). |
 
+> [!WARNING]
+> The below Docker related properties require the `customContainers` experimental [feature flag](#experimental-features) to be set to `true`.
+
 ### Docker properties
 
 | Property | Type | Description |
@@ -79,3 +82,26 @@ The following tables lists the configuration properties supported by VS Online. 
   "dockerfile": "Dockerfile"
 }
 ```
+
+## Experimental features
+
+To enable the earliest feedback possible, some experimental features in Visual Studio Online are made available behind opt-in feature flags.
+
+These features can only be used from within the Visual Studio Code based experience. The steps to enable experimental features are as follows:
+
+1. Create a file called `.cloudenv-settings.json` in `USERPROFILE` (Windows) or `HOME` (Linux).
+2. Add the following JSON configuration to `.cloudenv-settings.json`:
+   ```json
+   {
+       "isInternal": true,
+       "experimentalFeatures": {
+           "{featureToEnable}": true
+       }
+   }
+   ```
+
+### Feature list
+
+| Property | Description |
+|----------|-------------|
+| `customContainers` | Enables users to leverage the [Docker properties](#docker-properties) of `devcontainer.json`. |

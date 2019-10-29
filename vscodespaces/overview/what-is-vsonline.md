@@ -17,7 +17,7 @@ Additionally, Visual Studio Online brings many of the benefits of DevOps, like r
 
 Ready to get going? This document will run you through some concepts and introduce you to our features. If you're looking for an abridged version, check out [the quickstarts](../quickstarts/browser.md).
 
-## Concepts
+## Concepts and features
 
 The compelling features of Visual Studio Online are built on top of a few fundamental concepts. This section covers those concepts and gives a brief tour of features.
 
@@ -40,7 +40,7 @@ Cloud-hosted development environments come with all of the benefits of the cloud
   - They have predictable pricing and you only pay for what you use, with built in auto-suspend to eliminate runoff costs.
   - Moving your development workload to the cloud frees up resources on your personal machine to email, chat, stream music, or even to simultaneously work on more projects. 
 
-In addition to Cloud-hosted environments, Visual Studio Online also allows you to register and connect your own self-hosted environments. This allows you to use an environment you may have already perfectly tuned and experience some of the benefits of Visual Studio Online, for free!
+In addition to cloud-hosted environments, Visual Studio Online also allows you to register and connect your own self-hosted environments. This allows you to use an environment you may have already perfectly tuned and experience some of the benefits of Visual Studio Online, for free!
 
 ### Editors
 
@@ -58,66 +58,23 @@ Developers are highly opinionated about their editor and terminal configurations
 
 Environments can be created with a user specific collection of custom dotfiles (e.g. `.bashrc`, `.gitconfig`, etc.), and we automatically roam your Git identity, themes and settings so every environment you create looks and feels the way you like, regardless of the project specific environment capabilities. 
 
-## Features
-
-### Managed Cloud-hosted environments
-
-- Create environments from Git repos (public, private, GitHub, Azure DevOps, BitBucket)
-  - Post create command\Oryx 
-  - regions
-  - disposable
-
-### Self-hosted environments
-
-### Editor choice
-
-- Open in browser\vscode\new window\ disconnect 
-- Integrated terminal
-- browser for anywhere
-
-### Environment customization
-
-- Configurable
-  - Custom images & dockerfiles (turn on feature flag) 
-
-### App remoting
-
-- App remoting
-  - Port forwarding (UI, devcontainer and automatic) 
-
-### Environment personalization
-
-- Dotfiles 
-- Git identity 
-
-### Suspend
-
-- Shutdown environments\auto-shutdown 
-
-### Extensible and open
-
-- Install extensions from devcontainer.json\settings\auto-infer 
-- Live Share and IntelliCode work out-of-the-box 
-- any language
-
 ## See also
 
 ### Quickstarts:
 
-- Visual Studio Online in Visual Studio Code
-- Visual Studio Online in the browser
-- Visual Studio Online in Visual Studio
+- [Visual Studio Online in the browser](../quickstarts/browser.md)
+- [Visual Studio Online in Visual Studio Code](../quickstarts/vscode.md)
+- [Visual Studio Online in Visual Studio](../quickstarts/vs.md)
 
 ### How-tos:
 
-- Visual Studio Online in Visual Studio Code
-- Visual Studio Online in the browser 
-
+- [Visual Studio Online in the browser](../how-to/browser.md)
+- [Visual Studio Online in Visual Studio Code](../how-to/vscode.md)
 
 ### Reference & Resources:
 
-- Configuration
-- Troubleshooting
-- FAQ
-
-Having problems? Submit an issue or provide feedback.
+- [Configuration](../reference/configuring.md)
+- [Personalization](../reference/personalizing.md)
+- [Troubleshooting](../resources/troubleshooting.md)
+- [FAQ](../resources/faq.md)
+- [Feedback](../resources/feedback.md)

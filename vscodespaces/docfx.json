@@ -24,7 +24,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -41,7 +42,8 @@
     "globalMetadata": {
       "breadcrumb_path": "/visualstudio/online/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "titleSuffix": "Visual Studio Online"
     },
     "fileMetadata": {},
     "template": [],

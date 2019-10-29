@@ -11,7 +11,7 @@ ms.date: 09/20/2019
 
 ## General questions
 
-## How does Visual Studio Online relate to Visual Studio Code Remote Development?
+### How does Visual Studio Online relate to Visual Studio Code Remote Development?
 
 Visual Studio Online conceptually and technically extends the [Visual Studio Code Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). You can roughly think of VS Online's cloud-hosted environments as "Remote Containers as a Service" and it's self-hosted environments as "Remote SSH as a Service".
 

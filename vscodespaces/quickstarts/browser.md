@@ -28,9 +28,6 @@ To sign into VS Online, browse to the [login page](https://online.visualstudio.c
 
 Follow the prompts in the pop-up dialog to complete sign in.
 
-> ![TIP]
-> An Azure 
-
 ## 2. Create a plan
 
 A VS Online plan is required to create VS Online environments. To create a new plan and either use the blue **Create new plan** button, or by click the **Create new plan** in the **Plan Selector** menu in the header bar.

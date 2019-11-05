@@ -10,7 +10,7 @@ The documentation for Visual Studio Online can be found [here](https://aka.ms/vs
 
 ## Getting started
 
-If your looking to try Visual Studio Online, check out [this quickstart](https://aka.ms/vso-docs/quickstart/browser).
+You can try Visual Studio Online by [reading the quickstart](https://aka.ms/vso-docs/quickstart/browser).
 
 ## Microsoft Open Source Code of Conduct
 

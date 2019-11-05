@@ -82,26 +82,3 @@ The following tables lists the configuration properties supported by VS Online. 
   "dockerfile": "Dockerfile"
 }
 ```
-
-## Experimental features
-
-To enable the earliest feedback possible, some experimental features in Visual Studio Online are made available behind opt-in feature flags.
-
-These features can only be used from within the Visual Studio Code based experience. The steps to enable experimental features are as follows:
-
-1. Create a file called `.cloudenv-settings.json` in `USERPROFILE` (Windows) or `HOME` (Linux).
-2. Add the following JSON configuration to `.cloudenv-settings.json`:
-   ```json
-   {
-       "isInternal": true,
-       "experimentalFeatures": {
-           "{featureToEnable}": true
-       }
-   }
-   ```
-
-### Feature list
-
-| Property | Description |
-|----------|-------------|
-| `customContainers` | Enables users to leverage the [Docker properties](#docker-properties) of `devcontainer.json`. |

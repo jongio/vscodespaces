@@ -41,9 +41,6 @@ The following tables lists the configuration properties supported by VS Online. 
 | `workspaceFolder` | string | Sets the path that VS Online should clone a source repo into. Defaults to `/home/vsonline/workspace`. |
 | `postCreateCommand` | string or array | A command string or list of command arguments to run after the environment is created. Use `&&` in a string to execute multiple commands. For example, `"yarn install"`, `["yarn", "install"]`, or `"apt-get update && apt-get install -y git"`. It fires after your source code has been cloned, so you can also run shell scripts from your source repo. For example: `bash .devcontainer/install-dev-tools.sh`. By default, `oryx build` is run. To disable [Oryx](https://github.com/microsoft/Oryx) behavior, set the value to empty string (`""`) or empty array (`[]`). |
 
-> [!WARNING]
-> The below Docker related properties require the `customContainers` experimental [feature flag](#experimental-features) to be set to `true`.
-
 ### Docker properties
 
 | Property | Type | Description |

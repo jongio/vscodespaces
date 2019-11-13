@@ -77,8 +77,5 @@ The following tables lists the configuration properties supported by VS Online. 
 
   // Run Bash script in .devcontainer directory
   "postCreateCommand": "/bin/bash ./.devcontainer/post-create.sh > ~/post-create.log",
-
-  // Use the dockerfile in .devcontainer directory
-  "dockerfile": "Dockerfile"
 }
 ```

@@ -13,7 +13,7 @@ Welcome to Visual Studio Online! We're glad you're here.
 
 Visual Studio Online provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Online at no cost.
 
-Additionally, Visual Studio Online brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Online is also personaliazable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
+Additionally, Visual Studio Online brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Online is also personalizable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
 
 Ready to get going? This document will run you through some concepts and introduce you to our features. If you're looking for an abridged version, check out [the quickstarts](../quickstarts/browser.md).
 
@@ -31,7 +31,7 @@ If you're the do-it-yourself type of person and like to manage your own machines
 
 ### Environments
 
-An environment is the "backend" half of Visual Studio Online. It's where all of the compute associated with software development happens: compiling, debugging, restoring, etc. When you need to work on a new project, pick up a new task, or review a PR, you can simply spin up an Cloud-hosted environment, and Visual Studio Online takes care of configuring it correctly. It automatically configures everything you need to work on your project: the source code, runtime, compiler, debugger, editor, custom dotfile configurations, relevant editor extensions and more. 
+An environment is the "backend" half of Visual Studio Online. It's where all of the compute associated with software development happens: compiling, debugging, restoring, etc. When you need to work on a new project, pick up a new task, or review a PR, you can simply spin up an cloud-hosted environment, and Visual Studio Online takes care of configuring it correctly. It automatically configures everything you need to work on your project: the source code, runtime, compiler, debugger, editor, custom dotfile configurations, relevant editor extensions and more. 
 
 Cloud-hosted development environments come with all of the benefits of the cloud, powered by Azure:
 
@@ -54,7 +54,7 @@ Quickly created development environments enable easy onboarding for team members
 
 ### Personalized for you
 
-Developers are highly opinionated about their editor and terminal configurations, and commonly spend countless hours customizing them. As a result, Visual Studio Online not only allows for development environments customized per project, but also layers on individual personalizations so that our Cloud-hosted environments feel immediately natural to use no matter how you like to work. 
+Developers are highly opinionated about their editor and terminal configurations, and commonly spend countless hours customizing them. As a result, Visual Studio Online not only allows for development environments customized per project, but also layers on individual personalizations so that our cloud-hosted environments feel immediately natural to use no matter how you like to work. 
 
 Environments can be created with a user specific collection of custom dotfiles (e.g. `.bashrc`, `.gitconfig`, etc.), and we automatically roam your Git identity, themes and settings so every environment you create looks and feels the way you like, regardless of the project specific environment capabilities. 
 

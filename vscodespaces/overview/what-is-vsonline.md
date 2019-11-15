@@ -23,7 +23,7 @@ The compelling features of Visual Studio Online are built on top of a few fundam
 
 ### Remote Development
 
-Visual Studio Online conceptually and technically extends the [Visual Studio Code Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). As explained in the [Remote Development with VS Code](https://code.visualstudio.com/blogs/2019/05/02/remote-development) blog post, we built Visual Studio Online because "*We saw many developers trying to develop against containers and remote VMs configured with specific development and runtime stacks, simply because it is too hard, too disruptive, and in some cases impossible, to set up these development environments locally. We've all experienced this problem. Unless we feel it's time to flatten that machine, we hesitate to try out a new stack like Rust, Go, Node, or Python3, for fear of 'messing up' our current, well-tuned environment.*" 
+Visual Studio Online conceptually and technically extends the [Visual Studio Code Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). As explained in the [Remote Development with VS Code](https://code.visualstudio.com/blogs/2019/05/02/remote-development) blog post, we built Visual Studio Online because "_We saw many developers trying to develop against containers and remote VMs configured with specific development and runtime stacks, simply because it is too hard, too disruptive, and in some cases impossible, to set up these development environments locally. We've all experienced this problem. Unless we feel it's time to flatten that machine, we hesitate to try out a new stack like Rust, Go, Node, or Python3, for fear of 'messing up' our current, well-tuned environment._"
 
 Having remote-capable tools unblocks a ton of developer scenarios, but on their own, they still require you to manually manage machines. We've heard loud and clear that developers are spending too much time setting up their developer environments, and that it can get in the way of onboarding new team members or enabling you to quickly move between tasks. Visual Studio Online aims to solve these problems, and more.
 
@@ -31,14 +31,14 @@ If you're the do-it-yourself type of person and like to manage your own machines
 
 ### Environments
 
-An environment is the "backend" half of Visual Studio Online. It's where all of the compute associated with software development happens: compiling, debugging, restoring, etc. When you need to work on a new project, pick up a new task, or review a PR, you can simply spin up an Cloud-hosted environment, and Visual Studio Online takes care of configuring it correctly. It automatically configures everything you need to work on your project: the source code, runtime, compiler, debugger, editor, custom dotfile configurations, relevant editor extensions and more. 
+An environment is the "backend" half of Visual Studio Online. It's where all of the compute associated with software development happens: compiling, debugging, restoring, etc. When you need to work on a new project, pick up a new task, or review a PR, you can simply spin up an Cloud-hosted environment, and Visual Studio Online takes care of configuring it correctly. It automatically configures everything you need to work on your project: the source code, runtime, compiler, debugger, editor, custom dotfile configurations, relevant editor extensions and more.
 
 Cloud-hosted development environments come with all of the benefits of the cloud, powered by Azure:
 
-  - They are fast to create and disposable. Create as many as you want (up to subscription limits), and throw them away when you're done. It's just that easy.
-  - They are managed, reducing overall maintenance for you.
-  - They have predictable pricing and you only pay for what you use, with built in auto-suspend to eliminate runoff costs.
-  - Moving your development workload to the cloud frees up resources on your personal machine to email, chat, stream music, or even to simultaneously work on more projects. 
+- They are fast to create and disposable. Create as many as you want (up to subscription limits), and throw them away when you're done. It's just that easy.
+- They are managed, reducing overall maintenance for you.
+- They have predictable pricing and you only pay for what you use, with built in auto-suspend to eliminate runoff costs.
+- Moving your development workload to the cloud frees up resources on your personal machine to email, chat, stream music, or even to simultaneously work on more projects.
 
 In addition to cloud-hosted environments, Visual Studio Online also allows you to register and connect your own self-hosted environments. This allows you to use an environment you may have already perfectly tuned and experience some of the benefits of Visual Studio Online, for free!
 
@@ -54,9 +54,9 @@ Quickly created development environments enable easy onboarding for team members
 
 ### Personalized for you
 
-Developers are highly opinionated about their editor and terminal configurations, and commonly spend countless hours customizing them. As a result, Visual Studio Online not only allows for development environments customized per project, but also layers on individual personalizations so that our Cloud-hosted environments feel immediately natural to use no matter how you like to work. 
+Developers are highly opinionated about their editor and terminal configurations, and commonly spend countless hours customizing them. As a result, Visual Studio Online not only allows for development environments customized per project, but also layers on individual personalizations so that our Cloud-hosted environments feel immediately natural to use no matter how you like to work.
 
-Environments can be created with a user specific collection of custom dotfiles (e.g. `.bashrc`, `.gitconfig`, etc.), and we automatically roam your Git identity, themes and settings so every environment you create looks and feels the way you like, regardless of the project specific environment capabilities. 
+Environments can be created with a user specific collection of custom dotfiles (e.g. `.bashrc`, `.gitconfig`, etc.), and we automatically roam your Git identity, themes and settings so every environment you create looks and feels the way you like, regardless of the project specific environment capabilities.
 
 ## See also
 

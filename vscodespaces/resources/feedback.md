@@ -11,7 +11,6 @@ ms.date: 09/20/2019
 
 Feedback for Visual Studio Online is collected in [our documentation repository on GitHub](https://github.com/MicrosoftDocs/vsonline/).
 
-
 - **Issues**: Feel free to search through the list of [open bugs](https://github.com/MicrosoftDocs/vsonline/labels/bug) and [feature enhancements](https://github.com/MicrosoftDocs/vsonline/labels/enhancement), and certainly don't hesitate to [submit your own](https://github.com/MicrosoftDocs/vsonline/issues/new), or up vote one with a 👍🏻 reaction!
 - **Feedback Area Map**: Looking to get a general feel for what we're working on and looking for feedback about? Check out the [feedback area map](https://github.com/MicrosoftDocs/vsonline/issues/2).
 - **Twitter**: Interact with us on Twitter! Just be sure to use the [#vsonline](https://twitter.com/search?q=%23vsonline&src=typed_query&f=live) hashtag.

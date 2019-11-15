@@ -33,7 +33,7 @@ To create a new plan, browse to the [environments listing page](https://online.v
 
 ![Create Visual Studio Online plan](../images/create-plan-vso-01.png)
 
-Fill in the form to select an Azure subscription to associate the plan with, an Azure resource group to create the plan in, an Azure region to geo-locate the plan in, and specify a name for the plan itself. 
+Fill in the form to select an Azure subscription to associate the plan with, an Azure resource group to create the plan in, an Azure region to geo-locate the plan in, and specify a name for the plan itself.
 
 - **Subscription**: You can choose from any existing Azure subscription.
 - **Resource Group**: Your VS Online plan will be created in the existing Azure resource group selected.
@@ -44,7 +44,7 @@ Fill in the form to select an Azure subscription to associate the plan with, an 
   - West US 2
 - **Plan Name**: The name of the created VS Online plan. This name is displayed in the **Plan Selector** for organization purposes.
 
-Once a plan is created, it will be the selected plan in the **Plan Selector**. 
+Once a plan is created, it will be the selected plan in the **Plan Selector**.
 
 ![Selected Visual Studio Online plan](../images/create-plan-vso-02.png)
 
@@ -85,7 +85,7 @@ Complete the form to provide an environment name, path to Git repository (option
 
 ## Connect to an environment
 
-Once you finish [creating an environment](#create-an-environment), an **Available** badge will appear when the environment is ready. 
+Once you finish [creating an environment](#create-an-environment), an **Available** badge will appear when the environment is ready.
 
 ![Connect to a new environment in Visual Studio Code](../images/connect-env-vso-01.png)
 
@@ -109,13 +109,13 @@ Once connected to an environment, there's four ways to disconnect:
 
 ## Suspend an environment
 
-As described on the [VS Online pricing page](https://aka.ms/vso-pricing), you pay for active VS Online usage, with a nominal fee for when an environment is suspended. 
+As described on the [VS Online pricing page](https://aka.ms/vso-pricing), you pay for active VS Online usage, with a nominal fee for when an environment is suspended.
 
 VS Online will automatically suspend an inactive environment according to the auto-suspend setting used when the environment was created. This helps keep the costs of VS Online as low as possible.
 
 In addition to auto-suspending, you can manually suspend an environment at any time by using the **VS Online: Suspend Environment** command in the command palette, or by selecting **Suspend Environment** in the right-click context menu on any environment listed in the **VS Online** panel of the **Remote Explorer** side bar.
 
-Environments can also be suspended in VS Online's management panel by clicking the context menu and selecting **Suspend**. 
+Environments can also be suspended in VS Online's management panel by clicking the context menu and selecting **Suspend**.
 
 ![Suspend in Visual Studio Online](../images/suspend-vso-01.png)
 
@@ -123,10 +123,9 @@ Environments can also be suspended in VS Online's management panel by clicking t
 
 ## Delete an environment
 
-The actively connected environment cannot be deleted from within VS Online's browser-based editor, instead, it can be deleted in the management portal by clicking the context menu and selecting **Delete**. 
+The actively connected environment cannot be deleted from within VS Online's browser-based editor, instead, it can be deleted in the management portal by clicking the context menu and selecting **Delete**.
 
 ![Delete in Visual Studio Online](../images/delete-env-vso-01.png)
-
 
 > [!NOTE]
 > If you are already connected to an environment in VS Online's browser based editor, you can delete other environments using any of the techniques covered in the [Visual Studio Code how-to](vscode.md#delete-a-cloud-hosted-environment) document.
@@ -156,7 +155,7 @@ VS Online provides access to the applications and services running in remote env
 
 If your application, or any other, indicates that it is serving content from a local port in the integrated terminal, VS Online will automatically forward that port and add it to the list of **Forwarded Ports** under **Environment Details**.
 
-In the example below, `npx` is used to run `http-server`, which opens port `8080`. VS Online correspondingly and automatically forwards port `8080` so it can be accessed from your local environment. 
+In the example below, `npx` is used to run `http-server`, which opens port `8080`. VS Online correspondingly and automatically forwards port `8080` so it can be accessed from your local environment.
 
 ![VS Online Auto Port Forwarding](../images/auto-port-forwarding-vsc-01.gif)
 

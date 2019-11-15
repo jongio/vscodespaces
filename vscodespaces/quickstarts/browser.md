@@ -52,7 +52,7 @@ Once a plan is created, it will be the selected plan in the **Plan Selector**.
 
 ## 3. Create an Environment
 
-To create a new cloud-hosted environment in VS Online select the **Create environment** button on in the VS Online management portal.
+To create a new cloud-hosted environment in VS Online select the **Create environment** button in the VS Online management portal.
 
 ![Create environment in Visual Studio Code](../images/create-env-vso-01.png)
 

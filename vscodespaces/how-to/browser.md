@@ -55,7 +55,7 @@ Only environments contained within the selected plan will be displayed. To selec
 > [!NOTE]
 > Cloud-hosted environments are extremely configurable. See [configuring environments](../reference/configuring.md) for advanced information about how to configure your environments.
 
-To create a new cloud-hosted environment in VS Online, from the [environments listing page](https://online.visualstudio.com/environments) page click the **Create environment** button.
+To create a new cloud-hosted environment in VS Online, from the [environments listing page](https://online.visualstudio.com/environments) click the **Create environment** button.
 
 ![Create environment in Visual Studio Code](../images/create-env-vso-01.png)
 

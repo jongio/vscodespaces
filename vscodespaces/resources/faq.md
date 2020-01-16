@@ -21,6 +21,9 @@ If you're the do-it-yourself type of person and like to manage your own machines
 
 The Visual Studio Live Share agent runs on self-hosted machines and listens for connections.
 
+### What do you mean by "repositories you trust"?
+
+Visual Studio Online will clone and utilize the user-provided source and/or dotfile repositories to create and configure your cloud-hosted environment. To avoid unknowingly creating and connecting to an environment with malicious extensions or processes, be sure you understand and trust all repositories referenced during environment creation.
 
 ## Billing questions
 

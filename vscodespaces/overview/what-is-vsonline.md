@@ -75,6 +75,7 @@ Environments can be created with a user specific collection of custom dotfiles (
 
 - [Configuration](../reference/configuring.md)
 - [Personalization](../reference/personalizing.md)
+- [Repositories](../reference/repository.md)
 - [Troubleshooting](../resources/troubleshooting.md)
 - [FAQ](../resources/faq.md)
 - [Feedback](../resources/feedback.md)

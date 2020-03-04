@@ -20,7 +20,6 @@ Ready to get going? This document will walk you through how to install VS Online
 > [!IMPORTANT]
 > A Microsoft Account and Azure Subscription are required for this quickstart. You can sign up for both, as well as receive various Azure incentives at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/).
 
-
 ## 1. Install
 
 > [!TIP]
@@ -50,6 +49,7 @@ Answer the prompts with the following information:
 
 A **Creating environment: My Quick Environment** notification will appear in the bottom right corner. When that notification is replaced with on that says **Environment created: My Quick Environment**, press the **Connect** button.
 
+You can refer to our [repository reference](../reference/repository.md) on the supported url types and providers.
 
 ## 4. Connect To and Use the Environment
 
@@ -60,6 +60,7 @@ At this point, open **Readme.md** from **File Explorer**, and then press [`ctrl`
 Follow the instructions in **Readme.md**, and return to this document when complete.
 
 ## 5. Deleting the Environment
+
 To delete the newly created environment, right click on **My Quick Environment** in the **VS Online** panel of the **Remote Explorer** and select **Delete** from the context menu.
 
 ## Next Steps
@@ -67,4 +68,3 @@ To delete the newly created environment, right click on **My Quick Environment**
 That's it! You've quickly spun up an environment, used the integrated terminal, edited code, debugged and ran it, then disconnected and deleted the environment.
 
 If you'd like to learn more details, check out the [VS Online Overview](../overview/what-is-vsonline.md) or [VS Online for VS Code how-to](../how-to/vscode.md) documentation.
-

@@ -64,9 +64,7 @@ Complete the form to provide an environment name, path to Git repository (option
 ![Create environment in Visual Studio Code](../images/create-env-vso-02.png)
 
 - **Environment Name**: You can name your environment anything you'd like, but we recommend naming it after the project or task that you'll be using it for. (e.g. 'Todo App Environment', 'PR Review', 'Shopping Cart Feature')
-- **Git Repository**: If a path to a Git repository is provided, VS Online will automatically clone that repository into the environment. You can specify a Git repository in one of many formats:
-  - **GitHub Project URL**: The Https Url used to navigate to the homepage of a project on GitHub. (e.g. https://github.com/organization/repo)
-  - **GitHub Short Form**: The forward slash delimited `organization/repo` format used to refer to projects on GitHub.
+- **Git Repository**: If a path to a Git repository is provided, VS Online will automatically clone that repository into the environment. You can refer to our [repository reference](../reference/repository.md) on the supported url types and providers.
 - **Auto-suspend Setting**: The length of disconnected time before a VS Online environment will be automatically suspended. Choose between:
   - 5 minutes
   - 30 minutes

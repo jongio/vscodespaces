@@ -130,10 +130,10 @@ Follow the prompts to provide an environment name, path to Git repository (optio
 
 ### Self-hosted
 
-In addition to cloud-hosted environments, you can also "bring your own" self-hosted environments, registering them with VS Online. To do so, first [install VS Code and the VS Online extension](#install) on the environment you'd like to register. Then use the **VS Online: Register Local Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette):
+In addition to cloud-hosted environments, you can also "bring your own" self-hosted environments, registering them with VS Online. To do so, first [install VS Code and the VS Online extension](#install) on the environment you'd like to register. Then use the **VS Online: Register Self-hosted Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette):
 
 - If no folders are currently open in VS Code, you will be prompted to select one. This folder will be opened every time you connect to this environment from another machine. However, you can open any folder after connecting.
-![Register a Local Environment in Visual Studio Code](../images/register-local-env-vsc-01.png)
+![Register a Self-hosted Environment in Visual Studio Code](../images/register-local-env-vsc-01.png)
 
 - If no plan is selected, you will be prompted to select or create a plan. No charge is incurred for self-hosted environments.
 

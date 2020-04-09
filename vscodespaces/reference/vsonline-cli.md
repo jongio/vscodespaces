@@ -100,7 +100,7 @@ sudo apt-get install vso
 For other Linux distributions, run the following script by using curl and pipe directly to bash, or download the script to a file and inspect it before running.
 
 ```bash
-sudo wget -O ~/vso-script https://aka.ms/install-vso-linux && sudo tr -d '\r' < ~/vso-script  | bash
+curl -L https://aka.ms/install-vso-linux | sudo bash
 ```
 
 ## Usage

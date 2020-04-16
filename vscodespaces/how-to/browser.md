@@ -71,7 +71,6 @@ Complete the form to provide an environment name, path to Git repository (option
   - 5 minutes
   - 30 minutes
   - 2 hours
-  - Never auto-suspend the environment. (Manual suspension still available)
 - **Instance Type**: The CPU and memory configuration that will be provisioned for your environment. Choose **Standard Environment (Linux)** for most projects, and **Premium Environment (Linux)** for those that require a little extra power. More information about instance types is available at our [pricing page](https://aka.ms/vso-pricing).
 
 > [!NOTE]

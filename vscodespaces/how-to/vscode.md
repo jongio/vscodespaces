@@ -67,7 +67,7 @@ Once you've [signed up](#sign-up) and created an Azure subscription, you can acc
 
 More information about plans and pricing is available on [the VS Online pricing page](https://aka.ms/vso-pricing).
 
-The first time you [create an environment ](#create-an-environment), VS Code will automatically walk you through the steps required to create a plan. To explicitly create a new plan, you can either use the **VS Online: Create Plan** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by clicking the **Select Plan** button on the **VS Online** title bar in the **Remote Explorer** side bar, then selecting **Create new plan...** from the quick pick list.
+The first time you [create an environment ](#create-a-cloud-hosted-environment), VS Code will automatically walk you through the steps required to create a plan. To explicitly create a new plan, you can either use the **VS Online: Create Plan** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by clicking the **Select Plan** button on the **VS Online** title bar in the **Remote Explorer** side bar, then selecting **Create new plan...** from the quick pick list.
 
 ![Create Visual Studio Online plan](../images/create-plan-vsc-01.png)
 
@@ -88,12 +88,12 @@ Once a plan is created, it will be the selected plan in the **Remote Explorer**.
 
 Only environments contained within the selected plan will be displayed. To select a different plan, you can either use the **VS Online: Select Plan** command in the command palette, or by clicking the **Select Plan** button on the **VS Online** title bar.
 
-## Create an environment
-
-### Cloud-hosted
+## Create a cloud-hosted environment
 
 > [!NOTE]
 > Cloud-hosted environments are extremely configurable. See [configuring environments](../reference/configuring.md) for advanced information about how to configure your environments.
+>[!TIP]
+> If you've already got a configured environment or need specialized hardware VS Online doesn't currently support, check out our [self-hosted guide](self-hosting-vscode.md).
 
 To create a new cloud-hosted environment in VS Online, you can either use the **VS Online: Create New Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by selecting the **Create New Environment** button on the **VS Online** title bar in the **Remote Explorer** side bar.
 
@@ -117,7 +117,6 @@ Follow the prompts to provide an environment name, path to Git repository (optio
   - 5 minutes
   - 30 minutes
   - 2 hours
-  - Never auto-suspend the environment. (Manual suspension still available)
 - **Instance Type**: The CPU and memory configuration that will be provisioned for your environment. Choose **Standard Environment (Linux)** for most projects, and **Premium Environment (Linux)** for those that require a little extra power. More information about instance types is available at our [pricing page](https://aka.ms/vso-pricing).
 
 > [!NOTE]
@@ -128,29 +127,11 @@ Follow the prompts to provide an environment name, path to Git repository (optio
 
 <!-- TODO: Add information about instance type/SKU -->
 
-### Self-hosted
-
-In addition to cloud-hosted environments, you can also "bring your own" self-hosted environments, registering them with VS Online. To do so, first [install VS Code and the VS Online extension](#install) on the environment you'd like to register. Then use the **VS Online: Register Self-hosted Environment** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette):
-
-- If no folders are currently open in VS Code, you will be prompted to select one. This folder will be opened every time you connect to this environment from another machine. However, you can open any folder after connecting.
-![Register a Self-hosted Environment in Visual Studio Code](../images/register-local-env-vsc-01.png)
-
-- If no plan is selected, you will be prompted to select or create a plan. No charge is incurred for self-hosted environments.
-
-After registering, your self-hosted environment will appear under a new tree view in the **VS Online** panel of the **Remote Explorer** side bar.
-
-![Register a Local Environment in Visual Studio Code](../images/register-local-env-vsc-02.png)
-
-You can now connect from any machine with the VS Online extension installed or from the browser. The first time you connect may take longer than usual.
-
-
-If your self-hosted environment becomes unavailable for any reason, see our [troubleshooting](../resources/troubleshooting.md#self-hosted-environments) reference documentation.
-
 ## Connect to an environment
 
 VS Code makes connecting to environments quick and easy. If you were already connected to an environment when you last shut down VS Code, it will automatically try to re-connect to that environment when you launch it.
 
-If you're [creating an environment](#create-an-environment), a notification toast will appear as soon as the environment is ready. Simply select the **Connect** button to connect to the new environment.
+If you're [creating an environment](#create-a-cloud-hosted-environment), a notification toast will appear as soon as the environment is ready. Simply select the **Connect** button to connect to the new environment.
 
 ![Connect to a new environment in Visual Studio Code](../images/connect-env-vsc-01.png)
 

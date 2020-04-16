@@ -54,6 +54,8 @@ Only environments contained within the selected plan will be displayed. To selec
 
 > [!NOTE]
 > Cloud-hosted environments are extremely configurable. See [configuring environments](../reference/configuring.md) for advanced information about how to configure your environments.
+>[!TIP]
+> Want to bring your existing environment or need specialized hardware? Try out our [self-hosted offering](self-hosting-vscode.md)!
 
 To create a new cloud-hosted environment in VS Online, from the [environments listing page](https://online.visualstudio.com/environments) click the **Create environment** button.
 
@@ -69,15 +71,12 @@ Complete the form to provide an environment name, path to Git repository (option
   - 5 minutes
   - 30 minutes
   - 2 hours
-  - Never auto-suspend the environment. (Manual suspension still available)
 - **Instance Type**: The CPU and memory configuration that will be provisioned for your environment. Choose **Standard Environment (Linux)** for most projects, and **Premium Environment (Linux)** for those that require a little extra power. More information about instance types is available at our [pricing page](https://aka.ms/vso-pricing).
 
 > [!NOTE]
 > Windows based instance types are available as part of our VS Online for Visual Studio Private Preview. [Sign up](https://aka.ms/vsfutures-signup) to receive access.
-
 > [!TIP]
 > The guided environment creation experience described above supports Git repositories over the HTTP(S) scheme. To use another source control provider, or Git over SSH, simply leave the **Git Repository** setting blank, and use the environment's terminal support to clone your source code.
-
 > [!NOTE]
 > Optional dotfiles configuration options are covered in the [Personalizing environments](../reference/personalizing.md) reference document.
 

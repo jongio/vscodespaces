@@ -41,3 +41,6 @@ If your self-hosted environment becomes unavailable, you can attempt to restore 
 Right-click the self-hosted environment in the **VS Online** panel to reveal a context menu with a **Restore Local Environment** option. This option is only visible if you are currently working on the machine registered as a self-hosted environment.
 
 Select the **Restore Local Environment** option and wait for a notification toast indicating that the environment has been restored.
+
+### Incorrect Password for User (Windows)
+If you're recieving an error of "Incorrect password for user" when attempting to register the self-hosted agent as a service, you may not have "Log on as a service" enabled on your user account. You'll need to [grant "Log on as a service"](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) to your user account before registering the agent as a service.

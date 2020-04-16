@@ -53,12 +53,47 @@
     href: how-to/vscode.md#port-forwarding
   - name: Configuration and personalization
     href: how-to/vscode.md#configuration-and-personalization
+- name: "How-to guides: Register self-hosted environment in VS Code"
+  items:
+  - name: Sign-Up
+    href: how-to/self-hosting-vscode.md#sign-up
+  - name: Install
+    href: how-to/self-hosting-vscode.md#install
+  - name: Sign-In
+    href: how-to/self-hosting-vscode.md#sign-in
+  - name: Create a plan
+    href: how-to/self-hosting-vscode.md#create-a-plan
+  - name: Register your environment
+    href: how-to/self-hosting-vscode.md#register-your-environment
+  - name: Access your environment
+    href: how-to/self-hosting-vscode.md#access-your-environment
+- name: "How-to guides: Register self-hosted environment with the CLI"
+  items:
+  - name: Sign-Up
+    href: how-to/self-hosting-cli.md#sign-up
+  - name: Install
+    href: how-to/self-hosting-cli.md#installation
+    items:
+    - name: Windows
+      href: how-to/self-hosting-cli.md#windows
+    - name: macOS
+      href: how-to/self-hosting-cli.md#macos
+    - name: Linux
+      href: how-to/self-hosting-cli.md#linux
+  - name: Register your machine
+    href: how-to/self-hosting-cli.md#register-your-machine
+  - name: Access your environment
+    href: how-to/self-hosting-cli.md#access-your-environment
 - name: Reference
   items: 
   - name: Configuring environments
     href: reference/configuring.md
   - name: Personalizing environments
     href: reference/personalizing.md
+  - name: Repository support
+    href: reference/repository.md
+  - name: VS Online CLI
+    href: reference/vsonline-cli.md 
 - name: Resources
   items:
   - name: Troubleshooting

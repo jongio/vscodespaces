@@ -59,7 +59,7 @@ All VS Online environments are created within the confines of a plan. A plan is 
 
 ### What are Visual Studio Online's quotas?
 
-VS Online, by default, allows users to create 20 environments per plan, and 20 plans per subscription.
+VS Online, by default, allows users to create 3 environments per plan, and 2 plans per subscription.
 
 ### Where can I report an issue with my billing?
 

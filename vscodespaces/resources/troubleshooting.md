@@ -44,3 +44,14 @@ Select the **Restore Local Environment** option and wait for a notification toas
 
 ### Incorrect Password for User (Windows)
 If you're recieving an error of "Incorrect password for user" when attempting to register the self-hosted agent as a service, you may not have "Log on as a service" enabled on your user account. You'll need to [grant "Log on as a service"](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) to your user account before registering the agent as a service.
+
+## Partially Supported Browsers
+Due to browser restrictions, you may not get the full set of features in Safari and Firefox.
+
+### Safari Known Issues:
+- Unable to customize keybindings or context menu entries for Copy and Paste. Default keybindings to Copy/Paste in Editor, Terminal and all native input elements will still work.
+- Some fonts are not allowed as Safari disallows some web fonts to prevent finger printing [#83294](https://github.com/microsoft/vscode/issues/83294), for example Fira Code.
+- No Pinch to Zoom customization.
+
+### Firefox Known Issues:
+- Unable to customize keybindings. Basic keyboard shortcuts like **Ctrl/Cmd+N** to create new file and **Ctrl/Cmd+W** to close current file don't work. 

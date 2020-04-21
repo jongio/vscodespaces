@@ -38,7 +38,7 @@
   - name: Create a plan
     href: how-to/vscode.md#create-a-plan
   - name: Create an environment
-    href: how-to/vscode.md#create-an-environment
+    href: how-to/vscode.md#create-a-cloud-hosted-environment
   - name: Connect to an environment
     href: how-to/vscode.md#connect-to-an-environment
   - name: Disconnect from an environment
@@ -55,8 +55,6 @@
     href: how-to/vscode.md#configuration-and-personalization
 - name: "How-to guides: Register self-hosted environment in VS Code"
   items:
-  - name: Sign-Up
-    href: how-to/self-hosting-vscode.md#sign-up
   - name: Install
     href: how-to/self-hosting-vscode.md#install
   - name: Sign-In
@@ -69,10 +67,8 @@
     href: how-to/self-hosting-vscode.md#access-your-environment
 - name: "How-to guides: Register self-hosted environment with the CLI"
   items:
-  - name: Sign-Up
-    href: how-to/self-hosting-cli.md#sign-up
   - name: Install
-    href: how-to/self-hosting-cli.md#installation
+    href: how-to/self-hosting-cli.md#install-vs-online-for-self-hosting
     items:
     - name: Windows
       href: how-to/self-hosting-cli.md#windows

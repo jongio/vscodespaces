@@ -24,9 +24,9 @@
   - name: Delete an environment
     href: how-to/browser.md#delete-an-environment
   - name: Configuration and Settings
-    href: how-to/browser.md#configuration-and-settings
+    href: how-to/browser.md#configuration-and-personalization
   - name: Using the Terminal
-    href: how-to/browser.md#using-the-terminal
+    href: how-to/browser.md#using-the-integrated-terminal
   - name: Port Forwarding
     href: how-to/browser.md#port-forwarding
 - name: "How-to guides: VS Code"
@@ -46,7 +46,7 @@
   - name: Suspend an environment
     href: how-to/vscode.md#suspend-an-environment
   - name: Delete an environment
-    href: how-to/vscode.md#delete-an-environment
+    href: how-to/vscode.md#delete-a-cloud-hosted-environment
   - name: Using the integrated terminal
     href: how-to/vscode.md#using-the-integrated-terminal
   - name: Port Forwarding

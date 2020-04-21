@@ -21,7 +21,7 @@
     href: how-to/vscode.md
   - name: "Register self-hosted environment in VS Code"
     href: how-to/self-hosting-vscode.md
-  - name: "How-to guides: Register self-hosted environment with the CLI"
+  - name: "Register self-hosted environment with the CLI"
     href: how-to/self-hosting-cli.md
 - name: Reference
   items: 

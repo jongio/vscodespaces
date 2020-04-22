@@ -15,9 +15,9 @@
 #- name: Concepts
 - name: "How-to guides"
   items:
-  - name: "Use Visaul Studio Online in the Browser"
+  - name: "Use Visual Studio Online in the Browser"
     href: how-to/browser.md
-  - name: "Use Visaul Studio Online in Visual Studio Code"
+  - name: "Use Visual Studio Online in Visual Studio Code"
     href: how-to/vscode.md
   - name: "Register self-hosted environment in VS Code"
     href: how-to/self-hosting-vscode.md

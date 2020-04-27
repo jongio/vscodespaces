@@ -13,77 +13,16 @@
 #- name: Tutorials
 #- name: Samples
 #- name: Concepts
-- name: "How-to guides: Browser"
+- name: "How-to guides"
   items:
-  - name: Create an environment
-    href: how-to/browser.md#create-an-environment
-  - name: Connect to an environment
-    href: how-to/browser.md#connect-to-an-environment
-  - name: Suspend an environment
-    href: how-to/browser.md#suspend-an-environment
-  - name: Delete an environment
-    href: how-to/browser.md#delete-an-environment
-  - name: Configuration and Settings
-    href: how-to/browser.md#configuration-and-settings
-  - name: Using the Terminal
-    href: how-to/browser.md#using-the-terminal
-  - name: Port Forwarding
-    href: how-to/browser.md#port-forwarding
-- name: "How-to guides: VS Code"
-  items:
-  - name: Install
-    href: how-to/vscode.md#install
-  - name: Sign in
-    href: how-to/vscode.md#sign-in
-  - name: Create a plan
-    href: how-to/vscode.md#create-a-plan
-  - name: Create an environment
-    href: how-to/vscode.md#create-an-environment
-  - name: Connect to an environment
-    href: how-to/vscode.md#connect-to-an-environment
-  - name: Disconnect from an environment
-    href: how-to/vscode.md#disconnect-from-an-environment
-  - name: Suspend an environment
-    href: how-to/vscode.md#suspend-an-environment
-  - name: Delete an environment
-    href: how-to/vscode.md#delete-an-environment
-  - name: Using the integrated terminal
-    href: how-to/vscode.md#using-the-integrated-terminal
-  - name: Port Forwarding
-    href: how-to/vscode.md#port-forwarding
-  - name: Configuration and personalization
-    href: how-to/vscode.md#configuration-and-personalization
-- name: "How-to guides: Register self-hosted environment in VS Code"
-  items:
-  - name: Sign-Up
-    href: how-to/self-hosting-vscode.md#sign-up
-  - name: Install
-    href: how-to/self-hosting-vscode.md#install
-  - name: Sign-In
-    href: how-to/self-hosting-vscode.md#sign-in
-  - name: Create a plan
-    href: how-to/self-hosting-vscode.md#create-a-plan
-  - name: Register your environment
-    href: how-to/self-hosting-vscode.md#register-your-environment
-  - name: Access your environment
-    href: how-to/self-hosting-vscode.md#access-your-environment
-- name: "How-to guides: Register self-hosted environment with the CLI"
-  items:
-  - name: Sign-Up
-    href: how-to/self-hosting-cli.md#sign-up
-  - name: Install
-    href: how-to/self-hosting-cli.md#installation
-    items:
-    - name: Windows
-      href: how-to/self-hosting-cli.md#windows
-    - name: macOS
-      href: how-to/self-hosting-cli.md#macos
-    - name: Linux
-      href: how-to/self-hosting-cli.md#linux
-  - name: Register your machine
-    href: how-to/self-hosting-cli.md#register-your-machine
-  - name: Access your environment
-    href: how-to/self-hosting-cli.md#access-your-environment
+  - name: "Use Visual Studio Online in the Browser"
+    href: how-to/browser.md
+  - name: "Use Visual Studio Online in Visual Studio Code"
+    href: how-to/vscode.md
+  - name: "Register self-hosted environment in VS Code"
+    href: how-to/self-hosting-vscode.md
+  - name: "Register self-hosted environment with the CLI"
+    href: how-to/self-hosting-cli.md
 - name: Reference
   items: 
   - name: Configuring environments

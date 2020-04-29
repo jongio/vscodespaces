@@ -11,7 +11,7 @@ ms.date: 04/29/2020
 
 Visual Studio Online [environments](../overview/what-is-vsonline.md#environments) are personalizable on a per-user basis. This is accomplished in either of the following ways:
 
-- [Configure a dotfile repo during environment creation](#configure-a-doftfile-repo-during-environment-creation).
+- [Configure a dotfile repo during environment creation](#configure-a-dotfile-repo-during-environment-creation).
 - [Enable personalization settings sync in Visual Studio Code](#enable-personalization-settings-sync-in-visual-studio-code).
 
 ## Configure a dotfile repo during environment creation

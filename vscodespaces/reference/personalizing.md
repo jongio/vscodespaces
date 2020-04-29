@@ -28,11 +28,11 @@ To configure a dotfiles repo in Visual Studio Code:
 
 The following screenshot shows Visual Studio Online dotflies repository settings:
 
-![Visual Studio Online Settings in Visual Studio Code](../images/personalizing-dotfiles-vsc.png)
+[![Visual Studio Online settings in Visual Studio Code](../images/personalizing-dotfiles-vsc-cropped.png)](../images/personalizing-dotfiles-vsc.png#lightbox "Visual Studio Online settings in Visual Studio Code")
 
 You can also configure dotfiles using the [Visual Studio Online portal](https://online.visualstudio.com). Press the **Create environment** button and expand the **Dotfiles (optional)** settings.
 
-![Visual Studio Online Dotfiles Settings](../images/personalizing-dotfiles-vso.png)
+[![Visual Studio Online Dotfiles Settings](../images/personalizing-dotfiles-vso-cropped.png)](../images/personalizing-dotfiles-vso.png#lightbox "Visual Studio Online dotfiles settings")
 
 In both experiences, there are three options that can be configured:
 
@@ -60,8 +60,11 @@ Once the **Dotfiles Repository** is configured in VS Code, any environments crea
 To use settings sync, ensure you're connecting to your environment from within Visual Studio Code Insiders or enable Insiders for the browser based editor:
 
 - Navigate to the **Settings** pane from the user account card.
+
   ![Open settings](../images/access-settings.png)
+
 - Toggle the **Insiders channel** option to on.
+
   ![Turn on Insiders](../images/settings-pane.png)
 
 Once you're connected to the environment:

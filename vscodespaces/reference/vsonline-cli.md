@@ -2,12 +2,12 @@
 author: abuchholtzau
 ms.author: allisb
 ms.service: visual-studio-online
-title: How to use the VS Online CLI
+title: How to use the Codespaces CLI
 ms.topic: overview
 ms.date: 04/06/2020
 ---
 
-# VS Online CLI Reference
+# Codespaces CLI Reference
 
 ## Installation
 
@@ -15,7 +15,7 @@ ms.date: 04/06/2020
 
 #### Install via Powershell
 
-Download and execute the [PowerShell script](https://aka.ms/install-vso-windows) to install the VS Online CLI.
+Download and execute the [PowerShell script](https://aka.ms/install-vso-windows) to install the Codespaces CLI.
 
 ### macOS
 
@@ -91,7 +91,7 @@ Update `apt-get`:
 sudo apt-get update
 ```
 
-Install the VS Online CLI:
+Install the Codespaces CLI:
 
 ```bash
 sudo apt-get install vso
@@ -105,13 +105,13 @@ curl -L https://aka.ms/install-vso-linux | sudo bash
 
 ## Usage
 
-VS Online is launched using the following command:
+Codespaces is launched using the following command:
 
 ```bash
 vso [options] [command] [[--] <arg>...]
 ```
 
-The following **options** can be provided to VS Online:
+The following **options** can be provided to Codespaces:
 
 - **`-v | --version`**
   Displays the current installed version of the CLI
@@ -122,12 +122,12 @@ The following **options** can be provided to VS Online:
 The following **commands** are available:
 
 - **`start`**
-  Begins the interactive process of registering your self-hosted machine. For more information, see [Start VS Online](#start-vs-online).
+  Begins the interactive process of registering your self-hosted machine. For more information, see [Start Codespaces](#start-vs-online).
 
 - **`stop`**
-  Removes your machine from Visual Studio Online
+  Removes your machine from Visual Studio Codespaces
 
-## Start VS Online
+## Start Codespaces
 
 The **`start`** command begins the interactive process of registering your self-hosted machine:
   
@@ -164,9 +164,9 @@ If supplied, runs the local agent as a service/daemon on this machine (Requires 
 - **`-? | -h | --help`**
 Show help information
 
-## Stop VS Online
+## Stop Codespaces
 
-The **`stop`** command removes your environment from the Visual Studio Online service:
+The **`stop`** command removes your environment from the Visual Studio Codespaces service:
   
   ```bash
   vso stop

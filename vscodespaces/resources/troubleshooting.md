@@ -2,14 +2,14 @@
 author: nikmd23
 ms.author: nimolnar
 ms.service: visual-studio-online
-title: Troubleshooting Visual Studio Online
+title: Troubleshooting Visual Studio Codespaces
 ms.topic: overview
 ms.date: 09/20/2019
 ---
 
-# Troubleshooting Visual Studio Online
+# Troubleshooting Visual Studio Codespaces
 
-This resource document provides a list of tips and tricks to help remedy many possible issues you may be having with Visual Studio Online.
+This resource document provides a list of tips and tricks to help remedy many possible issues you may be having with Visual Studio Codespaces.
 
 ## General troubleshooting
 
@@ -30,7 +30,7 @@ There's a listing of [known issues and open bugs](https://github.com/MicrosoftDo
 If all else fails, feel free to [file an issue](https://github.com/MicrosoftDocs/vsonline/issues/new). Our team will get back with you as soon as possible.
 
 > [!TIP]
-> You can gather relevant VS Online diagnostic logs by running the **VS Online: Export Logs** command. Attaching this log file to submitted issues will help our team support you better.
+> You can gather relevant Codespaces diagnostic logs by running the **Codespaces: Export Logs** command. Attaching this log file to submitted issues will help our team support you better.
 
 ## Self-hosted environments
 
@@ -38,7 +38,7 @@ If all else fails, feel free to [file an issue](https://github.com/MicrosoftDocs
 
 If your self-hosted environment becomes unavailable, you can attempt to restore it on the registered machine. 
 
-Right-click the self-hosted environment in the **VS Online** panel to reveal a context menu with a **Restore Local Environment** option. This option is only visible if you are currently working on the machine registered as a self-hosted environment.
+Right-click the self-hosted environment in the **Codespaces** panel to reveal a context menu with a **Restore Local Environment** option. This option is only visible if you are currently working on the machine registered as a self-hosted environment.
 
 Select the **Restore Local Environment** option and wait for a notification toast indicating that the environment has been restored.
 

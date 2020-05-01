@@ -85,13 +85,3 @@ As part of registration, you will be asked to sign-in with your VS Online accoun
 You can now connect to your self-hosted VS Online environment from any machine with the VS Online extension installed, or from the [VS Online portal](https://online.visualstudio.com/environments) in the browser. The first time you connect may take longer than usual.
 
 If your self-hosted environment becomes unavailable for any reason, see our [troubleshooting](~/resources/troubleshooting.md#self-hosted-environments) reference documentation.
-
-## Known Issues
-
-### Unauthorized error when attempting to register environment - Reported April 9, 2020
-When attempting to register an environment through the CLI, process returns an "Unauthorized" error.
-
-#### Workaround
-Currently, we can only register an environment to a plan that matches the region you are currently in. 
-Please select a plan in your region to complete registration.
-To verify your current region, check https://online.visualstudio.com/api/v1/locations.

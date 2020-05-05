@@ -64,7 +64,7 @@ Environments can be created with a user specific collection of custom dotfiles (
 
 - [Visual Studio Online in the browser](../quickstarts/browser.md)
 - [Visual Studio Online in Visual Studio Code](../quickstarts/vscode.md)
-- [Visual Studio Online in Visual Studio](../quickstarts/vs.md)
+- [Visual Studio Online in Visual Studio 2019](../quickstarts/vs.md)
 
 ### How-tos:
 

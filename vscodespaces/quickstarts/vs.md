@@ -34,9 +34,10 @@ When you reach Visual Studio's Start Window click **Continue without code**. Now
 After you enable the Connect to Visual Studio Codespases preview feature you will see a new **Connect to a Codespace** button in the Start Window and a new **Connect to a Codespace** command under the File menu. Click the **Connect to a Codespace** button. If you aren't already signed with an account that has access to the Limited Preview, click account picker control to expand it in the upper right corner of the dialog and click **Add an account** to sign in.
 
 If this is your first time using Codespaces, click **New...** next to **Billing Plan**. Select the Azure subscription where you want to create the Billing plan and a region geographically close to where you'll use Codespaces; then click **Create**.
+![Create a billing plan](../images/vside-quickstart-01.png)
 
 To create a new cloud-hosted Codespace in Visual Studio Codespaces select the **New...** button next to the **Codespaces** label. 
-![Create Codespace in Visual Studio Code](../images/create-env-vsc-01.png)
+![Create a new Codespace](../images/vside-quickstart-02.png)
 
 Enter the following information then click the **Create** button:
 
@@ -49,7 +50,13 @@ Enter the following information then click the **Create** button:
 
 ## 3. Connect To and Use the Codespace
 
-Press the **Connect** button to connect to the cloud-hosted Codespace we just created. The name **My Quick Codespace** will appear in the **Remote Indicator** in the title bar when you are fully connect.
+Press the **Connect** button to connect to the cloud-hosted Codespace we just created. 
+
+![Connect to a Codespace](../images/vside-quickstart-03.png)
+
+The name **My Quick Codespace** will appear in the **Remote Indicator** in the title bar when you are fully connect.
+
+![Connected Codespace](../images/vside-quickstart-04.png)
 
 Click [`Ctrl`]+[`Shift`]+[`B`] to build the application.
 
@@ -62,6 +69,8 @@ Press [`F5`] again to continue execution and see the running app.
 ## 4. Deleting the Codespace
 
 To delete the newly created Codespace, open the **File** menu and click **Connect to a Codespace**. Select **My Quick Codespace** and click the **Delete** button.
+
+![Delete a Codespace](../images/vside-quickstart-03.png)
 
 ## Next Steps
 

@@ -11,7 +11,7 @@ ms.date: 09/20/2019
 
 Welcome to Visual Studio Online! We're glad you're here.
 
-Visual Studio Online provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Online at no cost.
+Visual Studio Online provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio 2019 ([sign up for the limited Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Online at no cost.
 
 Additionally, Visual Studio Online brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Online is also personalizable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
 
@@ -42,9 +42,9 @@ Cloud-hosted development environments come with all of the benefits of the cloud
 
 In addition to cloud-hosted environments, Visual Studio Online also allows you to register and connect your own self-hosted environments. This allows you to use an environment you may have already perfectly tuned and experience some of the benefits of Visual Studio Online, for free!
 
-### Editors
+### Editors and IDEs
 
-To go along with "backend" environments, Visual Studio Online also supports three "frontend" editors: Visual Studio Code, Visual Studio IDE (Private Preview) and our Visual Studio Code-based editor in the browser. Linux environments (Public Preview) are accessible from Visual Studio Code and our Visual Studio Code-based editor in the browser. Windows environments (Private Preview) are accessible from all three "frontend" editors. This allows you to use the tool best suited for the job at hand, and the ability do that job from anywhere, with any language or framework. Even better, the experience is super-charged with our support for extensions from [the Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+To go along with "backend" environments, Visual Studio Online also supports three "frontend" editors: Visual Studio Code, Visual Studio IDE ([sign up for the Limited Preview](https://aka.ms/vsfutures-signup)) and our Visual Studio Code-based editor in the browser. Linux environments (Public Preview) are accessible from Visual Studio Code and our Visual Studio Code-based editor in the browser. Windows environments (Limited Preview) are accessible from all three "frontend" editors. This allows you to use the tool best suited for the job at hand, and the ability do that job from anywhere, with any language or framework. Even better, the experience is super-charged with our support for extensions from [the Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ### Customized for your project
 
@@ -70,6 +70,7 @@ Environments can be created with a user specific collection of custom dotfiles (
 
 - [Visual Studio Online in the browser](../how-to/browser.md)
 - [Visual Studio Online in Visual Studio Code](../how-to/vscode.md)
+- [Visual Studio Online in Visual Studio 2019](../how-to/vside.md)
 
 ### Reference & Resources:
 

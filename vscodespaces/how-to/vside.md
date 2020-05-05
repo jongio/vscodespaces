@@ -15,7 +15,7 @@ A Microsoft Account and Azure Subscription are required to use Visual Studio Onl
 
 You can sign up for both, as well as receive various Azure incentives at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/).
 
-Access to the Visual Studio 2019 Limited Preview is also required to complete this How-to. Sign up for the limited preview here [https://aka.ms/vsfutures-signup](https://aka.ms/vsfutures-signup).
+Access to the Visual Studio 2019 Private Preview is also required to complete this How-to. Sign up for the Private Preview here [https://aka.ms/vsfutures-signup](https://aka.ms/vsfutures-signup).
 
 ## Install
 
@@ -28,13 +28,13 @@ When you reach Visual Studio's Start Window click **Continue without code**. Now
 
 ## Sign in
 
-After you enable the Connect to Visual Studio Codespases preview feature you will see a new **Connect to a Codespace** button in the Start Window and a new **Connect to a Codespace** command under the File menu. Click the **Connect to a Codespace** button. If you aren't already signed with an account that has access to the Limited Preview, click account picker control to expand it in the upper right corner of the dialog and click **Add an account** to sign in.
+After you enable the Connect to Visual Studio Codespases preview feature you will see a new **Connect to a Codespace** button in the Start Window and a new **Connect to a Codespace** command under the File menu. Click the **Connect to a Codespace** button. If you aren't already signed with an account that has access to the Private Preview, click account picker control to expand it in the upper right corner of the dialog and click **Add an account** to sign in.
 
 ## Create a plan
 
 Once you've [signed up](#sign-up) and created an Azure subscription, you can access Visual Studio Codespaces by creating a Billing Plan. You can create more than one plan, and plans can be used to group related Codespaces together or to create Codespaces in different regions. Visual Studio Codespace Billing plans are the unit of billing in Azure, so you'll see a line item on your Azure bill for each plan you create.
 
-Users will not be charge for Windows based Codespaces created during the Limited Preview. More information about plans and pricing is available on [the VS Online pricing page](https://aka.ms/vso-pricing).
+Users will not be charge for Windows based Codespaces created during the Private Preview. More information about plans and pricing is available on [the VS Online pricing page](https://aka.ms/vso-pricing).
 
 If this is your first time using Codespaces, click **New...** next to **Billing Plan**. 
 ![Create a billing plan](../images/vside-quickstart-01.png)

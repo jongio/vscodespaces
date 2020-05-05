@@ -11,9 +11,6 @@ ms.date: 09/20/2019
 
 Welcome to Visual Studio Codespaces! We're glad you're here. 
 
-Visual Studio's support for Visual Studio Codespaces is available through a Limited Preview. [sign up(https://aka.ms/vsfutures-signup) for hte Limited Preview] to try using Visual Studio Codespaces in Visual Studio 2019.
-
-
 Visual Studio Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio ([sign up for the Limited Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Codespaces at no cost.
 
 Additionally, Visual Studio Codespaces brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Codespaces is also personaliazable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
@@ -21,22 +18,21 @@ Additionally, Visual Studio Codespaces brings many of the benefits of DevOps, li
 Ready to get going? This document will walk you through how to install Visual Studio Codespaces, create a cloud-hosted environment, connect to it, run and debug the environment's application, disconnect and delete the environment.
 
 > [!IMPORTANT]
-> A Microsoft Account and Azure Subscription are required for this quickstart. You can sign up for both, as well as receive various Azure incentives at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/).
+> You must sign up for the Limited Preview and have an Azure Subscription to try this quickstart. If you don't already have an Azure Subscription first create one at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/). Then [sign up for the Limited Preview](https://aka.ms/vsfutures-signup).
 
 ## 1. Install
 
 > [!TIP]
-> If you don't have [Visual Studio Code](https://code.visualstudio.com/) installed already, you can download it [here](https://code.visualstudio.com/download).
+> If you don't have [Visual Studio 2019 Preview](http://aka.ms/vspreview) installed already, you can download it [here](http://aka.ms/vspreview). Check the **ASP.NET and web development**, **Desktop development with C++**, or both Workloads in the Installer. Then click **Install**.
 
-Install the [Visual Studio Codespaces extension](https://aka.ms/vso-dl) for Visual Studio Code by clicking on the green install button near the top of the page and following the prompts.
+Llaunch Visual Studio 2019 from the Start menu. If you just installed Visual Studio for the first time you'll see a welcome screen where you can sign in with any Microsoft identity.
 
-Once installed, you can sign in.
+When you reach Visual Studio's Start Window click **Continue without code**. Now open the **Tools** menu and click **Options...**. Search for **Preview features**. Check the **Connect to Visual Studio Codespaces(private preview only)** checkbox, then click **Ok** and restart Visual Studio.
 
-## 2. Sign In
+## 2. Create a Codespace
 
 To sign into Visual Studio Codespaces, you press `F1` and select the **Visual Studio Codespaces: Sign In** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). Follow the prompts in your browser to complete the sign in.
 
-## 3. Create an Environment
 
 To create a new cloud-hosted environment in Visual Studio Codespaces select the **Create New Environment** button on the **Visual Studio Codespaces** title bar in the **Remote Explorer** side bar.
 
@@ -54,7 +50,7 @@ A **Creating environment: My Quick Environment** notification will appear in the
 
 You can refer to our [repository reference](../reference/repository.md) on the supported url types and providers.
 
-## 4. Connect To and Use the Environment
+## 3. Connect To and Use the Environment
 
 After pressing the **Connect** button, Visual Studio Code will connect to the cloud-hosted environment we just created. The name **My Quick Environment** will appear in the **Remote Indicator** in the bottom left corner when you are fully connect.
 
@@ -62,7 +58,7 @@ At this point, open **Readme.md** from **File Explorer**, and then press [`ctrl`
 
 Follow the instructions in **Readme.md**, and return to this document when complete.
 
-## 5. Deleting the Environment
+## 4. Deleting the Environment
 
 To delete the newly created environment, right click on **My Quick Environment** in the **Visual Studio Codespaces** panel of the **Remote Explorer** and select **Delete** from the context menu.
 

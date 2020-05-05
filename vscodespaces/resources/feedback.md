@@ -7,7 +7,7 @@ ms.topic: overview
 ms.date: 09/20/2019
 ---
 
-# Feedback
+# Feedback & Support
 
 Feedback for Visual Studio Online is collected in [our documentation repository on GitHub](https://github.com/MicrosoftDocs/vsonline/).
 

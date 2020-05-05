@@ -54,3 +54,30 @@ Select the Azure subscription where you want to create the Billing plan and a re
 You can manage plans in the Azure portal and at http://online.visualstudio.com/environments.
 
 Only environments contained within the selected plan will be displayed. Select a different plan from the drop down on the Connect to a Codespace dialog to see Codespaces created under those plans.
+
+## Create a cloud-hosted Codespace
+
+> [!NOTE]
+> Cloud-hosted environments are extremely configurable. See [configuring environments](../reference/configuring.md) for advanced information about how to configure your environments.
+
+To create a new Codespace open the **Connect to a Codespace** dialog using the  **Connect to a Codespace** button in the Start Window or the **Connect to a Codespace** command under the File menu. Then click the **New...** link next to the Codespaces label.
+
+![Create a new Codespace](../images/vside-quickstart-02.png)
+
+- **Name**: You can name your Codespace anything you'd like, but we recommend naming it after the project or task that you'll be using it for. (e.g. 'Todo App Environment', 'PR Review', 'Shopping Cart Feature')
+- **Git Repository**: If a path to a Git repository is provided, VS Online will automatically clone that repository into the Codespace. You can specify a Git repository in one of many formats:
+  - **Absolute Http(s) Git URL**: A complete Http or Https Url. It may end in a `.git` extension. Examples include:
+    - https://github.com/organization/repo.git
+    - https://organization@dev.azure.com/organization/repo/_git/repo
+    - https://username@bitbucket.org/organization/repo.git
+  - **GitHub Project URL**: The Https Url used to navigate to the homepage of a project on GitHub. (e.g. https://github.com/organization/repo)
+  - **GitHub Short Form**: The forward slash delimited `organization/repo` format used to refer to projects on GitHub.
+  - **GitHub Pull Request URL**: The Https Url used to navigate to a pull request in GitHub. (e.g. https://github.com/organization/repo/pull/123)
+- **Instance Type**: The CPU and memory configuration that will be provisioned for your environment. **Premium (Windows)** are the only available instance type initially. **Standard (Windows)** will come online in the near future. Choose **Standard (Windows)** for most projects, and **Premium (Windows)** for those that require a little extra power. 
+- **Suspend idle Codespace after...**: The length of disconnected time before a Codespace will be automatically suspended. Choose between:
+  - 5 minutes
+  - 30 minutes
+  - 2 hours
+
+> [!TIP]
+> The guided environment creation experience described above supports Git repositories over the HTTP(S) scheme. To use another source control provider, or Git over SSH, simply leave the **Git Repository** setting blank, and use the environment's terminal support to clone your source code.

@@ -11,14 +11,14 @@ ms.date: 09/20/2019
 
 Welcome to Visual Studio Codespaces! We're glad you're here. 
 
-Visual Studio Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these Codespaces from Visual Studio Code, Visual Studio ([sign up for the Limited Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted Codespaces to Visual Studio Codespaces at no cost.
+Visual Studio Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these Codespaces from Visual Studio Code, Visual Studio ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted Codespaces to Visual Studio Codespaces at no cost.
 
 Additionally, Visual Studio Codespaces brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Codespaces is also personaliazable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
 
 Ready to get going? This document will walk you through how to install Visual Studio Codespaces, create a cloud-hosted Codespace, connect to it, run and debug the Codespace's application, disconnect and delete the Codespace.
 
 > [!IMPORTANT]
-> You must sign up for the Limited Preview and have an Azure Subscription to try this quickstart. If you don't already have an Azure Subscription first create one at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/). Then [sign up for the Limited Preview](https://aka.ms/vsfutures-signup).
+> You must sign up for the Private Preview and have an Azure Subscription to try this quickstart. If you don't already have an Azure Subscription first create one at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/). Then [sign up for the Private Preview](https://aka.ms/vsfutures-signup).
 
 ## 1. Install
 
@@ -31,7 +31,7 @@ When you reach Visual Studio's Start Window click **Continue without code**. Now
 
 ## 2. Create a Codespace
 
-After you enable the Connect to Visual Studio Codespases preview feature you will see a new **Connect to a Codespace** button in the Start Window and a new **Connect to a Codespace** command under the File menu. Click the **Connect to a Codespace** button. If you aren't already signed with an account that has access to the Limited Preview, click account picker control to expand it in the upper right corner of the dialog and click **Add an account** to sign in.
+After you enable the Connect to Visual Studio Codespases preview feature you will see a new **Connect to a Codespace** button in the Start Window and a new **Connect to a Codespace** command under the File menu. Click the **Connect to a Codespace** button. If you aren't already signed with an account that has access to the Private Preview, click account picker control to expand it in the upper right corner of the dialog and click **Add an account** to sign in.
 
 If this is your first time using Codespaces, click **New...** next to **Billing Plan**. Select the Azure subscription where you want to create the Billing plan and a region geographically close to where you'll use Codespaces; then click **Create**.
 ![Create a billing plan](../images/vside-quickstart-01.png)

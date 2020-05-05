@@ -81,3 +81,5 @@ To create a new Codespace open the **Connect to a Codespace** dialog using the  
 
 > [!TIP]
 > The guided environment creation experience described above supports Git repositories over the HTTP(S) scheme. To use another source control provider, or Git over SSH, simply leave the **Git Repository** setting blank, and use the environment's terminal support to clone your source code.
+
+Click **Create** to start provisioning the Codespace. Your new Codespace will immediately appear in the list of available Codespaces with a progress indicator while its getting setup. Codespaces only take about a minute to provision. Once the Codespace is ready you'll see the progress indicator change to an Active status indicator. Note if you let the Codespace sit idle longer than the suspend period the icon will change to a suspended icon.

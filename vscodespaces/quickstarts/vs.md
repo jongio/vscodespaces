@@ -7,8 +7,6 @@ ms.topic: overview
 ms.date: 09/20/2019
 ---
 
-# Visual Studio Online in Visual Studio Quickstart
+# Visual Studio Codespaces in Visual Studio 2019 Quickstart
 
-Visual Studio's support for Visual Studio Online is currently in Private Preview.
-
-If you'd like to access to the Private Preview, please [sign up](https://aka.ms/vsfutures-signup).
+Visual Studio's support for Visual Studio Codespaces is available through a Limited Preview. [sign up(https://aka.ms/vsfutures-signup) for hte Limited Preview] to try using Visual Studio Codespaces in Visual Studio 2019.

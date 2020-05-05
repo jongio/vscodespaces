@@ -13,7 +13,7 @@ ms.date: 09/20/2019
 
 ### What is Visual Studio Codespaces?
 
-Visual Studio Codespaces provides managed, on-demand development environments that can be used for long-term development projects or short-term tasks like pull requests. You can work with environments using Visual Studio Code, Visual Studio 2019 ([sign up for the Limited Preview](https://aka.ms/vsfutures-signup)), or the included browser-based editor.
+Visual Studio Codespaces provides managed, on-demand development environments that can be used for long-term development projects or short-term tasks like pull requests. You can work with environments using Visual Studio Code, Visual Studio 2019 ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or the included browser-based editor.
 
 ### How does Visual Studio Online relate to Visual Studio Code Remote Development?
 
@@ -27,7 +27,7 @@ The Visual Studio Live Share agent runs on self-hosted machines and listens for 
 
 ### How do I try Visual Studio Codespaces with Visual Studio 2019?
 
-Connecting to a Codespace from Visual Studio 2019 is available through a Limited Preview while we scale up the service. You can sign up for the Limited Preview by going to https://aka.ms/vsfutures-signup. [Read more](https://aka.ms/vs2019-codespaces-blog) about what Visual Studio 2019 support for Codespaces.
+Connecting to a Codespace from Visual Studio 2019 is available through a Private Preview while we scale up the service. You can sign up for the Private Preview by going to https://aka.ms/vsfutures-signup. [Read more](https://aka.ms/vs2019-codespaces-blog) about what Visual Studio 2019 support for Codespaces.
 
 ## Security questions
 

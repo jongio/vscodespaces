@@ -9,7 +9,7 @@ ms.date: 02/25/2020
 
 # Configuring Visual Studio Environments
 
-Visual Studio Online's [environments](../overview/what-is-vsonline.md#environments) are fully customizable on a per project basis. This is accomplished by including a `devcontainer.json` file in the project's repository.
+Visual Studio Online's [environments](../overview/what-is-vsonline.md#environments) are fully customizable on a per project basis. This is accomplished by including a `devcontainer.json` file in the project's repository.  We currently support [Dockerfiles[(#dockerfile-support)] and [Docker Compose](#docker-compose-support) as part of environment provisioning.
 
 Example customizations include:
 
@@ -39,6 +39,8 @@ A general container will be provided when a `devcontainer.json` file isn't provi
 - zsh
 - Powershell
 - Azure CLI
+- Docker
+- Kubectl - Must be configured before first use
 - nvm
 - nvs
 
@@ -51,7 +53,37 @@ Containers should be able to fullfil requirements of both [VSCode Remote Server]
 
 ## Container provisioning
 
-When a `devcontainer.json` file is included in the project's repository, the process to create the specified container starts. This may take some time depending on the complexity of the Dockerfile. A terminal containing the details of the build process will appear, and can be used to aid in diagnosing creation failures.
+When a `devcontainer.json` file is included in the project's repository, the process to create the specified container starts. A terminal containing the details of the build process will appear, and can be used to aid in diagnosing creation failures.
+
+### Dockerfile support
+
+To leverage a Dockerfile to provision your custom container, specify it using the `dockerFile` argument within your `devcontainer.json`. 
+
+Be sure to include the Dockerfile as part of the repository. We recommend placing it in the `.devcontainer.json` folder with the `devcontainer.json`.
+
+### Docker Compose support
+
+To create a custom container using Docker Compose, you'll need to specify the following in the `devcontainer.json`:
+
+- Path to docker-compose file, relative to the location of devcontainer.json
+- Name of the service you want to connect to when you start the session
+  - Currently, we only support connecting to one service per Codespace.
+- A docker-compose file with:
+  - Version 3 or higher
+  - A service matching the one in devcontainer.json with an image or docker file that fulfills our [requirements](#container-requirements)
+
+We currently support multiple docker-compose files for provisioning a Codespace.
+
+## Using Docker within a Codespace
+
+If you're using our general container, it comes with Docker installed and we automatically create a Docker group , so you don't have to use `sudo` to access Docker.
+
+If you'd like to access Docker within a custom container, you'll need to create a `docker` group inside your container with id 800 and add your container user to that group.
+  
+  ```bash
+  groupadd -g 800 docker
+  usermod -a -G docker USER
+  ```
 
 ## Visual Studio Online configuration reference
 
@@ -107,4 +139,6 @@ The following tables lists the configuration properties supported by VS Online. 
   // Run Bash script in .devcontainer directory
   "postCreateCommand": "/bin/bash ./.devcontainer/post-create.sh > ~/post-create.log",
 }
+
+## Creating a container 
 ```

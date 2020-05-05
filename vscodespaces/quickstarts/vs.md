@@ -76,4 +76,4 @@ To delete the newly created Codespace, open the **File** menu and click **Connec
 
 That's it! You've quickly spun up a Codespace, built an application, debugged and ran it, then disconnected and deleted the Codespace.
 
-If you'd like to learn more details, check out the [Visual Studio Codespaces Overview](../overview/what-is-vsonline.md) or [Visual Studio Codespaces for Visual Studio Code how-to](../how-to/vscode.md) documentation.
+If you'd like to learn more details, check out the [Visual Studio Codespaces Overview](../overview/what-is-vsonline.md) or [Visual Studio Codespaces for Visual Studio 2019 how-to](../how-to/vside.md) documentation.

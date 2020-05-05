@@ -25,45 +25,46 @@ Ready to get going? This document will walk you through how to install Visual St
 > [!TIP]
 > If you don't have [Visual Studio 2019 Preview](http://aka.ms/vspreview) installed already, you can download it [here](http://aka.ms/vspreview). Check the **ASP.NET and web development**, **Desktop development with C++**, or both Workloads in the Installer. Then click **Install**.
 
-Llaunch Visual Studio 2019 from the Start menu. If you just installed Visual Studio for the first time you'll see a welcome screen where you can sign in with any Microsoft identity.
+Launch Visual Studio 2019 from the Start menu. If you just installed Visual Studio for the first time you'll see a welcome screen where you can sign in with any Microsoft identity.
 
 When you reach Visual Studio's Start Window click **Continue without code**. Now open the **Tools** menu and click **Options...**. Search for **Preview features**. Check the **Connect to Visual Studio Codespaces(private preview only)** checkbox, then click **Ok** and restart Visual Studio.
 
 ## 2. Create a Codespace
 
-To sign into Visual Studio Codespaces, you press `F1` and select the **Visual Studio Codespaces: Sign In** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). Follow the prompts in your browser to complete the sign in.
+After you enable the Connect to Visual Studio Codespases preview feature you will see a new **Connect to a Codespace** button in the Start Window and a new **Connect to a Codespace** command under the File menu. Click the **Connect to a Codespace** button. If you aren't already signed with an account that has access to the Limited Preview, click account picker control to expand it in the upper right corner of the dialog and click **Add an account** to sign in.
 
+If this is your first time using Codespaces, click **New...** next to **Billing Plan**. Select the Azure subscription where you want to create the Billing plan and a region geographically close to where you'll use Codespaces; then click **Create**.
 
-To create a new cloud-hosted Codespace in Visual Studio Codespaces select the **Create New Codespace** button on the **Visual Studio Codespaces** title bar in the **Remote Explorer** side bar.
-
+To create a new cloud-hosted Codespace in Visual Studio Codespaces select the **New...** button next to the **Codespaces** label. 
 ![Create Codespace in Visual Studio Code](../images/create-env-vsc-01.png)
 
-Answer the prompts with the following information:
+Enter the following information then click the **Create** button:
 
 - **Name**: My Quick Codespace
-- **Git Repository**: microsoft/vsonline-quickstart
-- **Auto-suspend Setting**: 30 minutes
-- **Azure Subscription**: Select any Azure subscription to create a Visual Studio Codespaces plan in
-- **Instance Type**: Standard Codespace (Linux)
+- **Git Repository**: acangialosi/tictactoe
+- **Instance type**: Premium (Windows): 8 cores, 16 GB RAM
+- **Suspend idle Codespace after...**: 30 minutes
 
-A **Creating Codespace: My Quick Codespace** notification will appear in the bottom right corner. When that notification is replaced with on that says **Codespace created: My Quick Codespace**, press the **Connect** button.
-
-You can refer to our [repository reference](../reference/repository.md) on the supported url types and providers.
+**My Quick Codespace** will appear under the **Codespaces** list with an indeterminent progress indicator while the Codespace is provisioned. When the Codespace is ready to connect a green check will appear next to **My Quick Codespace**.
 
 ## 3. Connect To and Use the Codespace
 
-After pressing the **Connect** button, Visual Studio Code will connect to the cloud-hosted Codespace we just created. The name **My Quick Codespace** will appear in the **Remote Indicator** in the bottom left corner when you are fully connect.
+Press the **Connect** button to connect to the cloud-hosted Codespace we just created. The name **My Quick Codespace** will appear in the **Remote Indicator** in the title bar when you are fully connect.
 
-At this point, open **Readme.md** from **File Explorer**, and then press [`ctrl`]+[`shift`]+[`V`] to render the markdown file.
+Click [`Ctrl`]+[`Shift`]+[`B`] to build the application.
 
-Follow the instructions in **Readme.md**, and return to this document when complete.
+Add a breakpoint on line 31.
+
+Press [`F5`] to launch the app. Once the breakpoint is hit try stepping, examining locals and more.
+
+Press [`F5`] again to continue execution and see the running app.
 
 ## 4. Deleting the Codespace
 
-To delete the newly created Codespace, right click on **My Quick Codespace** in the **Visual Studio Codespaces** panel of the **Remote Explorer** and select **Delete** from the context menu.
+To delete the newly created Codespace, open the **File** menu and click **Connect to a Codespace**. Select **My Quick Codespace** and click the **Delete** button.
 
 ## Next Steps
 
-That's it! You've quickly spun up a Codespace, used the integrated terminal, edited code, debugged and ran it, then disconnected and deleted the Codespace.
+That's it! You've quickly spun up a Codespace, built an application, debugged and ran it, then disconnected and deleted the Codespace.
 
 If you'd like to learn more details, check out the [Visual Studio Codespaces Overview](../overview/what-is-vsonline.md) or [Visual Studio Codespaces for Visual Studio Code how-to](../how-to/vscode.md) documentation.

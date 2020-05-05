@@ -120,7 +120,7 @@ Follow the prompts to provide an environment name, path to Git repository (optio
 - **Instance Type**: The CPU and memory configuration that will be provisioned for your environment. Choose **Standard Environment (Linux)** for most projects, and **Premium Environment (Linux)** for those that require a little extra power. More information about instance types is available at our [pricing page](https://aka.ms/vso-pricing).
 
 > [!NOTE]
-> Windows based instance types are available as part of our VS Online for Visual Studio Private Preview. [Sign up](https://aka.ms/vsfutures-signup) to receive access.
+> Windows based Codespaces are available as part of Private Preview. [Sign up](https://aka.ms/vsfutures-signup) to receive access.
 
 > [!TIP]
 > The guided environment creation experience described above supports Git repositories over the HTTP(S) scheme. To use another source control provider, or Git over SSH, simply leave the **Git Repository** setting blank, and use the environment's terminal support to clone your source code.

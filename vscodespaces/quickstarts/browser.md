@@ -63,6 +63,9 @@ Complete the form with the following values:
 - **Put environment to sleep after...**: 30 minutes
 - **Instance Type**: Standard Environment (Linux)
 
+> [!TIP]
+> [Sign up for the Limited Preview](http://aka.ms/vsfutures-signup) to create Windows based Codespaces.
+
 ![Create environment in Visual Studio Code](../images/create-quickstart-vso-02.png)
 
 A card with the name **My Quick Environment** will appear in the management portal with a status badge of **Creating**.

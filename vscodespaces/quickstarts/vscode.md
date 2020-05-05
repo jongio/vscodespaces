@@ -11,7 +11,7 @@ ms.date: 09/20/2019
 
 Welcome to Visual Studio Online! We're glad you're here.
 
-Visual Studio Online provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Online at no cost.
+Visual Studio Online provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio 2019 ([sign up for the Limited Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Online at no cost.
 
 Additionally, Visual Studio Online brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Online is also personaliazable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
 
@@ -46,6 +46,9 @@ Answer the prompts with the following information:
 - **Auto-suspend Setting**: 30 minutes
 - **Azure Subscription**: Select any Azure subscription to create a VS Online plan in
 - **Instance Type**: Standard Environment (Linux)
+
+> [!TIP]
+> [Sign up for the Limited Preview](http://aka.ms/vsfutures-signup) to create Windows based Codespaces.
 
 A **Creating environment: My Quick Environment** notification will appear in the bottom right corner. When that notification is replaced with on that says **Environment created: My Quick Environment**, press the **Connect** button.
 

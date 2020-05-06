@@ -84,4 +84,20 @@ To create a new Codespace open the **Connect to a Codespace** dialog using the  
 
 Click **Create** to start provisioning the Codespace. Your new Codespace will immediately appear in the list of available Codespaces with a progress indicator while its getting setup. Codespaces only take about a minute to provision. Once the Codespace is ready you'll see the progress indicator change to an Active status indicator. Note if you let the Codespace sit idle longer than the suspend period the icon will change to a suspended icon.
 
- 
+ ## Connect to an Codespace
+
+To connect to an existing Codespace open the **Connect to a Codespace** dialog using the  **Connect to a Codespace** button in the Start Window or the **Connect to a Codespace** command under the File menu. Then click the **New...** link next to the Codespaces label.
+
+Press the **Connect** button to connect to the cloud-hosted Codespace we just created. 
+
+![Connect to a Codespace](../images/vside-quickstart-03.png)
+
+The name **My Quick Codespace** will appear in the **Remote Indicator** in the title bar when you are fully connect.
+
+![Connected Codespace](../images/vside-quickstart-04.png)
+
+If you repository contains solution files (.SLN) click on the **switch views** button in the solution explorer toolbar to see all solution files in the folder and switch between solutions and folders. 
+
+![Switch solutions](../images/vside-how-to-01.png)
+
+Features in Visual Studio generally work the same in a Codespace as they do while working in a local environment. You can edit code, build the application and debug using the same menus, toolbars and shortcuts. Not all Visual Studio features have been enabled  work in a Codespace, yet. Features that aren't yet supported in a Codespace will not appear in the UI when connected to Codespace or will appear with an indicator that they are not yet supported.

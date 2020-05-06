@@ -4,7 +4,7 @@ ms.author: nimolnar
 ms.service: visual-studio-online
 title: Configuring Visual Studio Online
 ms.topic: overview
-ms.date: 02/25/2020
+ms.date: 05/06/2020
 ---
 
 # Configuring Visual Studio Environments

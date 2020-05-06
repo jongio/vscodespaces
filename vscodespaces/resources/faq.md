@@ -72,3 +72,9 @@ VS Online, by default, allows users to create 3 environments per plan, and 2 pla
 ### Where can I report an issue with my billing?
 
 Billing support is available online at [https://aka.ms/vso-billing-issues](https://aka.ms/vso-billing-issues).
+
+## Visual Studio questions
+
+### What kinds of apps and projects are supported in Visual Studio while connected to a Codespace?
+
+Visual Studio currently supports building .NET Core and C++ applications while connected to a Codespace. In .NET Core you an create Console, Library, and ASP.NET applications. For C++ both CMake and .VCXProj based projects are supported for build Console apps and libraries. We are adding support for many more projects so check back again soon. 

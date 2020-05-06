@@ -126,3 +126,8 @@ You can delete a Codespace at any time by opening the **Connect to a Codespace**
 
 ![Suspend Codespace](../images/vside-quickstart-03.png)
 
+## Using the integrated terminal
+
+Visual Studio's integrated terminal and all of its features are fully supported in a Codespace. It is important to note, however, that while connected to a Codespace, commands issued in the terminal are executed against the Codespace and not the local machine. This provides control over Codespace environment and how it's configured.
+
+![Terminal](../images/vside-how-to-02.png)

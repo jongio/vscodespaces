@@ -22,7 +22,7 @@ Codespaces CLI tools can be used on [Windows](~/reference/vsonline-cli.md#window
 
 You must create a Codespaces plan before starting the registration process. For more information on creating a plan, see [create a plan](browser.md#create-a-plan) in our browser how-to guide.
 
-Once you've successfully installed the CLI, start the interactive registration process by running the [`vso start`](~/reference/vsonline-cli.md#start-vs-online) command.
+Once you've successfully installed the CLI, start the interactive registration process by running the [`vso start`](~/reference/vsonline-cli.md#start-codespaces) command.
 
 > [!NOTE]
 > Be sure you're running the process as the user you'd like to use when accessing the environment from other machines after registration.

@@ -19,7 +19,7 @@ If you're experiencing missing icons, missing syntax highlighting, or your listi
 
 ### Disable experimental features
 
-If you're experiencing issues, particularly related to environment creation, try disabling all [experimental features](../reference/configuring.md#experimental-features) you may have enabled.
+If you're experiencing issues, particularly related to environment creation, try disabling all experimental features by going to **Settings** > **Extensions** > **Visual Studio Codespaces** > **Feature Set**.
 
 ### Search known issues
 
@@ -43,7 +43,7 @@ Right-click the self-hosted environment in the **Codespaces** panel to reveal a 
 Select the **Restore Local Environment** option and wait for a notification toast indicating that the environment has been restored.
 
 ### Incorrect Password for User (Windows)
-If you're recieving an error of "Incorrect password for user" when attempting to register the self-hosted agent as a service, you may not have "Log on as a service" enabled on your user account. You'll need to [grant "Log on as a service"](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) to your user account before registering the agent as a service.
+If you're recieving an error of "Incorrect password for user" when attempting to register the self-hosted agent as a service, you may not have "Log on as a service" enabled on your user account. You'll need to [grant "Log on as a service"](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) to your user account before registering the agent as a service.
 
 ## Partially Supported Browsers
 Due to browser restrictions, you may not get the full set of features in Safari and Firefox.

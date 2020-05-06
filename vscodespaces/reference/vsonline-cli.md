@@ -122,7 +122,7 @@ The following **options** can be provided to Codespaces:
 The following **commands** are available:
 
 - **`start`**
-  Begins the interactive process of registering your self-hosted machine. For more information, see [Start Codespaces](#start-vs-online).
+  Begins the interactive process of registering your self-hosted machine. For more information, see [Start Codespaces](#start-codespaces).
 
 - **`stop`**
   Removes your machine from Visual Studio Codespaces

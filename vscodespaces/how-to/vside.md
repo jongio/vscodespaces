@@ -131,3 +131,15 @@ You can delete a Codespace at any time by opening the **Connect to a Codespace**
 Visual Studio's integrated terminal and all of its features are fully supported in a Codespace. It is important to note, however, that while connected to a Codespace, commands issued in the terminal are executed against the Codespace and not the local machine. This provides control over Codespace environment and how it's configured.
 
 ![Terminal](../images/vside-how-to-02.png)
+
+## Port Forwarding
+
+Visual Studio Codespaces provides access to the applications and services running in the remote environments by means of port forwarding. By default, no ports are forwarded for security concerns, however, there are several ways to open ports in the Codespace.
+
+### Auto port forwarding
+
+If your application, or any other, indicates that it is serving content from a local port in the integrated terminal, Visual Studio Codespaces will automatically forward that port and add it to the list of Forwarded Ports.
+
+### Configured port forwarding
+
+If there's one or more ports that should be forwarded by default for a given repository, that can be configured in `devcontainer.json`. See the [configuring environments](../reference/configuring.md) reference for more info.

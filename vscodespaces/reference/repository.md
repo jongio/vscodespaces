@@ -2,14 +2,14 @@
 author: edgonmsft
 ms.author: edgonmsft
 ms.service: visual-studio-online
-title: Repository Options Visual Studio Online
+title: Repository Options Visual Studio Codespaces
 ms.topic: overview
 ms.date: 02/25/2020
 ---
 
-# Repository support in Visual Studio Online
+# Repository support in Visual Studio Codespaces
 
-Visual Studio Online's [environments](../overview/what-is-vsonline.md#environments) can be initialized with a Git repository. In addition, a [devcontainer.json](configuring.md) file placed in the repository provides additional configuration opportunities.
+Visual Studio Codespaces's [environments](../overview/what-is-vsonline.md#environments) can be initialized with a Git repository. In addition, a [devcontainer.json](configuring.md) file placed in the repository provides additional configuration opportunities.
 
 Repository support is handled using the Git clone URL obtained from your source control provider. Any URL that can be locally cloned on your machine should work.
 

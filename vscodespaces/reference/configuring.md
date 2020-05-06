@@ -93,7 +93,7 @@ The following tables list the configuration properties supported by Codespaces. 
 
 | Property | Type | Description |
 |----------|------|-------------|
-| `extensions` | array | An array of [VS Code Extension Marketplace](https://marketplace.visualstudio.com/vscode) IDs that specify the extensions that should be installed in the environment when it is created. By default, Codepsaces installs the recommended extensions for the an environment's most prominent language. |
+| `extensions` | array | An array of [VS Code Extension Marketplace](https://marketplace.visualstudio.com/vscode) IDs that specify the extensions that should be installed in the environment when it is created. By default, Codespaces installs the recommended extensions for the an environment's most prominent language. |
 | `settings` | object | Adds [VS Code `settings.json`](https://code.visualstudio.com/docs/getstarted/settings) values into the environment.  |
 | `forwardPorts`| integer or array | A port or array of ports that should be automatically forwarded locally when the environment is running. By default, no ports are forwarded. This is the preferred method of port forwarding. |
 | `appPort` | integer or array | A port or array of ports that should be automatically forwarded locally when the environment is running. By default, no ports are forwarded. |

@@ -58,6 +58,11 @@ The name **My Quick Codespace** will appear in the **Remote Indicator** in the t
 
 ![Connected Codespace](../images/vside-quickstart-04.png)
 
+Click on the **switch views** button in the solution explorer toolbar and click **tictactoe.sln** to load the solution.
+
+![Switch solutions](../images/vside-quickstart-05.png)
+
+
 Click [`Ctrl`]+[`Shift`]+[`B`] to build the application.
 
 Add a breakpoint on line 31.

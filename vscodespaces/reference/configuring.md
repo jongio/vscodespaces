@@ -99,6 +99,7 @@ The following tables list the configuration properties supported by Codespaces. 
 | `appPort` | integer or array | A port or array of ports that should be automatically forwarded locally when the environment is running. By default, no ports are forwarded. |
 | `postCreateCommand` | string or array | A command string or list of command arguments to run after the environment is created. Use `&&` in a string to execute multiple commands. For example, `"yarn install"`, `["yarn", "install"]`, or `"apt-get update && apt-get install -y git"`. It fires after your source code has been cloned, so you can also run shell scripts from your source repo. For example: `bash .devcontainer/install-dev-tools.sh`. By default, `oryx build` is run. To disable [Oryx](https://github.com/microsoft/Oryx) behavior, set the value to empty string (`""`) or empty array (`[]`). |
 
+
 ### Docker properties
 
 | Property | Type | Description |
@@ -112,6 +113,8 @@ The following tables list the configuration properties supported by Codespaces. 
 | `remoteEnv` | object | A set of name-value pairs that sets or overrides environment variables for VS Code (or sub-processes like terminals), but not the whole container. Updates are applied when the environment is suspended and restarted, or after five minutes have passed after disconnecting. |
 | `containerUser` | string or array | The user that will be used when creating the container. If the property is undefined, it defaults to either root or the last USER instruction in the Dockerfile. |
 | `remoteUser` | string or array | Overrides the user that VS Code runs as in the container (along with sub-processes like terminals, tasks, or debugging). This property defaults to the `containerUser`. |
+| `build.args` | object | An object containing Docker image build arguments that should be passed when building a Dockerfile. Defaults to not set. For example: "build": { "args": { "MYARG": "MYVALUE" } } |
+| `build.target` | string | An string that specifies a Docker image build target that should be passed when building a Dockerfile Defaults to not set. For example: "build": { "target": "development" } |
 
 ## Codespaces configuration sample
 

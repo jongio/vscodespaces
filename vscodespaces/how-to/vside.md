@@ -101,3 +101,28 @@ If you repository contains solution files (.SLN) click on the **switch views** b
 ![Switch solutions](../images/vside-how-to-01.png)
 
 Features in Visual Studio generally work the same in a Codespace as they do while working in a local environment. You can edit code, build the application and debug using the same menus, toolbars and shortcuts. Not all Visual Studio features have been enabled  work in a Codespace, yet. Features that aren't yet supported in a Codespace will not appear in the UI when connected to Codespace or will appear with an indicator that they are not yet supported.
+
+## Disconnect from a Codespace
+
+Once connected to a Codespace, there's three ways to disconnect:
+
+1. Open the **File** menu and click **Disconnect from this Codespace**
+2. Connect to another Visual Studio Codespace
+3. Close the Visual Studio window.
+
+## Suspend a Codespace
+
+As described on the [VS Online pricing page](https://aka.ms/vso-pricing), you pay for active VS Online usage, with a nominal fee for when an environment is suspended. 
+
+The Visual Studio Codespaces service will automatically suspend an inactive environment according to the auto-suspend setting used when the Codespace was created. This helps keep the cost of your Codespace as low as possible.
+
+In addition to auto-suspending, you can manually suspend a Codespace at any time by opening the **Connect to a Codespace** dialog, selecting your Codespace in the list and clicking the **Suspend** button.
+
+![Suspend Codespace](../images/vside-quickstart-03.png)
+
+## Delete a Codespace
+
+You can delete a Codespace at any time by opening the **Connect to a Codespace** dialog, selecting your Codespace in the list and clicking the **Delete** button.
+
+![Suspend Codespace](../images/vside-quickstart-03.png)
+

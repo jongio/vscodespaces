@@ -75,6 +75,6 @@ Billing support is available online at [https://aka.ms/vso-billing-issues](https
 
 ## Visual Studio questions
 
-### What kinds of apps and projects are supported in Visual Studio while connected to a Codespace?
+### What kinds of apps and projects are supported in Visual Studio and Visual Studio Codespace?
 
 Visual Studio currently supports building .NET Core and C++ applications while connected to a Codespace. In .NET Core you an create Console, Library, and ASP.NET applications. For C++ both CMake and .VCXProj based projects are supported for build Console apps and libraries. We are adding support for many more projects so check back again soon. 

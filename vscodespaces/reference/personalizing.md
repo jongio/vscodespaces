@@ -34,7 +34,7 @@ You can also configure dotfiles using the [Visual Studio Online portal](https://
 In both experiences, there are three options that can be configured:
 
 1. **Dotfiles Repository**: The URL of the Git repository containing your dotfiles. (*Required to personalize an environment, optional otherwise*)
-2. **Dotfiles Target Path**: The path where the dotfiles repo will be cloned. Defaults to `~dotfiles`. (*Optional*)
+2. **Dotfiles Target Path**: The path where the dotfiles repo will be cloned. Defaults to `~/dotfiles`. (*Optional*)
 
 3. **Dotfiles Install Command**: The command to run after cloning the dotfiles repository. By default, Codespaces scans the dotfiles repository and runs one of the following files:
     - `install.sh`

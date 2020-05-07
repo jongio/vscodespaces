@@ -2,33 +2,30 @@
 author: nikmd23
 ms.author: nimolnar
 ms.service: visual-studio-online
-title: Personalize Visual Studio Online with dotfiles
+title: Personalizing Visual Studio Codespaces
 ms.topic: overview
 ms.date: 04/29/2020
 ---
 
 # Personalize Visual Studio Online with dotfiles
 
-Visual Studio Online [environments](../overview/what-is-vsonline.md#environments) are personalizable on a per-user basis. This is accomplished in either of the following ways:
+Visual Studio Codespaces's [environments](../overview/what-is-vsonline.md#environments) are fully personalizable on a per user basis. This is accomplished by referencing a "dotfiles repo" at environment creation time.
 
-- [Configure a dotfile repo during environment creation](#configure-a-dotfile-repo-during-environment-creation).
 - [Enable personalization settings sync in Visual Studio Code](#enable-personalization-settings-sync-in-visual-studio-code).
-
-## Configure a dotfile repo during environment creation
+- [Configure a dotfile repo during environment creation](#configure-a-dotfile-repo-during-environment-creation).
 
 Dotfiles are files whose filename begins with a dot (`.`). They typically contain configuration information for an application. They are used to control the way terminals, editors, source control, and other tools behave. Examples of dotfiles include `.bashrc`, `.gitignore`, and `.editorconfig`.
 
 Developers often store dotfiles in a GitHub repository so they can easily synchronize them between development environments. For more information, see [GitHub Dotfiles](https://dotfiles.github.io/) on GitHub.io.
 
+## Enable personalization settings sync in Visual Studio Code
+
 To configure a dotfiles repo in Visual Studio Code:
+Press `F1` and select the **Preferences: Open Setting (UI)** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). In the **Settings** tab that opens, select the **Extensions** node in the navigation tree, followed by **Visual Studio Codespaces**. 
 
-1. Press `F1` and select the **Preferences: Open Setting (UI)** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette).
-1. In the **Settings** tab, select the **Extensions** node in the navigation tree.
-1. Select the **Visual Studio Online** option.
+![Visual Studio Codespaces Settings in Visual Studio Code](../images/personalizing-dotfiles-vsc.png)
 
-The following screenshot shows Visual Studio Online dotflies repository settings:
-
-[![Visual Studio Online settings in Visual Studio Code](../images/personalizing-dotfiles-vsc-cropped.png)](../images/personalizing-dotfiles-vsc.png#lightbox "Visual Studio Online settings in Visual Studio Code")
+## Configure a dotfile repo during environment creation
 
 You can also configure dotfiles using the [Visual Studio Online portal](https://online.visualstudio.com). Press the **Create environment** button and expand the **Dotfiles (optional)** settings.
 
@@ -37,8 +34,9 @@ You can also configure dotfiles using the [Visual Studio Online portal](https://
 In both experiences, there are three options that can be configured:
 
 1. **Dotfiles Repository**: The URL of the Git repository containing your dotfiles. (*Required to personalize an environment, optional otherwise*)
-2. **Dotfiles Target Path**: The path where the dotfiles repo will be cloned. Defaults to `~dotfiles`. (*Optional*)
-3. **Dotfiles Install Command**: The command to run after cloning the dotfiles repository. By default, Visual Studio Online scans the dotfiles repository and runs one of the following files:
+2. **Dotfiles Target Path**: The path where the dotfiles repo will be cloned. Defaults to `~/dotfiles`. (*Optional*)
+
+3. **Dotfiles Install Command**: The command to run after cloning the dotfiles repository. By default, Codespaces scans the dotfiles repository and runs one of the following files:
     - `install.sh`
     - `install`
     - `bootstrap.sh`

@@ -2,14 +2,14 @@
 author: nikmd23
 ms.author: nimolnar
 ms.service: visual-studio-online
-title: Visual Studio Online Feedback
+title: Visual Studio Codespaces Feedback
 ms.topic: overview
 ms.date: 09/20/2019
 ---
 
 # Feedback & Support
 
-Feedback for Visual Studio Online is collected in [our documentation repository on GitHub](https://github.com/MicrosoftDocs/vsonline/).
+Feedback for Visual Studio Codespaces is collected in [our documentation repository on GitHub](https://github.com/MicrosoftDocs/vsonline/).
 
 - **Issues**: Feel free to search through the list of [open bugs](https://github.com/MicrosoftDocs/vsonline/labels/bug) and [feature enhancements](https://github.com/MicrosoftDocs/vsonline/labels/enhancement), and certainly don't hesitate to [submit your own](https://github.com/MicrosoftDocs/vsonline/issues/new), or up vote one with a 👍🏻 reaction!
 - **Feedback Area Map**: Looking to get a general feel for what we're working on and looking for feedback about? Check out the [feedback area map](https://github.com/MicrosoftDocs/vsonline/issues/2).
@@ -18,4 +18,4 @@ Feedback for Visual Studio Online is collected in [our documentation repository 
 
 Additionally, look for the **Help and Feedback** panel in the **Remote Explorer** for a quick and easy way to interact with our feedback channels.
 
-![Visual Studio Online Help & Feedback](../images/feedback.png)
+![Visual Studio Codespaces Help & Feedback](../images/feedback.png)

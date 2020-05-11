@@ -10,7 +10,7 @@ ms.date: 05/11/2020
 # Configuring Windows Codespaces
 
 >[!IMPORTANT]
-> This document refers to capabilities in the private preview of Visual Studio environments for Codespaces. The Windows instance type and Visual Studio capabilities aren't publicly available, yet. If you're interested in taking part in the  preview we'd love for you to [sign up for the private preview of Visual Studio for Codespaces](https://aka.ms/vsfutures-signup) and give us feedback.
+> This document refers to capabilities in the private preview of Visual Studio environments for Codespaces. The Windows instance type and Visual Studio capabilities aren't publicly available and are only available in a private preview. If you're interested in taking part in the preview we'd love for you to [sign up for the private preview of Visual Studio for Codespaces](https://aka.ms/vsfutures-signup).
 
 
 > [!NOTE]

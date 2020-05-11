@@ -27,6 +27,8 @@
   items: 
   - name: Configuring environments
     href: reference/configuring.md
+  - name: Configuring Windows environments
+    href: reference/configuring-windows.md
   - name: Personalizing environments
     href: reference/personalizing.md
   - name: Repository support

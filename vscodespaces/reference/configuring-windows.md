@@ -11,12 +11,21 @@ ms.date: 05/11/2020
 
 >[!IMPORTANT]
 > This document refers to capabilities in the private preview of Visual Studio environments for Codespaces. The Windows instance type and Visual Studio capabilities aren't publicly available and are only available in a private preview. If you're interested in taking part in the preview we'd love for you to [sign up for the private preview of Visual Studio for Codespaces](https://aka.ms/vsfutures-signup).
+
 > [!NOTE]
 > We would love to hear you feedback on the customizations (such as applications, features and settings) that you need to be successful using a Windows Codespace environment. If you would like to provide feedback and take part in future customer research please complete this [survey]( https://www.research.net/r/WXGB6N5).
 
 This document details the capabilities of Windows based Codespace environment for Visual Studio 2019. To get started with the Visual Studio Codespaces take a look at the [Visual Studio Codespaces quick start](../quickstarts/vs.md) .
 
-During the private preview Windows instance types for Codespaces will have only a limited support for customizations via `devcontainer.json`. Specifically only the [`extensions`](configuring#codespaces-configuration-reference) property of `devcontainer.json` is respected while the rest are not yet implemented. In lieu of customization the Windows instance types come with a range of already configuring components as listed below. If further customizations are needed you can use the Visual Studio Terminal which is running PowerShell elevated under the local administrator account. To learn more about the Visual Studio terminal please read this [blog](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/).
+During the private preview Windows instance types for Codespaces will have limited support for customizations via `devcontainer.json`. Specifically the following customizations from `devcontainer.json` are supported:
+
+ *    VS Code and Web Editor extensions via `extensions`
+ *    VS Code and Web Editor settings via `settings`
+ *    Port forwarding via `forwardPorts` and `appPort`
+
+ More information how to use this properties can be found in the [Configuring Codespaces](configuring#codespaces-configuration-reference) documentation.
+
+ In lieu of customization the Windows instance types come with a range of already configuring components as listed below. If further customizations are needed you can use the Visual Studio Terminal which is running PowerShell elevated under the local administrator account. To learn more about the Visual Studio terminal please read this [blog](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/).
 
 ## Installed Software
 

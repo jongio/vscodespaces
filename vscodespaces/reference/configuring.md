@@ -9,6 +9,9 @@ ms.date: 02/25/2020
 
 # Configuring Visual Studio Environments
 
+> [!NOTE]
+> This document applies to Codespaces environments running on Linux instance types, Windows instance types cannot currently be customized. You can find more about the capabilities of the Windows instance types in document on [Windows customizations](configuring-windows.md).
+
 Visual Studio Online's [environments](../overview/what-is-vsonline.md#environments) are fully customizable on a per project basis. This is accomplished by including a `devcontainer.json` file in the project's repository.
 
 Example customizations include:

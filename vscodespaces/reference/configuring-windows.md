@@ -45,7 +45,7 @@ The list above is not exhaustive, and many other tools are included as part of V
 
 ## Microsoft SQL Server
 
-Microsoft SQL Server 2019 Developer Edition is available and running as a local service (SQLServer) in Windows Environments. The currently logged in user, which your app and the VS terminal run as, have SQL administrator rights to the SQL server. To administer the server you will need to use the PowerShell terminal available in Visual Studio or other command line tools such as `dotnet tool ef`. Currently SQL Server Management Studio and other remote administration tools are not available.
+Microsoft SQL Server 2019 Developer Edition is available and running as a local service (SQLServer) in Windows Environments. The currently logged in user, which your app and the VS terminal run as, have SQL administrator rights to the SQL server. To administer the server you will need to use the PowerShell terminal available in Visual Studio or other command line tools such as `dotnet-ef`. Currently SQL Server Management Studio and other remote administration tools are not available.
 Note: SQL Server Express Edition (localdb) is also available in all Windows environments.
 
 ### Example Connection String

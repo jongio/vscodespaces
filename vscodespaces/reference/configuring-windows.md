@@ -18,7 +18,7 @@ ms.date: 05/11/2020
 
 This document details the capabilities of Windows based Codespace environment for Visual Studio 2019. To get started with the Visual Studio Codespaces take a look at the [Visual Studio Codespaces quick start](../quickstarts/vs.md) .
 
-Windows instance types for Codespaces do not support customizations via `devcontainer.json`. Instead, they come with a range of already configuring components as listed below. If further customizations are needed you can use the Visual Studio Terminal which is running PowerShell elevated under the local administrator account. To learn more about the Visual Studio terminal please read this [blog](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/).
+During the private preview Windows instance types for Codespaces will have only a limited support for customizations via `devcontainer.json`. Specifically only the [`extensions`](https://docs.microsoft.com/en-us/visualstudio/online/reference/configuring#codespaces-configuration-reference) property of `devcontainer.json` is respected while the rest are not yet implemented. In lieu of customization the Windows instance types come with a range of already configuring components as listed below. If further customizations are needed you can use the Visual Studio Terminal which is running PowerShell elevated under the local administrator account. To learn more about the Visual Studio terminal please read this [blog](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/).
 
 
 ## Installed Software

@@ -21,24 +21,25 @@ During the private preview Windows instance types for Codespaces will have only 
 ## Installed Software
 
 The table below lists the applications and features available in all Windows Codespace environments.
-|App     | Path Alias | Version
-|----------------|------------|------------|
-| Azure CLI | az | 2.5
-| Windows SDK | N/A | 10..0.18362
-| .NET | N/A | 4.8
-| .NET Core Runtime |  dotnet | 3.17, 3.1.2, 3.1.3
-| .NET Core SDK | dotnet | 3.17, 3.1.2, 3.1.3
-| Node.js | node | 12.16
-| NPM | npm | 6.14
-| Python  | python | 3.7.7
-| Chocolatey | choco | 0.10.15
-| Git | git | 2.26
-| Ninja | ninja | 1.8.2
-| CMake | cmake | 3.17
-| Microsoft build | msbuild | 16.7
-| VC Package Manager | vcpkg | 2020.02
-| Micorosft SQL Server Developer Edition 2019 | N/A |  15.0
-| Docker Desktop | docker | 19.03
+
+| App                                         | Path Alias | Version            |
+|---------------------------------------------|------------|--------------------|
+| .NET                                        | N/A        | 4.8                |
+| .NET Core Runtime                           | dotnet     | 3.17, 3.1.2, 3.1.3 |
+| .NET Core SDK                               | dotnet     | 3.17, 3.1.2, 3.1.3 |
+| Azure CLI                                   | az         | 2.5                |
+| Chocolatey                                  | choco      | 0.10.15            |
+| CMake                                       | cmake      | 3.17               |
+| Docker Desktop                              | docker     | 19.03              |
+| Git                                         | git        | 2.26               |
+| Microsoft build                             | msbuild    | 16.7               |
+| Microsoft SQL Server Developer Edition 2019 | N/A        | 15.0               |
+| Ninja                                       | ninja      | 1.8.2              |
+| Node.js                                     | node       | 12.16              |
+| NPM                                         | npm        | 6.14               |
+| Python                                      | python     | 3.7.7              |
+| VC Package Manager                          | vcpkg      | 2020.02            |
+| Windows SDK                                 | N/A        | 10..0.18362        |
 
 The list above is not exhaustive, and many other tools are included as part of Visual Studio (e.g. IISExpress).
 

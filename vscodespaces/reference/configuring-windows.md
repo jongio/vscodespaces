@@ -40,6 +40,8 @@ The table below lists the applications and features available in all Windows Cod
 | CMake | cmake | 3.17
 | Microsoft build | msbuild | 16.7
 | VC Package Manager | vcpkg | 2020.02
+| Micorosft SQL Server Developer Edition 2019 | N/A |  15.0
+| Docker Desktop | docker | 19.03
 
 The list above is not exhaustive, and many other tools are included as part of Visual Studio (e.g. IISExpress).
 

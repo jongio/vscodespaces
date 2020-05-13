@@ -29,6 +29,16 @@ The Visual Studio Live Share agent runs on self-hosted machines and listens for 
 
 Connecting to a Codespace from Visual Studio 2019 is available through a Private Preview while we scale up the service. You can sign up for the Private Preview by going to https://aka.ms/vsfutures-signup. [Read more](https://aka.ms/vs2019-codespaces-blog) about what Visual Studio 2019 support for Codespaces.
 
+### Can any Visual Studio client access any Codespace?
+We are actively expanding support for more features and workloads across the Visual Studio clients. Not all clients have been upgraded to support all Codespaces. Here is a summary of the Visual Studio clients and the Codespaces they can support.
+
+|                       | Codespace (Windows) | Codespace (Linux) |
+|-----------------------|:-------------------:|:-----------------:|
+| Visual Studio code    |         ✔         |        ✔         |
+| Browser based editor  |         ✔         |        ✔         |
+| Visual Studio 2019    |         ✔         |        ❌         |
+| Visual Studio for Mac |         ❌         |        ❌         |
+
 ## Security questions
 
 ### What do you mean by "repositories you trust"?

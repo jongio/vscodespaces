@@ -1,23 +1,23 @@
 - name: Overview
   items:
-  - name: What is Visual Studio Online?
+  - name: What is Visual Studio Codespaces?
     href: overview/what-is-vsonline.md
 - name: Quickstarts
   items:
-  - name: VS Online in the browser
+  - name: Codespaces in the browser
     href: quickstarts/browser.md
-  - name: VS Online in VS Code
+  - name: Codespaces in VS Code
     href: quickstarts/vscode.md
-  - name: VS Online in Visual Studio
+  - name: Codespaces in Visual Studio
     href: quickstarts/vs.md
 #- name: Tutorials
 #- name: Samples
 #- name: Concepts
 - name: "How-to guides"
   items:
-  - name: "Use Visual Studio Online in the Browser"
+  - name: "Use Visual Studio Codespaces in the Browser"
     href: how-to/browser.md
-  - name: "Use Visual Studio Online in Visual Studio Code"
+  - name: "Use Visual Studio Codespaces in Visual Studio Code"
     href: how-to/vscode.md
   - name: "Register self-hosted environment in VS Code"
     href: how-to/self-hosting-vscode.md
@@ -33,7 +33,7 @@
     href: reference/personalizing.md
   - name: Repository support
     href: reference/repository.md
-  - name: VS Online CLI
+  - name: Codespaces CLI
     href: reference/vsonline-cli.md 
 - name: Resources
   items:

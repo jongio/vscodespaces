@@ -4,14 +4,12 @@ ms.author: nimolnar
 ms.service: visual-studio-online
 title: Visual Studio Codespaces with Visual Studio 2019 Quickstart
 ms.topic: overview
-ms.date: 09/20/2019
+ms.date: 05/13/2020
 ---
 
 # Visual Studio Codespaces in Visual Studio 2019 Quickstart
 
-Welcome to Visual Studio Codespaces! We're glad you're here. 
-
-Visual Studio Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these Codespaces from Visual Studio Code, Visual Studio ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted Codespaces to Visual Studio Codespaces at no cost.
+Visual Studio Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these Codespaces from Visual Studio Code, Visual Studio 2019 ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted Codespaces to Visual Studio Codespaces at no cost.
 
 Additionally, Visual Studio Codespaces brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Codespaces is also personaliazable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
 
@@ -23,7 +21,7 @@ Ready to get going? This document will walk you through how to install Visual St
 ## 1. Install
 
 > [!TIP]
-> If you don't have [Visual Studio 2019 Preview](http://aka.ms/vspreview) installed already, you can download it [here](http://aka.ms/vspreview). Check the **ASP.NET and web development**, **Desktop development with C++**, or both Workloads in the Installer. Then click **Install**.
+> If you don't have [Visual Studio 2019 Preview](https://aka.ms/vspreview) installed already, you can download it [here](https://aka.ms/vspreview). Check the **ASP.NET and web development**, **Desktop development with C++**, or both Workloads in the Installer. Then click **Install**.
 
 Launch Visual Studio 2019 from the Start menu. If you just installed Visual Studio for the first time you'll see a welcome screen where you can sign in with any Microsoft identity.
 
@@ -36,7 +34,7 @@ After you enable the Connect to Visual Studio Codespases preview feature you wil
 If this is your first time using Codespaces, click **New...** next to **Billing Plan**. Select the Azure subscription where you want to create the Billing plan and a region geographically close to where you'll use Codespaces; then click **Create**.
 ![Create a billing plan](../images/vside-quickstart-01.png)
 
-To create a new cloud-hosted Codespace in Visual Studio Codespaces select the **New...** button next to the **Codespaces** label. 
+To create a new cloud-hosted Codespace in Visual Studio Codespaces select the **New...** button next to the **Codespaces** label.
 ![Create a new Codespace](../images/vside-quickstart-02.png)
 
 Enter the following information then click the **Create** button:
@@ -50,7 +48,7 @@ Enter the following information then click the **Create** button:
 
 ## 3. Connect To and Use the Codespace
 
-Press the **Connect** button to connect to the cloud-hosted Codespace we just created. 
+Press the **Connect** button to connect to the cloud-hosted Codespace we just created.
 
 ![Connect to a Codespace](../images/vside-quickstart-03.png)
 
@@ -61,7 +59,6 @@ The name **My Quick Codespace** will appear in the **Remote Indicator** in the t
 Click on the **switch views** button in the solution explorer toolbar and click **tictactoe.sln** to load the solution.
 
 ![Switch solutions](../images/vside-quickstart-05.png)
-
 
 Click [`Ctrl`]+[`Shift`]+[`B`] to build the application.
 

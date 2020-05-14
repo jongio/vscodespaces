@@ -9,7 +9,7 @@ ms.date: 05/13/2020
 
 # Visual Studio Codespaces VS Code How-to
 
-This guide covers how to get started using VS Code with Visual Studio Codespaces.
+This article covers how to get started using VS Code with Visual Studio Codespaces.
 
 ## Sign up
 
@@ -62,9 +62,7 @@ Add content for:
 
 ## Create a plan
 
-Once you've [signed up](#sign-up) and created an Azure subscription, you can access Codespaces by creating a Codespaces Plan. You can create more than one plan, and plans can be used to group related environments together. They are also the unit of billing, and as such you'll see a line item on your Azure bill for each plan you create.
-
-More information about plans and pricing is available on [the Codespaces pricing page](https://aka.ms/vso-pricing).
+Once you've [signed up](#sign-up) and created an Azure subscription, you can access Codespaces by creating a Codespaces Plan. You can create more than one plan, and plans can be used to group related environments together. They are also the unit of billing, and as such you'll see a line item on your Azure bill for each plan you create. For more information about plans and pricing, see [Codespaces pricing](https://aka.ms/vso-pricing).
 
 The first time you [create an environment](#create-a-cloud-hosted-environment), VS Code will automatically walk you through the steps required to create a plan. To explicitly create a new plan, you can either use the **Codespaces: Create Plan** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by clicking the **Select Plan** button on the **Codespaces** title bar in the **Remote Explorer** side bar, then selecting **Create new plan...** from the quick pick list.
 
@@ -103,7 +101,7 @@ Follow the prompts to provide an environment name, path to Git repository (optio
 
 ![Create environment in Visual Studio Code](../images/create-env-vsc-02.gif)
 
-- **Name**: You can name your environment anything you'd like, but we recommend naming it after the project or task that you'll be using it for. (e.g. 'Todo App Environment', 'PR Review', 'Shopping Cart Feature')
+- **Name**: Name your codespace after the project or task that you'll be using it for. (e.g. 'Todo App Environment', 'PR Review', 'Shopping Cart Feature')
 - **Git Repository**: If a path to a Git repository is provided, Codespaces will automatically clone that repository into the environment. You can specify a Git repository in one of many formats:
   - **Absolute Http(s) Git URL**: A complete Http or Https Url. It may end in a `.git` extension. Examples include:
     - https://github.com/organization/repo.git
@@ -163,7 +161,7 @@ Once connected to an environment, there are four ways to disconnect:
 <!-- TODO: Fix "connected" icon next to "My Environment" and add My-VSO-Plan in title bar -->
 ![Disconnect in Visual Studio Code](../images/disconnect-env-vsc-01.png)
 
-## Suspend an environment
+## Suspend a Codespace
 
 As described on the [Codespaces pricing page](https://aka.ms/vso-pricing), you pay for active Codespaces usage, with a nominal fee for when an environment is suspended.
 
@@ -173,7 +171,7 @@ In addition to auto-suspending, you can manually suspend an environment at any t
 
 <!-- TODO: Add context menu screenshot -->
 
-## Delete a cloud-hosted environment
+## Delete a Codespace
 
 The actively-connected environment cannot be deleted from within VS Code, however while [disconnected from an environment](#disconnect-from-an-environment), there are two ways to permanently delete it:
 
@@ -189,7 +187,7 @@ A self-hosted environment can be unregistered from any machine in one of two way
 
 ## Use the integrated terminal
 
-VS Code's integrated terminal and all of its features are fully supported in Codespaces. It is important to note, however, that while connected to Codespaces, commands issued in the terminal are executed against the environment, not the user's local machine. This provides Codespaces users full control over their development environment and how it's configured.
+VS Code's integrated terminal and all of its features are fully supported in a Codespace. It is important to note, however, that while connected to a Codespace, commands issued in the terminal are executed against the Codespace and not the local machine. This provides control over Codespace environment and how it's configured.
 
 > [!TIP]
 > The [integrated terminal is fully documented on the VS Code site](https://code.visualstudio.com/docs/editor/integrated-terminal).
@@ -206,7 +204,7 @@ In addition to the integrated terminal features of VS Code, Codespaces also allo
 
 ## Port Forwarding
 
-Codespaces provides access to the applications and services running in remote environments by means of port forwarding. By default, no ports are forwarded for security concerns, however, there are several ways to open ports in the remote environment.
+Visual Studio Codespaces provides access to the applications and services running in the remote environments by means of port forwarding. By default, no ports are forwarded for security concerns. However, there are several ways to open ports in the Codespace.
 
 ### Auto port forwarding
 

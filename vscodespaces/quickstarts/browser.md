@@ -62,7 +62,7 @@ Complete the form with the following values:
 - **Instance Type**: Standard Environment (Linux)
 
 > [!TIP]
-> [Sign up for the Private Preview](http://aka.ms/vsfutures-signup) to create Windows based Codespaces.
+> [Sign up for the Private Preview](https://aka.ms/vsfutures-signup) to create Windows based Codespaces.
 
 ![Create environment in Visual Studio Code](../images/create-quickstart-vso-02.png)
 

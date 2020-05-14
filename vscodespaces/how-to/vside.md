@@ -4,54 +4,61 @@ ms.author: anthc
 ms.service: visual-studio-online
 title: How to use Visual Studio Online with Visual Studio 2019
 ms.topic: overview
-ms.date: 05/05/2020
+ms.date: 05/13/2020
 ---
 
 # Visual Studio Codespaces Visual Studio 2019 How-to
 
-## Sign Up
+This article covers how to get started using Visual Studio 2019 with Visual Studio Codespaces.
 
-A Microsoft Account and Azure Subscription are required to use Visual Studio Online.
+## Sign up
 
-You can sign up for both, as well as receive various Azure incentives at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/).
+A Microsoft Account and Azure Subscription are required to use Visual Studio Codespaces. You can sign up for both at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/).
 
 Access to the Visual Studio 2019 Private Preview is also required to complete this How-to. Sign up for the Private Preview here [https://aka.ms/vsfutures-signup](https://aka.ms/vsfutures-signup).
 
 ## Install
 
-> [!TIP]
-> If you don't have [Visual Studio 2019 Preview](http://aka.ms/vspreview) installed already, you can download it [here](http://aka.ms/vspreview). Check the **ASP.NET and web development**, **Desktop development with C++**, or both Workloads in the Installer. Then click **Install**.
+If you don't have [Visual Studio 2019 Preview](https://aka.ms/vspreview) installed already, you can [download it from visualstudio.microsoft.com](https://aka.ms/vspreview).
 
-Launch Visual Studio 2019 from the Start menu. If you just installed Visual Studio for the first time you'll see a welcome screen where you can sign in with any Microsoft identity.
+Once Visual Studio 2019 Preview is installed, follow these steps to set up Codespaces:
 
-When you reach Visual Studio's Start Window click **Continue without code**. Now open the **Tools** menu and click **Options...**. Search for **Preview features**. Check the **Connect to Visual Studio Codespaces(private preview only)** checkbox, then click **Ok** and restart Visual Studio.
+1. Open the Visual Studio installer
+1. Check the **ASP.NET and web development**, **Desktop development with C++**, or both Workloads in the Installer. Then click **Install**.
+1. Launch Visual Studio 2019 from the Start menu. If you just installed Visual Studio for the first time you'll see a welcome screen where you can sign in with any Microsoft identity.
+1. On the Visual Studio Start Window click **Continue without code**.
+1. Open the **Tools** menu and click **Options...**.
+1. Search for **Preview features**.
+1. Check the **Connect to Visual Studio Codespaces(private preview only)** checkbox, then click **Ok** and restart Visual Studio.
 
 ## Sign in
 
-After you enable the Connect to Visual Studio Codespases preview feature you will see a new **Connect to a Codespace** button in the Start Window and a new **Connect to a Codespace** command under the File menu. Click the **Connect to a Codespace** button. If you aren't already signed with an account that has access to the Private Preview, click account picker control to expand it in the upper right corner of the dialog and click **Add an account** to sign in.
+After you enable the Connect to Visual Studio Codespaces preview feature you will see a new **Connect to a Codespace** button in the Start Window and a new **Connect to a Codespace** command under the File menu.
+
+Click the **Connect to a Codespace** button. If you aren't already signed with an account that has access to the Private Preview, click account picker control to expand it in the upper right corner of the dialog and click **Add an account** to sign in.
 
 ## Create a plan
 
 Once you've [signed up](#sign-up) and created an Azure subscription, you can access Visual Studio Codespaces by creating a Billing Plan. You can create more than one plan, and plans can be used to group related Codespaces together or to create Codespaces in different regions. Visual Studio Codespace Billing plans are the unit of billing in Azure, so you'll see a line item on your Azure bill for each plan you create.
 
-Users will not be charge for Windows based Codespaces created during the Private Preview. More information about plans and pricing is available on [the VS Online pricing page](https://aka.ms/vso-pricing).
+Users will not be charged for Windows-based Codespaces created during the Private Preview. For more information about plans and pricing, see [Codespaces pricing](https://aka.ms/vso-pricing).
 
-If this is your first time using Codespaces, click **New...** next to **Billing Plan**. 
+If this is your first time using Codespaces, click **New...** next to **Billing Plan**.
+
 ![Create a billing plan](../images/vside-quickstart-01.png)
 
-- **Azure subscription**: You can any listed Azure subscriptions when creating a billing plan. 
+- **Azure subscription**: You can use any listed Azure subscriptions when creating a billing plan.
 - **Resource group name**: Your Billing plan will be created in a new Azure resource group with the name provided in this step.
-- **Plan name**: The name of the created Billing plan. 
+- **Plan name**: The name of the created Billing plan.
 - **Region**: Choose an [Azure region](https://azure.microsoft.com/global-infrastructure/regions/) to create the Billing plan. All environments created within this plan, will be provisioned in the region selected. Supported regions are:
   - East US
   - Southeast Asia
   - West Europe
   - West US 2
-purposes.
 
 Select the Azure subscription where you want to create the Billing plan and a region geographically close to where you'll use Codespaces; then click **Create**.
 
-You can manage plans in the Azure portal and at http://online.visualstudio.com/environments.
+You can manage plans in the [Azure portal](https://portal.azure.com) and the [Visual Studio Codespaces Portal](https://online.visualstudio.com/environments).
 
 Only environments contained within the selected plan will be displayed. Select a different plan from the drop down on the Connect to a Codespace dialog to see Codespaces created under those plans.
 
@@ -64,7 +71,7 @@ To create a new Codespace open the **Connect to a Codespace** dialog using the  
 
 ![Create a new Codespace](../images/vside-quickstart-02.png)
 
-- **Name**: You can name your Codespace anything you'd like, but we recommend naming it after the project or task that you'll be using it for. (e.g. 'Todo App Environment', 'PR Review', 'Shopping Cart Feature')
+- **Name**: Name your Codespace after the project or task that you'll be using it for. (e.g. 'Todo App Environment', 'PR Review', 'Shopping Cart Feature')
 - **Git Repository**: If a path to a Git repository is provided, VS Online will automatically clone that repository into the Codespace. You can specify a Git repository in one of many formats:
   - **Absolute Http(s) Git URL**: A complete Http or Https Url. It may end in a `.git` extension. Examples include:
     - https://github.com/organization/repo.git
@@ -73,30 +80,32 @@ To create a new Codespace open the **Connect to a Codespace** dialog using the  
   - **GitHub Project URL**: The Https Url used to navigate to the homepage of a project on GitHub. (e.g. https://github.com/organization/repo)
   - **GitHub Short Form**: The forward slash delimited `organization/repo` format used to refer to projects on GitHub.
   - **GitHub Pull Request URL**: The Https Url used to navigate to a pull request in GitHub. (e.g. https://github.com/organization/repo/pull/123)
-- **Instance Type**: The CPU and memory configuration that will be provisioned for your environment. **Premium (Windows)** are the only available instance type initially. **Standard (Windows)** will come online in the near future. Choose **Standard (Windows)** for most projects, and **Premium (Windows)** for those that require a little extra power. 
+- **Instance Type**: The CPU and memory configuration that will be provisioned for your environment. **Premium (Windows)** are the only available instance type initially. **Standard (Windows)** will come online in the near future. Choose **Standard (Windows)** for most projects, and **Premium (Windows)** for those that require a little extra power.
 - **Suspend idle Codespace after...**: The length of disconnected time before a Codespace will be automatically suspended. Choose between:
   - 5 minutes
   - 30 minutes
   - 2 hours
 
-> [!TIP]
-> The guided environment creation experience described above supports Git repositories over the HTTP(S) scheme. To use another source control provider, or Git over SSH, simply leave the **Git Repository** setting blank, and use the environment's terminal support to clone your source code.
+The guided environment creation experience described above supports Git repositories over the HTTP(S) scheme. To use another source control provider, or Git over SSH, simply leave the **Git Repository** setting blank, and use the environment's terminal support to clone your source code.
 
-Click **Create** to start provisioning the Codespace. Your new Codespace will immediately appear in the list of available Codespaces with a progress indicator while its getting setup. Codespaces only take about a minute to provision. Once the Codespace is ready you'll see the progress indicator change to an Active status indicator. Note if you let the Codespace sit idle longer than the suspend period the icon will change to a suspended icon.
+Click **Create** to start provisioning the Codespace. Your new Codespace will immediately appear in the list of available Codespaces with a progress indicator while it's being set up. Codespaces only take about a minute to provision. Once the Codespace is ready the progress indicator will change to an Active status indicator.
 
- ## Connect to an Codespace
+> [!NOTE]
+> If you let the Codespace sit idle longer than the suspend period the icon will change to a suspended icon.
+
+## Connect to an Codespace
 
 To connect to an existing Codespace open the **Connect to a Codespace** dialog using the  **Connect to a Codespace** button in the Start Window or the **Connect to a Codespace** command under the File menu. Then click the **New...** link next to the Codespaces label.
 
-Press the **Connect** button to connect to the cloud-hosted Codespace we just created. 
+Press the **Connect** button to connect to the cloud-hosted Codespace you just created.
 
 ![Connect to a Codespace](../images/vside-quickstart-03.png)
 
-The name **My Quick Codespace** will appear in the **Remote Indicator** in the title bar when you are fully connect.
+The name **My Quick Codespace** will appear in the **Remote Indicator** in the title bar when you are fully connected.
 
 ![Connected Codespace](../images/vside-quickstart-04.png)
 
-If you repository contains solution files (.SLN) click on the **switch views** button in the solution explorer toolbar to see all solution files in the folder and switch between solutions and folders. 
+If your repository contains solution (.SLN) files click on the **switch views** button in the solution explorer toolbar to see all solution files in the folder and switch between solutions and folders.
 
 ![Switch solutions](../images/vside-how-to-01.png)
 
@@ -104,17 +113,17 @@ Features in Visual Studio generally work the same in a Codespace as they do whil
 
 ## Disconnect from a Codespace
 
-Once connected to a Codespace, there's three ways to disconnect:
+Once connected to a Codespace, there are three ways to disconnect:
 
 1. Open the **File** menu and click **Disconnect from this Codespace**
 2. Connect to another Visual Studio Codespace
-3. Close the Visual Studio window.
+3. Close the Visual Studio 2019.
 
 ## Suspend a Codespace
 
-As described on the [VS Online pricing page](https://aka.ms/vso-pricing), you pay for active VS Online usage, with a nominal fee for when an environment is suspended. 
+As described on the [Codespaces pricing page](https://aka.ms/vso-pricing), you pay for active Codespaces usage, with a nominal fee for when an environment is suspended.
 
-The Visual Studio Codespaces service will automatically suspend an inactive environment according to the auto-suspend setting used when the Codespace was created. This helps keep the cost of your Codespace as low as possible.
+Codespaces will automatically suspend an inactive environment according to the auto-suspend settings configured when the environment was created. This helps reduce the cost of Codespaces.
 
 In addition to auto-suspending, you can manually suspend a Codespace at any time by opening the **Connect to a Codespace** dialog, selecting your Codespace in the list and clicking the **Suspend** button.
 
@@ -134,12 +143,12 @@ Visual Studio's integrated terminal and all of its features are fully supported 
 
 ## Port Forwarding
 
-Visual Studio Codespaces provides access to the applications and services running in the remote environments by means of port forwarding. By default, no ports are forwarded for security concerns, however, there are several ways to open ports in the Codespace.
+Visual Studio Codespaces provides access to the applications and services running in the remote environments by means of port forwarding. By default, no ports are forwarded for security concerns. However, there are several ways to open ports in the Codespace.
 
-### Auto port forwarding
+### Automatic port forwarding
 
 If your application, or any other, indicates that it is serving content from a local port in the integrated terminal, Visual Studio Codespaces will automatically forward that port and add it to the list of Forwarded Ports.
 
 ### Configured port forwarding
 
-If there's one or more ports that should be forwarded by default for a given repository, that can be configured in `devcontainer.json`. See the [configuring environments](../reference/configuring.md) reference for more info.
+If there are one or more ports that should be forwarded by default for a given repository, that can be configured in `devcontainer.json`. See the [configuring environments](../reference/configuring.md) reference for more info.

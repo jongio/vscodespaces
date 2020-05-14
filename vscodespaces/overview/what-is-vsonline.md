@@ -13,50 +13,60 @@ Welcome to Visual Studio Codespaces! We're glad you're here.
 
 Visual Studio Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio 2019 ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Codespaces at no cost.
 
-Additionally, Visual Studio Codespaces brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Codespaces is also personalizable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
+Additionally, Visual Studio Codespaces brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Codespaces is also personalizable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on.
 
-Ready to get going? This document will run you through some concepts and introduce you to our features. If you're looking for an abridged version, check out [the quickstarts](../quickstarts/browser.md).
+This document will explain key concepts and introduce Codespaces features. If you're looking for an abridged version, check out [the quickstarts](../quickstarts/browser.md).
 
 ## Concepts and features
 
-The compelling features of Visual Studio Codespaces are built on top of a few fundamental concepts. This section covers those concepts and gives a brief tour of features.
+Visual Studio Codespaces features are built on top of a few fundamental concepts. This section covers those concepts and gives a brief tour of features.
 
-### Remote Development
+### Remote development
 
-Visual Studio Codespaces conceptually and technically extends the [Visual Studio Code Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). As explained in the [Remote Development with VS Code](https://code.visualstudio.com/blogs/2019/05/02/remote-development) blog post, we built Visual Studio Codespaces because "_We saw many developers trying to develop against containers and remote VMs configured with specific development and runtime stacks, simply because it is too hard, too disruptive, and in some cases impossible, to set up these development environments locally. We've all experienced this problem. Unless we feel it's time to flatten that machine, we hesitate to try out a new stack like Rust, Go, Node, or Python3, for fear of 'messing up' our current, well-tuned environment._"
+Visual Studio Codespaces conceptually and technically extends the [Visual Studio Code Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). As explained in the [Remote Development with VS Code](https://code.visualstudio.com/blogs/2019/05/02/remote-development) blog post, the following quote sums up the problem solved by Codespaces:
 
-Having remote-capable tools unblocks a ton of developer scenarios, but on their own, they still require you to manually manage machines. We've heard loud and clear that developers are spending too much time setting up their developer environments, and that it can get in the way of onboarding new team members or enabling you to quickly move between tasks. Visual Studio Codespaces aims to solve these problems, and more.
+>"_We saw many developers trying to develop against containers and remote VMs configured with specific development and runtime stacks, simply because it is too hard, too disruptive, and in some cases impossible, to set up these development environments locally. We've all experienced this problem. Unless we feel it's time to flatten that machine, we hesitate to try out a new stack like Rust, Go, Node, or Python3, for fear of 'messing up' our current, well-tuned environment._"
 
-If you're the do-it-yourself type of person and like to manage your own machines, we'd love for you to use [Visual Studio Code's Remote Development](https://code.visualstudio.com/docs/remote/remote-overview). If you're looking for a managed solution that lets you focus more on productivity and less on setup, then read on and give Visual Studio Codespaces a try.
+Remote-capable tools empower developers but usually add overhead of machine management. Environment configuration often complicates onboarding and context switching. Visual Studio Codespaces removes the barriers to rapid onboarding and context switching by enabling the simultaneous existence of many environments.
+
+Visual Studio Codespaces focuses on managed solutions that allow you to focus on productivity over setup. Developers that prefer to manage their own environments can explore [Visual Studio Code's Remote Development](https://code.visualstudio.com/docs/remote/remote-overview).
 
 ### Environments
 
-An environment is the "backend" half of Visual Studio Codespaces. It's where all of the compute associated with software development happens: compiling, debugging, restoring, etc. When you need to work on a new project, pick up a new task, or review a PR, you can simply spin up an Cloud-hosted environment, and Visual Studio Codespaces takes care of configuring it correctly. It automatically configures everything you need to work on your project: the source code, runtime, compiler, debugger, editor, custom dotfile configurations, relevant editor extensions and more.
+An environment is the "backend" half of Visual Studio Codespaces. It's where all of the compute associated with software development happens: compiling, debugging, restoring, etc. Creating a Codespace prepares everything you need to complete a task, review a PR, or start a new project. Codespaces configures the runtime, compiler, debugger, editor, custom dotfile configurations, editor extensions, and the source code required to work on a project.
 
-Cloud-hosted development environments come with all of the benefits of the cloud, powered by Azure:
+Cloud-hosted development environments provide the benefits associated with Azure:
 
-- They are fast to create and disposable. Create as many as you want (up to subscription limits), and throw them away when you're done. It's just that easy.
+- They are fast to create and disposable. Create as many as you need (up to subscription limits), and dispose of them when you are finished.
 - They are managed, reducing overall maintenance for you.
-- They have predictable pricing and you only pay for what you use, with built in auto-suspend to eliminate runoff costs.
-- Moving your development workload to the cloud frees up resources on your personal machine to email, chat, stream music, or even to simultaneously work on more projects.
+- They have predictable pricing and you only pay for what you use, with built in auto-suspend to eliminate runaway costs.
+- Moving your development workload to the cloud frees the limited resources on your personal machine.
 
-In addition to cloud-hosted environments, Visual Studio Codespaces also allows you to register and connect your own self-hosted environments. This allows you to use an environment you may have already perfectly tuned and experience some of the benefits of Visual Studio Codespaces, for free!
+In addition to cloud-hosted environments, Visual Studio Codespaces also allows you to register and connect your own self-hosted environments. This functionality allows you to use existing environments, and still experience some of the benefits of Visual Studio Codespaces.
 
 ### Editors and IDEs
 
-To go along with "backend" environments, Visual Studio Codespaces also supports three "frontend" editors: Visual Studio Code, Visual Studio 2019 (Private Preview) and our Visual Studio Code-based editor in the browser. Linux environments (Public Preview) are accessible from Visual Studio Code and our Visual Studio Code-based editor in the browser. Windows environments (Private Preview) are accessible from all three "frontend" editors. This allows you to use the tool best suited for the job at hand, and the ability do that job from anywhere, with any language or framework. Even better, the experience is super-charged with our support for extensions from [the Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+In addition to "backend" environments, Visual Studio Codespaces supports these "frontend" editors:
 
-### Customized for your project
+- Visual Studio Code
+- Visual Studio 2019 (Private Preview)
+- Visual Studio Code-based editor in the browser
 
-To maximize your productivity, every Visual Studio Codespaces environment is carefully crafted with the needs of a specific project or task in mind. This can either be accomplished automatically with our smart-configuration features, or you can finely tune your environments with JSON and Dockerfile configuration overrides. Either way, our dynamic environments are quick to create, reproducible and reliable.
+Linux environments (Public Preview) are accessible from Visual Studio Code and our Visual Studio Code-based editor in the browser. Windows environments (Private Preview) are accessible from all three "frontend" editors.
 
-Quickly created development environments enable easy onboarding for team members new to your project, and allows you to get started on new or exotic projects that would otherwise be cumbersome to try out. Additionally, reproducible development environments eliminate the "works on my machine" problem.
+This array of editor options allows developers to use their preferred tooling from anywhere. This experience is extended with support for extensions from [the Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
-### Personalized for you
+### Custom configuration
 
-Developers are highly opinionated about their editor and terminal configurations, and commonly spend countless hours customizing them. As a result, Visual Studio Codespaces not only allows for development environments customized per project, but also layers on individual personalizations so that our Cloud-hosted environments feel immediately natural to use no matter how you like to work.
+Visual Studio Codespaces is built to accommodate the widest variety of projects or tasks. Developers can start with smart-configuration features that provide common defaults, or finely-tune environments with custom JSON and Dockerfile configuration.
 
-Environments can be created with a user specific collection of custom dotfiles (e.g. `.bashrc`, `.gitconfig`, etc.), and we automatically roam your Git identity, themes and settings so every environment you create looks and feels the way you like, regardless of the project specific environment capabilities.
+Flexible configuration allows developers to rapidly onboard on projects with unique configuration and requirements that are difficult to apply on a local machine. Additionally, reproducible development environments eliminate "works on my machine" problems.
+
+### Personal configuration
+
+Preserving personal preferences is critical to make development on a cloud-hosted environment feel familiar and natural. Visual Studio Codespaces layers individualized configuration on top of environment configuration. Personal preferences and configuration for editors, terminal are supported by Visual Studio Codespaces.
+
+Environments can be created with a user specific collection of custom dotfiles (e.g. `.bashrc`, `.gitconfig`, etc.), and we automatically synchronize your Git identity, themes and settings so every environment you create looks and feels the way you like, regardless of the project specific environment capabilities.
 
 ## See also
 

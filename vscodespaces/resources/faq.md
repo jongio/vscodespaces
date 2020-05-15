@@ -17,9 +17,9 @@ Visual Studio Codespaces provides managed, on-demand development environments th
 
 ### How does Visual Studio Codespaces relate to Visual Studio Code Remote Development?
 
-Visual Studio Codespaces conceptually and technically extends the [Visual Studio Code Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). You can roughly think of Codespaces's cloud-hosted environments as "Remote Containers as a Service" and it's self-hosted environments as "Remote SSH as a Service".
+Visual Studio Codespaces conceptually and technically extends the [Visual Studio Code Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). You can think of Codespaces's cloud-hosted environments as "Remote Containers as a Service" and it's self-hosted environments as "Remote SSH as a Service".
 
-If you're the do-it-yourself type of person and like to manage your own machines, we'd love for you to use [Visual Studio Code's Remote Development](https://code.visualstudio.com/docs/remote/remote-overview). If you're looking for a managed solution that lets you focus more on productivity and less on setup, then give Visual Studio Codespaces a try.
+Visual Studio Codespaces optimizes for productivity by streamlining setup with default configurations. If you're interested in managing your own machines and configuration, see [Visual Studio Code's Remote Development](https://code.visualstudio.com/docs/remote/remote-overview).
 
 ### What is running on self-hosted machines to make them accessible?
 
@@ -27,9 +27,10 @@ The Visual Studio Live Share agent runs on self-hosted machines and listens for 
 
 ### How do I try Visual Studio Codespaces with Visual Studio 2019?
 
-Connecting to a Codespace from Visual Studio 2019 is available through a Private Preview while we scale up the service. You can sign up for the Private Preview by going to https://aka.ms/vsfutures-signup. [Read more](https://aka.ms/vs2019-codespaces-blog) about what Visual Studio 2019 support for Codespaces.
+Connecting to a Codespace from Visual Studio 2019 is available through a Private Preview while we scale up the service. You can sign up for the Private Preview by going to the [Visual Studio Codespaces for Visual Studio 2019 signup](https://aka.ms/vsfutures-signup). For more information about Visual Studion 2019 support, see the [Visual Studio Blog](https://aka.ms/vs2019-codespaces-blog).
 
 ### Can any Visual Studio client access any Codespace?
+
 We are actively expanding support for more features and workloads across the Visual Studio clients. Not all clients have been upgraded to support all Codespaces. Here is a summary of the Visual Studio clients and the Codespaces they can support.
 
 |                       | Codespace (Windows) | Codespace (Linux) |

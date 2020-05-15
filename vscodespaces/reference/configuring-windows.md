@@ -22,7 +22,7 @@ During the private preview Windows instance types for Codespaces will have limit
 
  More information how to use this properties can be found in the [Configuring Codespaces](configuring#codespaces-configuration-reference) documentation.
 
- The Windows instance types come with a range of already configuring components as listed below. If further customizations are needed you can use the Visual Studio Terminal, which is running PowerShell elevated under the local administrator account. To learn more about the Visual Studio terminal, see the [Visual Studio Terminal announcement blog](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/).
+ The Windows instance types come with a range of already configured components, as listed below. If further customizations are needed you can use the Visual Studio Terminal, which is running PowerShell elevated under the local administrator account. To learn more about the Visual Studio terminal, see the [Visual Studio Terminal announcement blog](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/).
 
 ## Installed software
 
@@ -45,16 +45,16 @@ The table below lists the applications and features available in all Windows Cod
 | NPM                                         | npm        | 6.14               |
 | Python                                      | python     | 3.7.7              |
 | VC Package Manager                          | vcpkg      | 2020.02            |
-| Windows SDK                                 | N/A        | 10..0.18362        |
+| Windows SDK                                 | N/A        | 10.0.18362         |
 
-The list above is not exhaustive, and many other tools are included as part of Visual Studio (e.g. IISExpress).
+The list above is not exhaustive and excludes many tools that Visual Studio installs (e.g. IISExpress). A component may also have a different minor or patch version than the one stated above.
 
 ## Microsoft SQL Server
 
-Microsoft SQL Server 2019 Developer Edition is available and running as a local service (SQLServer) in Windows Environments. The current user, which your app and the VS terminal run as, have SQL administrator rights to the SQL server. To administer the server you will need to use the PowerShell terminal available in Visual Studio or other command line tools such as `dotnet-ef`. Currently SQL Server Management Studio and other remote administration tools are not available.
+Microsoft SQL Server 2019 Developer Edition is available and running as a local service (SQLServer) in the Windows Codespace environment. The current user, which your app and the Visual Studio Terminal run as, has SQL administrator rights to the SQL server. To administer the server you will need to use PowerShell in the Visual Studio Terminal or other command line tools such as `dotnet-ef`. Currently SQL Server Management Studio and other remote administration tools are not available.
 
 > [!NOTE]
-> SQL Server Express Edition (localdb) is also available in all Windows environments.
+> SQL Server Express Edition (localdb) is also available in all Windows Codespace environments.
 
 ### Example connection string
 
@@ -66,15 +66,15 @@ The below is an example of a connection string to connect to the local MS SQL se
 
 ## Docker desktop
 
-Whole Docker Desktop is installed in all Windows please note, the docker tools for Visual Studio are currently not available in Codespaces.
+Docker desktop is installed in all Windows Codespace environment. However, the docker tools for Visual Studio are currently not available in Visual Studio Codespaces.
 
 ## Azure CLI
 
-The Azure CLI is installed in all Windows environments and is available on path as `az`.
+The Azure CLI is installed in all Windows Codespace environments and is available on path as `az`.
 
 ### Using Azure resources
 
-If you are using an Azure Active Directory (AAD) identity to authenticate your application against Azure resources, you will need to use first login to Azure from the Visual Studio terminal. To do this you will need to use the Azure CLI login command with the device login flow (as shown in the example below). Once logged in your application and terminal session should be able to use that identity.
+If you are using an Azure Active Directory (AAD) identity to authenticate your application against Azure resources, you will need to use first login to Azure from the Visual Studio terminal. To do this use the Azure CLI login command with the device login flow (as shown in the example below). Once logged in your application and terminal session should be able to use that identity.
 
 ```powershell
 > az login --use-device-code

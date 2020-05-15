@@ -4,7 +4,7 @@ ms.author: andster
 ms.service: visual-studio-online
 title: Configuring Windows Instance Types in Codespaces
 ms.topic: overview
-ms.date: 05/11/2020
+ms.date: 05/13/2020
 ---
 
 # Configuring Windows Codespaces
@@ -12,22 +12,19 @@ ms.date: 05/11/2020
 >[!IMPORTANT]
 > This document refers to capabilities in the private preview of Visual Studio environments for Codespaces. The Windows instance type and Visual Studio capabilities aren't publicly available and are only available in a private preview. If you're interested in taking part in the preview we'd love for you to [sign up for the private preview of Visual Studio for Codespaces](https://aka.ms/vsfutures-signup).
 
-> [!NOTE]
-> We would love to hear you feedback on the customizations (such as applications, features and settings) that you need to be successful using a Windows Codespace environment. If you would like to provide feedback and take part in future customer research please complete this [survey]( https://www.research.net/r/WXGB6N5).
-
-This document details the capabilities of Windows based Codespace environment for Visual Studio 2019. To get started with the Visual Studio Codespaces take a look at the [Visual Studio Codespaces quick start](../quickstarts/vs.md) .
+This document details the capabilities of Windows based Codespace environment for Visual Studio 2019. To get started with the Visual Studio Codespaces take a look at the [Visual Studio Codespaces quick start](../quickstarts/vs.md). We would love to hear you feedback on the customizations (such as applications, features and settings) that you need to be successful using a Windows Codespace environment. If you would like to provide feedback and take part in future customer research please complete this [survey]( https://www.research.net/r/WXGB6N5).
 
 During the private preview Windows instance types for Codespaces will have limited support for customizations via `devcontainer.json`. Specifically the following customizations from `devcontainer.json` are supported:
 
- *    VS Code and Web Editor extensions via `extensions`
- *    VS Code and Web Editor settings via `settings`
- *    Port forwarding via `forwardPorts` and `appPort`
+- VS Code and Web Editor extensions via `extensions`
+- VS Code and Web Editor settings via `settings`
+- Port forwarding via `forwardPorts` and `appPort`
 
  More information how to use this properties can be found in the [Configuring Codespaces](configuring#codespaces-configuration-reference) documentation.
 
- In lieu of customization the Windows instance types come with a range of already configuring components as listed below. If further customizations are needed you can use the Visual Studio Terminal which is running PowerShell elevated under the local administrator account. To learn more about the Visual Studio terminal please read this [blog](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/).
+ The Windows instance types come with a range of already configuring components as listed below. If further customizations are needed you can use the Visual Studio Terminal, which is running PowerShell elevated under the local administrator account. To learn more about the Visual Studio terminal, see the [Visual Studio Terminal announcement blog](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/).
 
-## Installed Software
+## Installed software
 
 The table below lists the applications and features available in all Windows Codespace environments.
 
@@ -54,18 +51,20 @@ The list above is not exhaustive, and many other tools are included as part of V
 
 ## Microsoft SQL Server
 
-Microsoft SQL Server 2019 Developer Edition is available and running as a local service (SQLServer) in Windows Environments. The currently logged in user, which your app and the VS terminal run as, have SQL administrator rights to the SQL server. To administer the server you will need to use the PowerShell terminal available in Visual Studio or other command line tools such as `dotnet-ef`. Currently SQL Server Management Studio and other remote administration tools are not available.
-Note: SQL Server Express Edition (localdb) is also available in all Windows environments.
+Microsoft SQL Server 2019 Developer Edition is available and running as a local service (SQLServer) in Windows Environments. The current user, which your app and the VS terminal run as, have SQL administrator rights to the SQL server. To administer the server you will need to use the PowerShell terminal available in Visual Studio or other command line tools such as `dotnet-ef`. Currently SQL Server Management Studio and other remote administration tools are not available.
 
-### Example Connection String
+> [!NOTE]
+> SQL Server Express Edition (localdb) is also available in all Windows environments.
+
+### Example connection string
 
 The below is an example of a connection string to connect to the local MS SQL server.
 
-```dotnet
+```csharp
 "Server=localhost;Integrated Security=true;”
 ```
 
-## Docker Desktop
+## Docker desktop
 
 Whole Docker Desktop is installed in all Windows please note, the docker tools for Visual Studio are currently not available in Codespaces.
 
@@ -73,11 +72,11 @@ Whole Docker Desktop is installed in all Windows please note, the docker tools f
 
 The Azure CLI is installed in all Windows environments and is available on path as `az`.
 
-### Using Azure Resources
+### Using Azure resources
 
 If you are using an Azure Active Directory (AAD) identity to authenticate your application against Azure resources, you will need to use first login to Azure from the Visual Studio terminal. To do this you will need to use the Azure CLI login command with the device login flow (as shown in the example below). Once logged in your application and terminal session should be able to use that identity.
 
-```PowerShell
+```powershell
 > az login --use-device-code
 ```
 

@@ -61,7 +61,7 @@ Microsoft SQL Server 2019 Developer Edition is available and running as a local 
 The below is an example of a connection string to connect to the local MS SQL server.
 
 ```csharp
-"Server=localhost;Integrated Security=true;”
+"Server=localhost;Integrated Security=true;"
 ```
 
 ## Docker desktop

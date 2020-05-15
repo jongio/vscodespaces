@@ -84,4 +84,8 @@ To delete the newly created environment, click the context menu on the **My Quic
 
 ## Next steps
 
-This article covered a typical end-to-end use of Codespaces. For more information, see [Codespaces Overview](../overview/what-is-vsonline.md) or [Codespaces for VS Code how-to](../how-to/vscode.md).
+This article covered a typical end-to-end use of Codespaces. For more information, see:
+
+- [What is Codespaces?](../overview/what-is-vsonline.md)
+- [Codespaces with Visual Studio 2019 quickstart](../quickstarts/vs.md)
+- [Codespaces with VS Code quickstart](../quickstarts/vscode.md)

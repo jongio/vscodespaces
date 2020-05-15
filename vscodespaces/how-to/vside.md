@@ -21,15 +21,16 @@ Access to the Visual Studio 2019 Private Preview is also required to complete th
 
 If you don't have [Visual Studio 2019 Preview](https://aka.ms/vspreview) installed already, you can [download it from visualstudio.microsoft.com](https://aka.ms/vspreview).
 
+Check the **ASP.NET and web development**, **Desktop development with C++**, or both Workloads in the Installer. Then click **Install**.
+
 Once Visual Studio 2019 Preview is installed, follow these steps to set up Codespaces:
 
-1. Open the Visual Studio installer
-1. Check the **ASP.NET and web development**, **Desktop development with C++**, or both Workloads in the Installer. Then click **Install**.
 1. Launch Visual Studio 2019 from the Start menu. If you just installed Visual Studio for the first time you'll see a welcome screen where you can sign in with any Microsoft identity.
 1. On the Visual Studio Start Window click **Continue without code**.
 1. Open the **Tools** menu and click **Options...**.
 1. Search for **Preview features**.
-1. Check the **Connect to Visual Studio Codespaces(private preview only)** checkbox, then click **Ok** and restart Visual Studio.
+1. Check the **Connect to Visual Studio Codespaces(private preview only)** checkbox, then click **Ok**
+1. Restart Visual Studio.
 
 ## Sign in
 

@@ -40,6 +40,12 @@ We are actively expanding support for more features and workloads across the Vis
 | Visual Studio 2019    |         ✔         |        ❌         |
 | Visual Studio for Mac |         ❌         |        ❌         |
 
+### I'm building a service for developers. Can I integrate Visual Studio Codespaces into my own product's experience?
+
+If you're an organization building a service and you want to integrate Visual Studio Codespaces into your experience, we'd like to hear from you. We have an embedded offering in private preview that enables you to use your service's own independent authentication, authorization, and billing systems, while integrating Visual Studio Codespaces directly into your product experience. 
+
+If you're interested, and would like to find out more, please [send us an inquiry](mailto:vscs-inquiry@microsoft.com).
+
 ## Security questions
 
 ### What do you mean by "repositories you trust"?

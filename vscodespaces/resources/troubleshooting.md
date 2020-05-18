@@ -52,6 +52,7 @@ Due to browser restrictions, you may not get the full set of features in Safari 
 - Unable to customize keybindings or context menu entries for Copy and Paste. Default keybindings to Copy/Paste in Editor, Terminal and all native input elements will still work.
 - Some fonts are not allowed as Safari disallows some web fonts to prevent finger printing [#83294](https://github.com/microsoft/vscode/issues/83294), for example Fira Code.
 - No Pinch to Zoom customization.
+- "Open documentation" button in the Preferences Sync dialog opens a blank page. This is currently tracked by Issue #[473](https://github.com/MicrosoftDocs/vsonline/issues/473). See [Setting Sync documentation](https://code.visualstudio.com/docs/editor/settings-sync).
 
 ### Firefox Known Issues:
 - Unable to customize keybindings. Basic keyboard shortcuts like **Ctrl/Cmd+N** to create new file and **Ctrl/Cmd+W** to close current file don't work. 

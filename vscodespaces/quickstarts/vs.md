@@ -89,4 +89,4 @@ This article covered a typical end-to-end use of Codespaces. For more informatio
 
 - [What is Codespaces?](../overview/what-is-vsonline.md)
 - [Codespaces with VS Code quickstart](../quickstarts/vscode.md)
-- [Codespaces with the browser quickstart](../quickstart/browser.md)
+- [Codespaces with the browser quickstart](../quickstarts/browser.md)

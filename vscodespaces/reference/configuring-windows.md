@@ -20,7 +20,7 @@ During the private preview Windows instance types for Codespaces will have limit
 - VS Code and Web Editor settings via `settings`
 - Port forwarding via `forwardPorts` and `appPort`
 
- More information how to use this properties can be found in the [Configuring Codespaces](configuring#codespaces-configuration-reference) documentation.
+ More information how to use these properties can be found in the [Configuring Codespaces](configuring.md#codespaces-configuration-reference) documentation.
 
  The Windows instance types come with a range of already configured components, as listed below. If further customizations are needed you can use the Visual Studio Terminal, which is running PowerShell elevated under the local administrator account. To learn more about the Visual Studio terminal, see the [Visual Studio Terminal announcement blog](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/).
 

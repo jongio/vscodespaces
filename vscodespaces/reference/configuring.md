@@ -4,10 +4,13 @@ ms.author: nimolnar
 ms.service: visual-studio-online
 title: Configure Codespace Environments
 ms.topic: overview
-ms.date: 05/06/2020
+ms.date: 05/13/2020
 ---
 
 # Configure Codespace Environments
+
+> [!NOTE]
+> This document applies to Codespaces environments running on Linux instance types, Windows instance types cannot currently be customized. You can find more about the capabilities of the Windows instance types in document on [Windows customizations](configuring-windows.md).
 
 Codespace [environments](../overview/what-is-vsonline.md#environments) are fully customizable on a per project basis. Customization is accomplished by including a **devcontainer.json** file in the project's repository.  We currently support [Dockerfiles](#dockerfile-support) and [Docker Compose](#docker-compose-support) as part of environment provisioning.
 
@@ -98,7 +101,6 @@ The following tables list the configuration properties supported by Codespaces. 
 | `forwardPorts`| integer or array | A port or array of ports that should be automatically forwarded locally when the environment is running. By default, no ports are forwarded. This is the preferred method of port forwarding. |
 | `appPort` | integer or array | A port or array of ports that should be automatically forwarded locally when the environment is running. By default, no ports are forwarded. |
 | `postCreateCommand` | string or array | A command string or list of command arguments to run after the environment is created. Use `&&` in a string to execute multiple commands. For example, `"yarn install"`, `["yarn", "install"]`, or `"apt-get update && apt-get install -y git"`. It fires after your source code has been cloned, so you can also run shell scripts from your source repo. For example: `bash .devcontainer/install-dev-tools.sh`. By default, `oryx build` is run. To disable [Oryx](https://github.com/microsoft/Oryx) behavior, set the value to empty string (`""`) or empty array (`[]`). |
-
 
 ### Docker properties
 

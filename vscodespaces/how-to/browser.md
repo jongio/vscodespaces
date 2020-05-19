@@ -125,7 +125,7 @@ The actively connected environment cannot be deleted from within Codespaces's br
 ![Delete in Visual Studio Codespaces](../images/delete-env-vso-01.png)
 
 > [!NOTE]
-> If you are already connected to an environment in Codespaces's browser based editor, you can delete other environments using any of the techniques covered in the [Visual Studio Code how-to](vscode.md#delete-a-cloud-hosted-environment) document.
+> If you are already connected to an environment in Codespaces's browser based editor, you can delete other environments using the techniques covered in the [Visual Studio Code how-to](vscode.md#delete-a-codespace) document.
 
 ## Using the integrated terminal
 

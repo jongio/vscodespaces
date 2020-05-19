@@ -17,6 +17,8 @@
   items:
   - name: "Use Visual Studio Codespaces in the Browser"
     href: how-to/browser.md
+  - name: "Use Visual Studio Codespaces in Visual Studio 2019"
+    href: how-to/vside.md
   - name: "Use Visual Studio Codespaces in Visual Studio Code"
     href: how-to/vscode.md
   - name: "Register self-hosted environment in VS Code"

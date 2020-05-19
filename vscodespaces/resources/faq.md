@@ -4,22 +4,47 @@ ms.author: nimolnar
 ms.service: visual-studio-online
 title: Visual Studio Codespaces Frequently Asked Questions
 ms.topic: overview
-ms.date: 09/20/2019
+ms.date: 05/13/2020
 ---
 
 # FAQ
 
 ## General questions
 
+### What is Visual Studio Codespaces?
+
+Visual Studio Codespaces provides managed, on-demand development environments that can be used for long-term development projects or short-term tasks like pull requests. You can work with environments using Visual Studio Code, Visual Studio 2019 ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or the included browser-based editor.
+
 ### How does Visual Studio Codespaces relate to Visual Studio Code Remote Development?
 
-Visual Studio Codespaces conceptually and technically extends the [Visual Studio Code Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). You can roughly think of Codespaces's cloud-hosted environments as "Remote Containers as a Service" and it's self-hosted environments as "Remote SSH as a Service".
+Visual Studio Codespaces conceptually and technically extends the [Visual Studio Code Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). You can think of Codespaces's cloud-hosted environments as "Remote Containers as a Service" and it's self-hosted environments as "Remote SSH as a Service".
 
-If you're the do-it-yourself type of person and like to manage your own machines, we'd love for you to use [Visual Studio Code's Remote Development](https://code.visualstudio.com/docs/remote/remote-overview). If you're looking for a managed solution that lets you focus more on productivity and less on setup, then give Visual Studio Codespaces a try.
+Visual Studio Codespaces optimizes for productivity by streamlining setup with default configurations. If you're interested in managing your own machines and configuration, see [Visual Studio Code's Remote Development](https://code.visualstudio.com/docs/remote/remote-overview).
 
 ### What is running on self-hosted machines to make them accessible?
 
 The Visual Studio Live Share agent runs on self-hosted machines and listens for connections.
+
+### How do I try Visual Studio Codespaces with Visual Studio 2019?
+
+Connecting to a Codespace from Visual Studio 2019 is available through a Private Preview while we scale up the service. You can sign up for the Private Preview by going to the [Visual Studio Codespaces for Visual Studio 2019 signup](https://aka.ms/vsfutures-signup). For more information about Visual Studion 2019 support, see the [Visual Studio Blog](https://aka.ms/vs2019-codespaces-blog).
+
+### Can any Visual Studio client access any Codespace?
+
+We are actively expanding support for more features and workloads across the Visual Studio clients. Not all clients have been upgraded to support all Codespaces. Here is a summary of the Visual Studio clients and the Codespaces they can support.
+
+|                       | Codespace (Windows) | Codespace (Linux) |
+|-----------------------|:-------------------:|:-----------------:|
+| Visual Studio code    |         ✔         |        ✔         |
+| Browser based editor  |         ✔         |        ✔         |
+| Visual Studio 2019    |         ✔         |        ❌         |
+| Visual Studio for Mac |         ❌         |        ❌         |
+
+### I'm building a service for developers. Can I integrate Visual Studio Codespaces into my own product's experience?
+
+If you're an organization building a service and you want to integrate Visual Studio Codespaces into your experience, we'd like to hear from you. We have an embedded offering in private preview that enables you to use your service's own independent authentication, authorization, and billing systems, while integrating Visual Studio Codespaces directly into your product experience. 
+
+If you're interested, and would like to find out more, please [send us an inquiry](mailto:vscs-inquiry@microsoft.com).
 
 ## Security questions
 
@@ -64,3 +89,9 @@ Codespaces, by default, allows users to create 3 environments per plan, and 2 pl
 ### Where can I report an issue with my billing?
 
 Billing support is available online at [https://aka.ms/vso-billing-issues](https://aka.ms/vso-billing-issues).
+
+## Visual Studio questions
+
+### What kinds of apps and projects are supported in Visual Studio and Visual Studio Codespace?
+
+Visual Studio currently supports building .NET Core and C++ applications while connected to a Codespace. In .NET Core you an create Console, Library, and ASP.NET applications. For C++ both CMake and .VCXProj based projects are supported for build Console apps and libraries. We are adding support for many more projects so check back again soon.

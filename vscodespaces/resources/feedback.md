@@ -16,6 +16,10 @@ Feedback for Visual Studio Codespaces is collected in [our documentation reposit
 - **Twitter**: Interact with us on Twitter! Just be sure to use the [#vsonline](https://twitter.com/search?q=%23vsonline&src=typed_query&f=live) hashtag.
 - **Billing**: For support with billing inquiries, see the [Azure Help + support blade](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 
+Issues in Visual Studio 2019 using Codespaces are collected on [Visual Studio's Developer Community site.](https://developercommunity.visualstudio.com/) Use the feedback button in Visual Studio to include logs and other helpful diagnostics information. 
+
+![Visual Studio 2019 Help & Feedback](../images/vs2019-feedback.png)
+
 Additionally, look for the **Help and Feedback** panel in the **Remote Explorer** for a quick and easy way to interact with our feedback channels.
 
 ![Visual Studio Codespaces Help & Feedback](../images/feedback.png)

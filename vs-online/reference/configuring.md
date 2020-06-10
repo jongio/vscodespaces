@@ -30,7 +30,7 @@ The **devcontainer.json** file can be placed in one of two places in a repositor
 > [!WARNING]
 > **devcontainer.json** files are also used to support Visual Studio Code Remote Development, and have additional properties not covered in this document. These additional properties are safe to add to the file, but will be ignored by Codespaces. For more information, see [devcontainer.json reference](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference) on code.visualstudio.com.
 
-A general container will be provided when a **devcontainer.json** file isn't included, or when the `image` or `dockerFile` properties are not specified. The general container has the following tools and SDKs:
+A container with a default image will be provided when a **devcontainer.json** file isn't included, or when the `image`,  `dockerFile` or `docker-compose` properties are not specified. The default image has the following tools and SDKs:
 
 - Python
 - Node.js
@@ -50,6 +50,44 @@ A general container will be provided when a **devcontainer.json** file isn't inc
 > [!NOTE]
 > The versions of Python, Node.js, .NET Core, and PHP in the container are based on the latest [Oryx](https://github.com/Microsoft/Oryx) image.
 
+## Container features
+
+Our service sets the following features by default in environments created without any special configuration in a **devcontainer.json** file. This features are optional when creating environments through any of the configurations described later in this article.
+
+### Host Network mode
+
+Containers are created by default with `--network host` in the case of the default image, custom image, or custom Dockerfile scenarios. This allows the user to create side by side containers that would have network access to the main container.
+
+If a `--network` property is included in `runArgs` as part of a **devcontainer.json** file it will override this default setting.
+
+For docker-compose scenarios the default setting is not applied and should be specified in the docker-compose file.
+
+### Docker socket mount
+
+Our service implements by default the DoD (Docker-outside-Docker) model.
+
+In default image scenarios the docker socket is mounted to the container, allowing the user to control docker and create side by side containers.
+
+For DiD (Docker in Docker) you have to create a devcontainer.json file that references a docker image or Dockerfile with the necessary features like the `docker` image. See: [Docker](https://hub.docker.com/_/docker/)
+
+### Temporary SSD mount
+
+For IO intensive operations the managed disk that safeguards the user information might not be fast enough.
+
+For this reason we mount the local VM Premium SSD to the `/tmp` folder inside the container. Any operation performed in this folder will be local and get much faster IO performance (The IOPS depend on the SKU the environment is currently running in.)
+
+This mount is applied by default in possible configuration scenarios.
+
+It can be disabled applying the following to the **devcontainer.json** file:
+
+  ```json
+    "codespaces": {
+      "shouldEnableTmpMount" : false},
+  ```
+
+> [!WARNING]
+> The contents of this folder will be lost when the environment is suspended and resumed.
+
 ## Container requirements
 
 Containers should be able to fullfil requirements of both [VSCode Remote Server](https://code.visualstudio.com/docs/remote/containers#_system-requirements) and [Live Share](/visualstudio/liveshare/reference/linux#install-linux-prerequisites).
@@ -57,6 +95,12 @@ Containers should be able to fullfil requirements of both [VSCode Remote Server]
 ## Container provisioning
 
 Start provisioning a container by including a **devcontainer.json** file in the project repository. A terminal containing the details of the build process will appear, and can be used to aid in diagnosing creation failures.
+
+### Image support
+
+Add the `image` argument and value to a **devcontainer.json** file in the project repository. The image must be in a public repository.
+
+A possible workflow to speed up environment creations would be to create this image as part of a Continuous Integration process and reference a particular tag here.
 
 ### Dockerfile support
 
@@ -81,8 +125,22 @@ We currently support multiple docker-compose files for provisioning a Codespace.
 
 Our general container comes with Docker installed and we automatically create a Docker group. This configuration allows you to access Docker without `sudo`.
 
-If you'd like to access Docker within a custom container, you'll need to create a `docker` group inside your container with id 800, and add your container user to that group. For example:
-  
+If you'd like to access Docker within a custom container you can add the docker socket mount as part of a run argument or the mounts property as follows:
+
+  ```json
+    "runArgs": [
+    "--v", "/var/run/docker.sock:/var/run/docker.sock"],
+  ```
+
+Or
+
+  ```json
+    "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"],
+  ```
+
+If you'd like to run docker commands without sudo you'll need to create a `docker` group inside your container with id 800, and add your container user to that group. For example:
+
   ```bash
   groupadd -g 800 docker
   usermod -a -G docker USER
@@ -107,16 +165,24 @@ The following tables list the configuration properties supported by Codespaces. 
 | Property | Type | Description |
 |----------|------|-------------|
 | `image` | string | The name of an image in a public container registry (e.g. [DockerHub](https://hub.docker.com), [Azure Container Registry](https://azure.microsoft.com/services/container-registry/), [GitHub](https://github.com/features/package-registry)) that Codespaces should use to create the environment. |
-| `dockerFile` | string | The location of a [Dockerfile](https://docs.docker.com/engine/reference/builder/) that Codespaces will `docker build` and use the resulting Docker image for the environment. The path is relative to the **devcontainer.json** file. You can find a number of sample Dockerfiles for different configurations in the [vscode-dev-containers repository](https://github.com/Microsoft/vscode-dev-containers/tree/master/containers). |
+| `dockerFile` | string | The location of a [Dockerfile](https://docs.docker.com/engine/reference/builder/) that Codespaces will `docker build` and use the resulting Docker image for the environment. The path is relative to the **devcontainer.json** file. You can find a number of sample Dockerfiles for different configurations in the [vscode-dev-containers repository](https://github.com/Microsoft/vscode-dev-containers/tree/master/containers).
+| `dockerComposeFile` | string or array | A single or a list of docker-compose files that will be applied when executing docker-compose up. |
+| `service` | string | The name of the service declared inside the docker-compose file that the user wants to connect to. |
 | `context` | string | Path that the Codespaces `docker build` command should be run from, relative to **devcontainer.json**. For example, a value of `".."` would allow you to reference content in sibling directories. Defaults to `"."`. |
-| `runArgs` | string | Arguments to pass to docker when creating the container. Only `-e`, `-u`, `--cap-add=SYS_PTRACE` and `--security-opt seccomp=unconfined` are taken into account. |
-| `overrideCommand` | string | Tells VS Code whether it should run `/bin/sh -c "while sleep 1000; do :; done"` when starting the container, instead of the container's default command. This property defaults to true, since the container can shut down if the default command fails. It should be set to false if the default command must run for the container to function correctly. |
+| `runArgs` | string | Arguments to pass to docker when creating the container. Only `-e`, `-u`, `--network`, `--privileged`, `--cap-add=SYS_PTRACE`, `--security-opt seccomp=unconfined` and the docker socket bind mount are taken into account. |
+| `overrideCommand` | string | Tells VS Code whether it should run `/bin/sh -c "while sleep 1000; do :; done"` when starting the container instead of the container's default command. This property defaults to true, since the container can shut down if the default command fails. It should be set to false if the default command must run for the container to function correctly. |
 | `containerEnv` | object | A set of name-value pairs that sets or overrides environment variables for the container.  |
 | `remoteEnv` | object | A set of name-value pairs that sets or overrides environment variables for VS Code (or sub-processes like terminals), but not the whole container. Updates are applied when the environment is suspended and restarted, or after five minutes have passed after disconnecting. |
 | `containerUser` | string or array | The user that will be used when creating the container. If the property is undefined, it defaults to either root or the last USER instruction in the Dockerfile. |
 | `remoteUser` | string or array | Overrides the user that VS Code runs as in the container (along with sub-processes like terminals, tasks, or debugging). This property defaults to the `containerUser`. |
 | `build.args` | object | An object containing Docker image build arguments that should be passed when building a Dockerfile. Defaults to not set. For example: "build": { "args": { "MYARG": "MYVALUE" } } |
 | `build.target` | string | An string that specifies a Docker image build target that should be passed when building a Dockerfile Defaults to not set. For example: "build": { "target": "development" } |
+
+### Codespaces properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `codespaces.shouldEnableTmpMount` | boolean | Defaults to `true`. Setting `false` disables mounting the local SSD in the containers `/tmp` folder. |
 
 ## Codespaces configuration sample
 

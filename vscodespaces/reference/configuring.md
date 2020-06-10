@@ -52,7 +52,7 @@ A container with a default image will be provided when a **devcontainer.json** f
 
 ## Container features
 
-Our service sets the following features by default in environments created without any special configuration in a **devcontainer.json** file. This features are optional when creating environments through any of the configurations described later in this article.
+Our service sets the following features by default in environments created without any special configuration in a **devcontainer.json** file. These features can also be manually specified when creating environments through any of the advanced configurations described later in this article.
 
 ### Host Network mode
 

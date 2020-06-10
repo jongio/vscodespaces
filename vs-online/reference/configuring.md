@@ -72,7 +72,7 @@ For DiD (Docker in Docker) you have to create a devcontainer.json file that refe
 
 ### Temporary SSD mount
 
-For IO intensive operations the managed disk that safeguards the user information might not be fast enough.
+For I/O intensive operations, the persistent storage that safeguards the user information might not be fast enough.
 
 For this reason we mount the local VM Premium SSD to the `/tmp` folder inside the container. Any operation performed in this folder will be local and get much faster IO performance (The IOPS depend on the SKU the environment is currently running in.)
 

@@ -100,7 +100,7 @@ Start provisioning a container by including a **devcontainer.json** file in the 
 
 Add the `image` argument and value to a **devcontainer.json** file in the project repository. The image must be in a public repository.
 
-A possible workflow to speed up environment creations would be to create this image as part of a Continuous Integration process and reference a particular tag here.
+A possible workflow to speed up environment creations would be to create this image as part of a Continuous Integration process and reference a particular tag here. Downloading a pre-built image is often faster than building a `Dockerfile` on-the-fly.
 
 ### Dockerfile support
 

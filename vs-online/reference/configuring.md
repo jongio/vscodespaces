@@ -182,7 +182,7 @@ The following tables list the configuration properties supported by Codespaces. 
 
 | Property | Type | Description |
 |----------|------|-------------|
-| `codespaces.shouldEnableTmpMount` | boolean | Defaults to `true`. Setting `false` disables mounting the local SSD in the containers `/tmp` folder. |
+| `codespaces.shouldEnableTmpMount` | boolean | Defaults to `true`. Setting `false` disables mounting the local SSD in the container's `/tmp` folder. |
 
 ## Codespaces configuration sample
 

@@ -90,7 +90,7 @@ It can be disabled applying the following to the **devcontainer.json** file:
 
 ## Container requirements
 
-Containers should be able to fullfil requirements of both [VSCode Remote Server](https://code.visualstudio.com/docs/remote/containers#_system-requirements) and [Live Share](/visualstudio/liveshare/reference/linux#install-linux-prerequisites).
+Containers should be able to fulfill requirements of both [VSCode Remote Server](https://code.visualstudio.com/docs/remote/containers#_system-requirements) and [Live Share](/visualstudio/liveshare/reference/linux#install-linux-prerequisites).
 
 ## Container provisioning
 

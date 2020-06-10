@@ -76,7 +76,7 @@ For I/O intensive operations, the persistent storage that safeguards the user in
 
 For this reason we mount a local SSD drive to the `/tmp` folder inside the container. Any operation performed in this folder will be not be persisted across suspend/resume sessions, but it will get much faster I/O performance. The exact IOPS for the `/tmp` directory depends on the Codespace SKU.
 
-This mount is applied by default in possible configuration scenarios.
+This mount is applied by default in all configuration scenarios.
 
 It can be disabled applying the following to the **devcontainer.json** file:
 

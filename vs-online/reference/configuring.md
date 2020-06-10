@@ -74,7 +74,7 @@ For DiD (Docker in Docker) you have to create a devcontainer.json file that refe
 
 For I/O intensive operations, the persistent storage that safeguards the user information might not be fast enough.
 
-For this reason we mount the local VM Premium SSD to the `/tmp` folder inside the container. Any operation performed in this folder will be local and get much faster IO performance (The IOPS depend on the SKU the environment is currently running in.)
+For this reason we mount a local SSD drive to the `/tmp` folder inside the container. Any operation performed in this folder will be not be persisted across suspend/resume sessions, but it will get much faster I/O performance. The exact IOPS for the `/tmp` directory depends on the Codespace SKU.
 
 This mount is applied by default in possible configuration scenarios.
 

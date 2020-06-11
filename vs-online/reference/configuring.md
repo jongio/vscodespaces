@@ -76,7 +76,8 @@ It can be disabled applying the following to the **devcontainer.json** file:
 
   ```json
     "codespaces": {
-      "shouldEnableTmpMount" : false},
+      "shouldEnableTmpMount" : false
+    },
   ```
 
 > [!WARNING]

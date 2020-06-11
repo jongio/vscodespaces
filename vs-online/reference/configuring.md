@@ -56,17 +56,13 @@ Our service sets the following features by default in environments created witho
 
 ### Host Network mode
 
-Containers are created by default with `--network host` in the case of the default image, custom image, or custom Dockerfile scenarios. This allows the user to create side by side containers that would have network access to the main container.
+Containers are created by default with `--network host` in the case of the default image, custom image, or custom Dockerfile scenarios. This allows the user to create side by side containers that would have network access to the main container. For docker-compose scenarios the default setting is not applied and should be specified in the docker-compose file.
 
 If a `--network` property is included in `runArgs` as part of a **devcontainer.json** file it will override this default setting.
 
-For docker-compose scenarios the default setting is not applied and should be specified in the docker-compose file.
-
 ### Docker socket mount
 
-Our service implements by default the DoD (Docker-outside-Docker) model.
-
-In default image scenarios the docker socket is mounted to the container, allowing the user to control docker and create side by side containers.
+Our service implements by default the DoD (Docker-outside-Docker) model. In default image scenarios the docker socket is mounted to the container, allowing the user to control docker and create side by side containers.
 
 For DiD (Docker in Docker) you have to create a devcontainer.json file that references a docker image or Dockerfile with the necessary features like the `docker` image. See: [Docker](https://hub.docker.com/_/docker/)
 
@@ -74,9 +70,7 @@ For DiD (Docker in Docker) you have to create a devcontainer.json file that refe
 
 For I/O intensive operations, the persistent storage that safeguards the user information might not be fast enough.
 
-For this reason we mount a local SSD drive to the `/tmp` folder inside the container. Any operation performed in this folder will be not be persisted across suspend/resume sessions, but it will get much faster I/O performance. The exact IOPS for the `/tmp` directory depends on the Codespace SKU.
-
-This mount is applied by default in all configuration scenarios.
+For this reason we mount a local SSD drive to the `/tmp` folder inside the container. Any operation performed in this folder will be not be persisted across suspend/resume sessions, but it will get much faster I/O performance. The exact IOPS for the `/tmp` directory depends on the Codespace SKU. This mount is applied by default in all configuration scenarios.
 
 It can be disabled applying the following to the **devcontainer.json** file:
 

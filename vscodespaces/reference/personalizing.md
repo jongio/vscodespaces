@@ -50,7 +50,7 @@ Once the **Dotfiles Repository** is configured in VS Code, any environments crea
 
 ## Enable personalization settings sync in Visual Studio Code
 
-> ![NOTE]
+> [!NOTE]
 > Settings Sync is currently in Preview and is only available in Visual Studio Code Insiders.
 
 [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync) allows you to sync a variety of settings, such as theme, keyboard shortcuts, extensions, and more across your various Visual Studio Code instances to give you tooling consistency whether you're working from a local Visual Studio Code instance or the browser-based editor.

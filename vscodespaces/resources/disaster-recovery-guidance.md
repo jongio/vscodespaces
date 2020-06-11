@@ -2,99 +2,36 @@
 author: nikmd23
 ms.author: nimolnar
 ms.service: visual-studio-online
-title: Visual Studio Codespaces Frequently Asked Questions
+title: Disaster recovery scenarios
 ms.topic: overview
-ms.date: 05/29/2020
+ms.date: 05/10/2020
 ---
 
-# FAQ
+# Disaster Recovery Guidance
 
-## General questions
+At Microsoft, we work hard to make sure that our services are always available to you when you need them. Forces beyond our control sometimes impact us in ways that cause unplanned service disruptions.
 
-### What is Visual Studio Codespaces?
+This article covers a true disaster recovery scenario, when a whole region experiences an outage due to major natural disaster or widespread service interruption. These are rare occurrences, but you must prepare for the possibility that there is an outage of an entire region. If an entire region experiences a service disruption, the locally redundant copies of your data would temporarily be unavailable.
 
-Visual Studio Codespaces provides managed, on-demand development environments that can be used for long-term development projects or short-term tasks like pull requests. You can work with environments using Visual Studio Code, Visual Studio 2019 ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or the included browser-based editor.
+To help you handle these rare occurrences, we provide the following guidance for Visual Studio Codespaces in the case of a service disruption of the entire region where your Codespace is deployed.
 
-### How does Visual Studio Codespaces relate to Visual Studio Code Remote Development?
+## Option 1: Create a new Codespace in another region
 
-Visual Studio Codespaces conceptually and technically extends the [Visual Studio Code Remote Development extensions](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). You can think of Codespaces's cloud-hosted environments as "Remote Containers as a Service" and it's self-hosted environments as "Remote SSH as a Service".
+A key benefit of Visual Studio Codespaces is the ability to provision developer environments quickly, with all dependencies pre-configured, which enables developers to be more resilient to the loss of their workstation than they typically would be. Codespaces are not, however, intended to host any production service, and do not provide cross-region failover. Developers are encouraged to "push" their code frequently to remote source control repositories both as part of their regular workflow and to provide a backup in the case of a region-wide outage. In the case of such an event, a new workspace can be quickly provisioned in a new region from the same repository, with all of their changes as of their last "push".
 
-Visual Studio Codespaces optimizes for productivity by streamlining setup with default configurations. If you're interested in managing your own machines and configuration, see [Visual Studio Code's Remote Development](https://code.visualstudio.com/docs/remote/remote-overview).
+## Option 2: Wait for recovery
 
-### What is running on self-hosted machines to make them accessible?
+In this case, no action on your part is required. Know that we are working diligently to restore service availability. You can see the current service status on our [Visual Studio Services Status Dashboard](https://vsstatus.visualstudio.com/).
 
-The Visual Studio Live Share agent runs on self-hosted machines and listens for connections.
+Multiple Codespaces in different regions can be linked to the same repository, but in most cases it would be unnecessary to create warm/hot spares manually ahead of time, as environments are designed to be provisioned quickly, and having multiple would provide no extra data resiliency as the limiting factor would still be the most recent "push".
 
-### How do I try Visual Studio Codespaces with Visual Studio 2019?
+## Additional considerations for self-hosted Codespaces
 
-Connecting to a Codespace from Visual Studio 2019 is available through a Private Preview while we scale up the service. You can sign up for the Private Preview by going to the [Visual Studio Codespaces for Visual Studio 2019 signup](https://aka.ms/vsfutures-signup). For more information about Visual Studion 2019 support, see the [Visual Studio Blog](https://aka.ms/vs2019-codespaces-blog).
+Self-hosted Codespaces environments, which are not managed by the service, and may be highly customized, require additional planning:
 
-### Can any Visual Studio client access any Codespace?
+* Because self-hosted environments are accessed through a region-specific plan, they may become inaccessible in the event of a region-wide outage in the plan's region, regardless of the actual location of the environment. In the event of an outage, these environments can be re-registered as new self-hosted environments under a separate plan in a different Azure region.
 
-We are actively expanding support for more features and workloads across the Visual Studio clients. Not all clients have been upgraded to support all Codespaces. Here is a summary of the Visual Studio clients and the Codespaces they can support.
-
-|                       | Codespace (Windows) | Codespace (Linux) |
-|-----------------------|:-------------------:|:-----------------:|
-| Visual Studio code    |         ✔         |        ✔         |
-| Browser based editor  |         ✔         |        ✔         |
-| Visual Studio 2019    |         ✔         |        ❌         |
-| Visual Studio for Mac |         ❌         |        ❌         |
-
-### I'm building a service for developers. Can I integrate Visual Studio Codespaces into my own product's experience?
-
-If you're an organization building a service and you want to integrate Visual Studio Codespaces into your experience, we'd like to hear from you. We have an embedded offering in private preview that enables you to use your service's own independent authentication, authorization, and billing systems, while integrating Visual Studio Codespaces directly into your product experience. 
-
-If you're interested, and would like to find out more, please [send us an inquiry](mailto:vscs-inquiry@microsoft.com).
-
-## Security questions
-
-### What do you mean by "repositories you trust"?
-
-Visual Studio Codespaces will clone and utilize the user-provided source and/or dotfile repositories to create and configure your cloud-hosted environment. To avoid unknowingly creating and connecting to an environment with malicious extensions or processes, be sure you understand and trust all repositories referenced during environment creation.
-
-### Where can security issues or concerns be reported?
-
-Visual Studio Codespaces is eligible under the Microsoft Azure Bounty Program. For information, visit <https://www.microsoft.com/msrc/bounty-microsoft-azure>.
-
-## Billing questions
-
-### What is an environment unit? 
-
-Environment units bundle compute, network, snapshot and disk costs together. A Codespaces environment instance is billed on an hourly basis according to a base set of environment units which depend on the environment instance size.  A standard Codespaces environment has a different base rate of environment units than a premium Codespaces environment due to the difference of compute, network, snapshot and disk costs together. While environment pricing is listed in units per hour, usage is calculated per-second (including fractional units), so you only pay for exactly what you use. Find out more at our [pricing page](https://aka.ms/vso-pricing).
-
-### What happens when I'm not using an environment? 
-
-Once created, you can connect to a cloud-hosted environment by opening it in the browser or connecting to it from a client like Visual Studio Code. While connected, the environment is "active". If you disconnect, the environment can automatically move into a "suspended" state until you either connect to it again or delete it. The auto-suspend delay is configurable, or you can disable it if you want more control.
-
-### If I create an environment, use it for 6 minutes, 45 seconds, then delete it, how much do I get billed? 
-
-Time is measured in seconds, so you will be billed for 6 minutes and 45 seconds of active time in environment units. 
-
-### Will I be billed for cloud-hosted environments while I'm not using them? 
-
-Yes, once created, an cloud-hosted environment bills at a nominal base rate until you delete it. Find out more at our [pricing page](https://aka.ms/vso-pricing).
-
-### What are self-hosted environments?  
-
-By default, Codespaces provisions fully managed environments that run in Azure. These environments are backed by the full power of Azure (always available, quick to create, scalable, etc). However, you may also register your own physical or virtualized environment to your Codespaces Plan. This allows you to have some of the benefits of Codespaces (e.g. use of the browser-based editor) while leveraging your existing, potentially specialized, infrastructure.
-
-### What is a Visual Studio Codespaces plan?
-
-All Codespaces environments are created within the confines of a plan. A plan is a simple grouping mechanism, and is also the level of reporting for billing purposes. For example, if you create three environments within a plan named "Foo", your Azure bill will have one Codespaces line item for the plan named "Foo", which would aggregate the costs for all three of its environments. A subscription can have more than one Codespaces plan, up to the default quota.
-
-### What are Visual Studio Codespaces's quotas?
-
-Codespaces, by default, allows users to create 3 environments per plan, and 2 plans per subscription.
-
-### Where can I report an issue with my billing?
-
-Billing support is available online at [https://aka.ms/vso-billing-issues](https://aka.ms/vso-billing-issues).
-
-## Visual Studio questions
-
-### What kinds of apps and projects are supported in Visual Studio and Visual Studio Codespace?
-
-Visual Studio currently supports building .NET Core and C++ applications while connected to a Codespace. In .NET Core you an create Console, Library, and ASP.NET applications. For C++ both CMake and .VCXProj based projects are supported for build Console apps and libraries. We are adding support for many more projects so check back again soon.
+* Resiliency for the self-hosted environments themselves is outside the scope of this article, and depends on the underlying hosting infrastructure. Some types of resiliency, such as failing a VM over from one physical host to another, or backing up and restoring a physical server, may be transparent to the service itself. In other cases, the environment may need to re-registered.
 
 > [!NOTE]
-> If .NET Core projects fail to load, check whether you have the appropriate .NET Core SDK version installed.
+> For disaster recovery guidance for self-hosted environments also hosted in Azure, such as custom VMs, see [Disaster recovery and high availability for Azure applications](https://docs.microsoft.com/azure/architecture/resiliency/recovery-loss-azure-region).

@@ -56,21 +56,19 @@ Our service sets the following features by default in environments created witho
 
 ### Host Network mode
 
-Containers are created by default with `--network host` in the case of the default image, custom image, or custom Dockerfile scenarios. This allows the user to create side by side containers that would have network access to the main container. For docker-compose scenarios the default setting is not applied and should be specified in the docker-compose file.
+Containers are created by default with `--network host` in the case of the default image, custom image, or custom Dockerfile scenarios. This allows the user to create side by side containers that have network access to the main container. For docker-compose scenarios, the default setting is not applied and should be specified in the docker-compose file.
 
 If a `--network` property is included in `runArgs` as part of a **devcontainer.json** file it will override this default setting.
 
 ### Docker socket mount
 
-Our service implements by default the DoD (Docker-outside-Docker) model. In default image scenarios the docker socket is mounted to the container, allowing the user to control docker and create side by side containers.
+Our service implements the DoD (Docker-outside-Docker) model. In default image scenarios, the docker socket is mounted to the container, allowing the user to control docker and create side by side containers.
 
-For DiD (Docker in Docker) you have to create a devcontainer.json file that references a docker image or Dockerfile with the necessary features like the `docker` image. See: [Docker](https://hub.docker.com/_/docker/)
+For DiD (Docker in Docker) you must create a devcontainer.json file that references a docker image or Dockerfile with the necessary features like the `docker` image. See: [Docker](https://hub.docker.com/_/docker/)
 
 ### Temporary SSD mount
 
-For I/O intensive operations, the persistent storage that safeguards the user information might not be fast enough.
-
-For this reason we mount a local SSD drive to the `/tmp` folder inside the container. Any operation performed in this folder will be not be persisted across suspend/resume sessions, but it will get much faster I/O performance. The exact IOPS for the `/tmp` directory depends on the Codespace SKU. This mount is applied by default in all configuration scenarios.
+To improve I/O performance during intensive operations, we mount a local SSD drive to the `/tmp` folder inside the container. The exact IOPS for the `/tmp` directory depends on the Codespace SKU. Any operation performed in this folder will be not be persisted across suspend/resume sessions, but it will get much faster I/O performance. This mount is applied by default in all configuration scenarios.
 
 It can be disabled applying the following to the **devcontainer.json** file:
 
@@ -164,7 +162,7 @@ The following tables list the configuration properties supported by Codespaces. 
 | `dockerComposeFile` | string or array | A single or a list of docker-compose yml files that will be applied when executing `docker-compose up`. |
 | `service` | string | The name of the service declared inside the docker-compose file that the user wants to connect to. |
 | `context` | string | Path that the Codespaces `docker build` command should be run from, relative to **devcontainer.json**. For example, a value of `".."` would allow you to reference content in sibling directories. Defaults to `"."`. |
-| `runArgs` | string | Arguments to pass to docker when creating the container. Only `-e`, `-u`, `--network`, `--privileged`, `--cap-add=SYS_PTRACE`, `--security-opt seccomp=unconfined` and the docker socket bind mount are taken into account. |
+| `runArgs` | string | Arguments passed to docker when creating the container. Only `-e`, `-u`, `--network`, `--privileged`, `--cap-add=SYS_PTRACE`, `--security-opt seccomp=unconfined` and the docker socket bind mount are taken into account. |
 | `overrideCommand` | string | Tells VS Code whether it should run `/bin/sh -c "while sleep 1000; do :; done"` when starting the container instead of the container's default command. This property defaults to true, since the container can shut down if the default command fails. It should be set to false if the default command must run for the container to function correctly. |
 | `containerEnv` | object | A set of name-value pairs that sets or overrides environment variables for the container.  |
 | `remoteEnv` | object | A set of name-value pairs that sets or overrides environment variables for VS Code (or sub-processes like terminals), but not the whole container. Updates are applied when the environment is suspended and restarted, or after five minutes have passed after disconnecting. |

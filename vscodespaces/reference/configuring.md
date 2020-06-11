@@ -56,13 +56,13 @@ Our service sets the following features by default in environments created witho
 
 ### Host Network mode
 
-Containers are created by default with `--network host` in the case of the default image, custom image, or custom Dockerfile scenarios. This allows the user to create side by side containers that have network access to the main container. For docker-compose scenarios, the default setting is not applied and should be specified in the docker-compose file.
+Containers are created by default with `--network host` in the case of the default image, custom image, or custom Dockerfile scenarios. This allows the user to create side-by-side containers that have network access to the main container. For docker-compose scenarios, the default setting is not applied and should be specified in the docker-compose file.
 
 If a `--network` property is included in `runArgs` as part of a **devcontainer.json** file it will override this default setting.
 
 ### Docker socket mount
 
-Our service implements the DoD (Docker-outside-Docker) model. In default image scenarios, the docker socket is mounted to the container, allowing the user to control docker and create side by side containers.
+Our service implements the DoD (Docker-outside-Docker) model. In default image scenarios, the docker socket is mounted to the container, allowing the user to control docker and create side-by-side containers.
 
 For DiD (Docker in Docker) you must create a devcontainer.json file that references a docker image or Dockerfile with the necessary features like the `docker` image. See: [Docker](https://hub.docker.com/_/docker/)
 

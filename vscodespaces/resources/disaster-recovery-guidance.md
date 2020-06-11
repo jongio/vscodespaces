@@ -19,11 +19,18 @@ To help you handle these rare occurrences, we provide the following guidance for
 
 A key benefit of Visual Studio Codespaces is the ability to provision developer environments quickly, with all dependencies pre-configured, which enables developers to be more resilient to the loss of their workstation than they typically would be. Codespaces are not, however, intended to host any production service, and do not provide cross-region failover. Developers are encouraged to "push" their code frequently to remote source control repositories both as part of their regular workflow and to provide a backup in the case of a region-wide outage. In the case of such an event, a new workspace can be quickly provisioned in a new region from the same repository, with all of their changes as of their last "push".
 
+>[!TIP]
+> Recovery time can be optimized by configuring a `devcontainer.json` in the project's repository, which allows
+> you to define the tools, runtimes, frameworks, editor settings, extensions, and other configuration necessary to restore the development environment automatically. See [Configuring Codespace Environments](../reference/configuring.md).
+
 ## Option 2: Wait for recovery
 
 In this case, no action on your part is required. Know that we are working diligently to restore service availability. You can see the current service status on our [Visual Studio Services Status Dashboard](https://vsstatus.visualstudio.com/).
 
 Multiple Codespaces in different regions can be linked to the same repository, but in most cases it would be unnecessary to create warm/hot spares manually ahead of time, as environments are designed to be provisioned quickly, and having multiple would provide no extra data resiliency as the limiting factor would still be the most recent "push".
+
+>[!TIP]
+> You can reduce the potential impact of service-wide outages by pushing to remote repositories frequently.
 
 ## Additional considerations for self-hosted Codespaces
 

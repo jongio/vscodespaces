@@ -45,3 +45,5 @@
     href: resources/feedback.md
   - name: FAQ
     href: resources/faq.md
+  - name: Disaster recovery
+    href: resources/disaster-recovery-guidance.md

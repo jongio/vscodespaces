@@ -31,8 +31,8 @@ The table below lists the applications and features available in all Windows Cod
 | App                                         | Path Alias | Version            |
 |---------------------------------------------|------------|--------------------|
 | .NET                                        | N/A        | 4.8                |
-| .NET Core Runtime                           | dotnet     | 3.17, 3.1.2, 3.1.3 |
-| .NET Core SDK                               | dotnet     | 3.17, 3.1.2, 3.1.3 |
+| .NET Core Runtime                           | dotnet     | 2.1, 3.1           |
+| .NET Core SDK                               | dotnet     | 2.1, 3.1.3, 3.1.4  |
 | Azure CLI                                   | az         | 2.5                |
 | Chocolatey                                  | choco      | 0.10.15            |
 | CMake                                       | cmake      | 3.17               |
@@ -43,7 +43,7 @@ The table below lists the applications and features available in all Windows Cod
 | Ninja                                       | ninja      | 1.8.2              |
 | Node.js                                     | node       | 12.16              |
 | NPM                                         | npm        | 6.14               |
-| Python                                      | python     | 3.7.7              |
+| Python                                      | python     | 3.7                |
 | VC Package Manager                          | vcpkg      | 2020.02            |
 | Windows SDK                                 | N/A        | 10.0.18362         |
 

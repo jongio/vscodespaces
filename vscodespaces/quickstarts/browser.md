@@ -28,14 +28,14 @@ Follow the prompts in the pop-up dialog to complete sign in.
 
 ## 2. Create a plan
 
-A Codespaces plan is required to create Codespaces environments. To create a new plan, use either the **Create new plan** item in the **Plan Selector** menu in the header bar or the **Create Codespace** button, which will create a new plan as part of the create codespace workflow.
+A Codespaces plan is required to create a codespace. To create a new plan, use either the **Create new plan** item in the **Plan Selector** menu in the header bar or the **Create Codespace** button, which will create a new plan as part of the create codespace workflow.
 
 ![Create Visual Studio Codespaces plan](../images/create-plan-vso-01.png)
 
 Fill in the form with the following information:
 
 - **Subscription**: Choose any existing Azure subscription you'd like.
-- **Location**: Choose the supported regions geographically closest to you. Supported locations are:
+- **Location**: Choose the supported region geographically closest to you. Supported locations are:
   - East US
   - Southeast Asia
   - West Europe

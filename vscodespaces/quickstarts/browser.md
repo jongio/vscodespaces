@@ -45,7 +45,7 @@ And under **Advanced Options**, you can leave the automatically generated values
 
 - **Plan Name**: For example: "My-Codespaces-Plan"
 - **Resource Group**: Choose any existing Azure resource group you'd like. A new resource group will be created if an existing one isn't specified.
-- **Default Instance Type**: Choose the default Codespaces Instance Type, such as **Standard (Linux)**.
+- **Default Instance Type**: Choose the default Codespaces Instance Type, such as Standard (Linux).
 
 Once a plan is created, it will be the selected plan in the **Plan Selector**.
 
@@ -76,7 +76,7 @@ If you go back to the management portal, there will be a new card with the name 
 
 The codespace will have several editors open; the **Welcome** page, the quickstart repository's `README.md`, as well as the codespace **Creation Log** in a side editor group.
 
-Close the **Creation Log** and select the `README.md` editor tab. You can then press [`ctrl`]+[`shift`]+[`V`] to render the Markdown file.
+Close the **Creation Log** and select the `README.md` editor tab. You can then press **Ctrl** + **Shift** + **V** to render the Markdown file.
 
 Follow the instructions in `README.md`, and return to this document when complete.
 

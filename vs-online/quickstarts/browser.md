@@ -45,6 +45,7 @@ And under **Advanced Options**, you can leave the automatically generated values
 
 - **Plan Name**: For example: "My-Codespaces-Plan"
 - **Resource Group**: Choose any existing Azure resource group you'd like. A new resource group will be created if an existing one isn't specified.
+- **Default Instance Type**: Choose the default Codespaces Instance Type, such as **Standard (Linux)**.
 
 Once a plan is created, it will be the selected plan in the **Plan Selector**.
 
@@ -57,7 +58,7 @@ To create a new cloud-hosted codespace, fill in the **Create Codespace** form. T
 
 Complete the form with the following values:
 
-- **Codespace Name**: My Quick Environment
+- **Codespace Name**: My Quick Codespace
 - **Git Repository**: microsoft/vsonline-quickstart
 - **Instance Type**: Standard (Linux)
 - **Suspend idle Codespace after...**: 30 minutes
@@ -69,7 +70,7 @@ Complete the form with the following values:
 
 Once you've filled in the form, select **Create**. This will begin creating your codespace and open the codespace in your browser when it is finished.
 
-If you go back to the management portal, there will be a new card with the name **My Quick Environment** and a status badge of **Available**.
+If you go back to the management portal, there will be a new card with the name **My Quick Codespace** and a status badge of **Available**.
 
 ## 4. Working in your codespace
 
@@ -79,11 +80,11 @@ Close the **Creation Log** and select the `README.md` editor tab. You can then p
 
 Follow the instructions in `README.md`, and return to this document when complete.
 
-You can return to the Codespaces management portal with your browser's back navigation. To reconnect to the codespace, select the **My Quick Environment** link in the codespace card.
+You can return to the Codespaces management portal with your browser's back navigation. To reconnect to the codespace, select the **My Quick Codespace** link in the codespace card.
 
 ## 5. Delete the codespace
 
-To delete the newly created codespace, open the **More** options menu in the lower right of the **My Quick Environment** card and select **Delete**.
+To delete the newly created codespace, open the **More** options menu in the lower right of the **My Quick Codespace** card and select **Delete**.
 
 ![Delete in Visual Studio Codespaces management portal](../images/delete-env-vso-01.png)
 
@@ -91,6 +92,6 @@ To delete the newly created codespace, open the **More** options menu in the low
 
 This article covered a typical end-to-end use of Codespaces. For more information, see:
 
-- [What are Codespaces?](../overview/what-is-vsonline.md)
+- [What is Visual Studio Codespaces?](../overview/what-is-vsonline.md)
 - [Codespaces with Visual Studio 2019 quickstart](../quickstarts/vs.md)
 - [Codespaces with VS Code quickstart](../quickstarts/vscode.md)

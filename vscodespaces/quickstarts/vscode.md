@@ -40,7 +40,7 @@ To create a new cloud-hosted environment in Codespaces select the **Create New E
 Answer the prompts with the following information:
 
 - **Name**: My Quick Environment
-- **Git Repository**: microsoft/vsonline-quickstart
+- **Git Repository**: microsoft/vscodespaces-quickstart
 - **Auto-suspend Setting**: 30 minutes
 - **Azure Subscription**: Select any Azure subscription to create a Codespaces plan in
 - **Instance Type**: Standard Environment (Linux)

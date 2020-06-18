@@ -44,8 +44,8 @@ By default, Codespaces scans the dotfiles repository and runs one of the followi
     - `bootstrap`
     - `setup.sh`
     - `setup`
-
-On a Windows-based Codespace:
+    
+    On a Windows-based Codespace:
     - `bootstrap.ps1`
     - `bootstrap.bat`
 
@@ -56,7 +56,7 @@ On a Linux-based Codespace:
   - `sourcer.sh` for Bash and other shell
 
 On a Windows-based Codespace:
-    - `profile.ps1` for PowerShell
+  - `profile.ps1` for PowerShell
 
 Please note that this last part only happens when you did not specify any install command and none of the pre-configured install scripts listed above are found.
 

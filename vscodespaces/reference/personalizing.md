@@ -18,14 +18,14 @@ Dotfiles are files whose filename begins with a dot (`.`). They typically contai
 
 Developers often store dotfiles in a GitHub repository so they can easily synchronize them between development environments. For more information, see [GitHub Dotfiles](https://dotfiles.github.io/) on GitHub.io.
 
-## Enable personalization settings sync in Visual Studio Code
+## Configure a dotfile repo in Visual Studio Code
 
 To configure a dotfiles repo in Visual Studio Code:
 Press `F1` and select the **Preferences: Open Setting (UI)** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). In the **Settings** tab that opens, select the **Extensions** node in the navigation tree, followed by **Visual Studio Codespaces**. 
 
 ![Visual Studio Codespaces Settings in Visual Studio Code](../images/personalizing-dotfiles-vsc.png)
 
-## Configure a dotfile repo during environment creation
+## Configure a dotfile repo in the portal
 
 You can also configure dotfiles using the [Visual Studio Codespaces portal](https://online.visualstudio.com). Press the **Create environment** button and expand the **Dotfiles (optional)** settings.
 

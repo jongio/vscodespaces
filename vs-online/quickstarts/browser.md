@@ -59,7 +59,7 @@ To create a new cloud-hosted codespace, fill in the **Create Codespace** form. T
 Complete the form with the following values:
 
 - **Codespace Name**: My Quick Codespace
-- **Git Repository**: microsoft/vsonline-quickstart
+- **Git Repository**: microsoft/vscodespaces-quickstart
 - **Instance Type**: Standard (Linux)
 - **Suspend idle Codespace after...**: 30 minutes
 

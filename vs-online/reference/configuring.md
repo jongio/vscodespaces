@@ -99,7 +99,7 @@ A possible workflow to speed up environment creations would be to create this im
 
 Add the `dockerFile` argument and value to your **devcontainer.json** to provision a custom container.
 
-Include the Dockerfile as part of the repository. We recommend placing it in the **.devcontainer.json** folder with the **devcontainer.json** file.
+Include the Dockerfile as part of the repository. We recommend placing it in the **.devcontainer** folder with the **devcontainer.json** file.
 
 ### Docker Compose support
 

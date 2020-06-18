@@ -7,7 +7,7 @@ ms.topic: overview
 ms.date: 04/29/2020
 ---
 
-# Personalize Visual Studio Online with dotfiles
+# Personalize Visual Studio Codespaces with dotfiles
 
 Visual Studio Codespaces's [environments](../overview/what-is-vsonline.md#environments) are fully personalizable on a per user basis. This is accomplished by referencing a "dotfiles repo" at environment creation time.
 
@@ -27,16 +27,17 @@ Press `F1` and select the **Preferences: Open Setting (UI)** command in the [com
 
 ## Configure a dotfile repo during environment creation
 
-You can also configure dotfiles using the [Visual Studio Online portal](https://online.visualstudio.com). Press the **Create environment** button and expand the **Dotfiles (optional)** settings.
+You can also configure dotfiles using the [Visual Studio Codespaces portal](https://online.visualstudio.com). Press the **Create environment** button and expand the **Dotfiles (optional)** settings.
 
-[![Visual Studio Online Dotfiles Settings](../images/personalizing-dotfiles-vso-cropped.png)](../images/personalizing-dotfiles-vso.png#lightbox "Visual Studio Online dotfiles settings")
+[![Visual Studio Codespaces Dotfiles Settings](../images/personalizing-dotfiles-vso-cropped.png)](../images/personalizing-dotfiles-vso.png#lightbox "Visual Studio Codespaces dotfiles settings")
 
 In both experiences, there are three options that can be configured:
 
 1. **Dotfiles Repository**: The URL of the Git repository containing your dotfiles. (*Required to personalize an environment, optional otherwise*)
-2. **Dotfiles Target Path**: The path where the dotfiles repo will be cloned. Defaults to `~/dotfiles`. (*Optional*)
+2. **Dotfiles Target Path**: The path where the dotfiles repo will be cloned. Defaults to `~/dotfiles` on Linux, `C:\dotfiles` on Windows. (*Optional*)
 
-3. **Dotfiles Install Command**: The command to run after cloning the dotfiles repository. By default, Codespaces scans the dotfiles repository and runs one of the following files:
+3. **Dotfiles Install Command**: The command to run after cloning the dotfiles repository. The install command should be relative to the repository root folder.
+By default, Codespaces scans the dotfiles repository and runs one of the following files. On a Linux-based Codespace:
     - `install.sh`
     - `install`
     - `bootstrap.sh`
@@ -44,7 +45,20 @@ In both experiences, there are three options that can be configured:
     - `setup.sh`
     - `setup`
 
-If none of these files are found, any files and folders starting with `.` are symlinked to the home (`~` or `$HOME` on Linux) directory.
+On a Windows-based Codespace:
+    - `bootstrap.ps1`
+    - `bootstrap.bat`
+
+If none of these files are found, any files and folders starting with `.` are symlinked to the home (`~` or `$HOME` on Linux, `%HOMEPATH%` on Windows) directory. In addition, a couple of files are picked up automatically by convention for sourcing.
+
+On a Linux-based Codespace:
+  - `sourcer.zsh` for zsh shell
+  - `sourcer.sh` for Bash and other shell
+
+On a Windows-based Codespace:
+    - `profile.ps1` for PowerShell
+
+Please note that this last part only happens when you did not specify any install command and none of the pre-configured install scripts listed above are found.
 
 Once the **Dotfiles Repository** is configured in VS Code, any environments created going forward will use the personalized settings.
 

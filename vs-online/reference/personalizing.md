@@ -37,7 +37,9 @@ In both experiences, there are three options that can be configured:
 2. **Dotfiles Target Path**: The path where the dotfiles repo will be cloned. Defaults to `~/dotfiles` on Linux, `C:\dotfiles` on Windows. (*Optional*)
 
 3. **Dotfiles Install Command**: The command to run after cloning the dotfiles repository. The install command should be relative to the repository root folder.
-By default, Codespaces scans the dotfiles repository and runs one of the following files. On a Linux-based Codespace:
+By default, Codespaces scans the dotfiles repository and runs one of the following files. 
+
+On Linux-based codespaces:
     - `install.sh`
     - `install`
     - `bootstrap.sh`
@@ -45,17 +47,17 @@ By default, Codespaces scans the dotfiles repository and runs one of the followi
     - `setup.sh`
     - `setup`
     
-    On a Windows-based Codespace:
+    On Windows-based codespaces:
     - `bootstrap.ps1`
     - `bootstrap.bat`
 
 If none of these files are found, any files and folders starting with `.` are symlinked to the home (`~` or `$HOME` on Linux, `%HOMEPATH%` on Windows) directory. In addition, a couple of files are picked up automatically by convention for sourcing.
 
-On a Linux-based Codespace:
+On Linux-based codespaces:
   - `sourcer.zsh` for zsh shell
   - `sourcer.sh` for Bash and other shell
 
-On a Windows-based Codespace:
+On Windows-based codespaces:
   - `profile.ps1` for PowerShell
 
 Please note that this last part only happens when you did not specify any install command and none of the pre-configured install scripts listed above are found.

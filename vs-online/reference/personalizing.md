@@ -12,7 +12,7 @@ ms.date: 04/29/2020
 Visual Studio Codespaces's [environments](../overview/what-is-vsonline.md#environments) are fully personalizable on a per user basis. This is accomplished by referencing a "dotfiles repo" at environment creation time.
 
 - [Enable personalization settings sync in Visual Studio Code](#enable-personalization-settings-sync-in-visual-studio-code).
-- [Configure a dotfile repo during environment creation](#configure-a-dotfile-repo-during-environment-creation).
+- [Configure a dotfile repo in the portal](#configure-a-dotfile-repo-in-the-portal).
 
 Dotfiles are files whose filename begins with a dot (`.`). They typically contain configuration information for an application. They are used to control the way terminals, editors, source control, and other tools behave. Examples of dotfiles include `.bashrc`, `.gitignore`, and `.editorconfig`.
 
@@ -39,7 +39,7 @@ In both experiences, there are three options that can be configured:
 3. **Dotfiles Install Command**: The command to run after cloning the dotfiles repository. The install command should be relative to the repository root folder.
 By default, Codespaces scans the dotfiles repository and runs one of the following files. 
 
-On Linux-based codespaces:
+    On Linux-based codespaces:
     - `install.sh`
     - `install`
     - `bootstrap.sh`

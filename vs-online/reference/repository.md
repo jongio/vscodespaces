@@ -3,7 +3,7 @@ author: edgonmsft
 ms.author: edgonmsft
 ms.service: visual-studio-online
 title: Repository Options Visual Studio Codespaces
-ms.topic: overview
+ms.topic: reference
 ms.date: 02/25/2020
 ---
 

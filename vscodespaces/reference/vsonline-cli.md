@@ -3,7 +3,7 @@ author: abuchholtzau
 ms.author: allisb
 ms.service: visual-studio-online
 title: How to use the Codespaces CLI
-ms.topic: overview
+ms.topic: reference
 ms.date: 04/06/2020
 ---
 

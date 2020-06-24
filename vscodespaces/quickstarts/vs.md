@@ -3,7 +3,7 @@ author: nikmd23
 ms.author: nimolnar
 ms.service: visual-studio-online
 title: Visual Studio Codespaces with Visual Studio 2019 Quickstart
-ms.topic: overview
+ms.topic: quickstart
 ms.date: 05/13/2020
 ---
 

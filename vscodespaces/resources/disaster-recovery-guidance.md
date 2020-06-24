@@ -3,7 +3,7 @@ author: nikmd23
 ms.author: nimolnar
 ms.service: visual-studio-online
 title: Disaster recovery scenarios
-ms.topic: overview
+ms.topic: troubleshooting
 ms.date: 05/10/2020
 ---
 

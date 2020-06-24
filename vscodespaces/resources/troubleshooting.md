@@ -3,7 +3,7 @@ author: nikmd23
 ms.author: nimolnar
 ms.service: visual-studio-online
 title: Troubleshooting Visual Studio Codespaces
-ms.topic: overview
+ms.topic: troubleshooting
 ms.date: 09/20/2019
 ---
 

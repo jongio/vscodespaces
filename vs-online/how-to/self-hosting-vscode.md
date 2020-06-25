@@ -3,7 +3,7 @@ author: abuchholtzau
 ms.author: allisb
 ms.service: visual-studio-online
 title: Register a self-hosted Codespaces environment with Visual Studio Code
-ms.topic: overview
+ms.topic: how-to
 ms.date: 04/06/2020
 ---
 # Register a self-hosted Codespaces environment with Visual Studio Code

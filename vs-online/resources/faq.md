@@ -3,7 +3,7 @@ author: nikmd23
 ms.author: nimolnar
 ms.service: visual-studio-online
 title: Visual Studio Codespaces Frequently Asked Questions
-ms.topic: overview
+ms.topic: troubleshooting
 ms.date: 05/29/2020
 ---
 

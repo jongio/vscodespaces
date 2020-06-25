@@ -3,7 +3,7 @@ author: nikmd23
 ms.author: nimolnar
 ms.service: visual-studio-online
 title: Personalizing Visual Studio Codespaces
-ms.topic: overview
+ms.topic: reference
 ms.date: 04/29/2020
 ---
 

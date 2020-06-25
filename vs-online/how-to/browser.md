@@ -3,7 +3,7 @@ author: nikmd23
 ms.author: nimolnar
 ms.service: visual-studio-online
 title: How to use Visual Studio Codespaces with a browser
-ms.topic: overview
+ms.topic: how-to
 ms.date: 09/20/2019
 ---
 

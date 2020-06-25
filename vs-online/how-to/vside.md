@@ -3,7 +3,7 @@ author: acangialosi
 ms.author: anthc
 ms.service: visual-studio-online
 title: How to use Visual Studio Online with Visual Studio 2019
-ms.topic: overview
+ms.topic: how-to
 ms.date: 05/13/2020
 ---
 

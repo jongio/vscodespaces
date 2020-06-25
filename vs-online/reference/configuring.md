@@ -3,7 +3,7 @@ author: nikmd23
 ms.author: nimolnar
 ms.service: visual-studio-online
 title: Configure Codespace Environments
-ms.topic: overview
+ms.topic: reference
 ms.date: 05/13/2020
 ---
 

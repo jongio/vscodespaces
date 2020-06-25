@@ -3,7 +3,7 @@ author: andster
 ms.author: andster
 ms.service: visual-studio-online
 title: Configuring Windows Instance Types in Codespaces
-ms.topic: overview
+ms.topic: reference
 ms.date: 05/13/2020
 ---
 

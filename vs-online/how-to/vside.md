@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 05/13/2020
 ---
 
-# Visual Studio Codespaces Visual Studio 2019 How-to
+# Visual Studio Codespaces in Visual Studio 2019 How-to
 
 This article covers how to get started using Visual Studio 2019 with Visual Studio Codespaces.
 

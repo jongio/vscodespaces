@@ -2,7 +2,7 @@
 author: acangialosi
 ms.author: anthc
 ms.service: visual-studio-online
-title: How to use Visual Studio Online with Visual Studio 2019
+title: How to use Visual Studio Codespaces with Visual Studio 2019
 ms.topic: how-to
 ms.date: 05/13/2020
 ---
@@ -73,7 +73,7 @@ To create a new Codespace open the **Connect to a Codespace** dialog using the  
 ![Create a new Codespace](../images/vside-quickstart-02.png)
 
 - **Name**: Name your Codespace after the project or task that you'll be using it for. (e.g. 'Todo App Environment', 'PR Review', 'Shopping Cart Feature')
-- **Git Repository**: If a path to a Git repository is provided, VS Online will automatically clone that repository into the Codespace. You can specify a Git repository in one of many formats:
+- **Git Repository**: If a path to a Git repository is provided, Codespaces will automatically clone that repository into the Codespace. You can specify a Git repository in one of many formats:
   - **Absolute Http(s) Git URL**: A complete Http or Https Url. It may end in a `.git` extension. Examples include:
     - https://github.com/organization/repo.git
     - https://organization@dev.azure.com/organization/repo/_git/repo

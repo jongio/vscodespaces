@@ -1,7 +1,8 @@
 ---
 author: nikmd23
 ms.author: nimolnar
-ms.service: visual-studio-online
+ms.prod: visual-studio-family
+ms.technology: visual-studio-codespaces
 title: Personalizing Visual Studio Codespaces
 ms.topic: reference
 ms.date: 04/29/2020

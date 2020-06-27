@@ -1,7 +1,8 @@
 ---
 author: nikmd23
 ms.author: nimolnar
-ms.service: visual-studio-online
+ms.prod: visual-studio-family
+ms.technology: visual-studio-codespaces
 title: How to use Visual Studio Codespaces with a browser
 ms.topic: how-to
 ms.date: 09/20/2019

@@ -1,7 +1,8 @@
 ---
 author: abuchholtzau
 ms.author: allisb
-ms.service: visual-studio-online
+ms.prod: visual-studio-family
+ms.technology: visual-studio-codespaces
 title: How to use the Codespaces CLI
 ms.topic: reference
 ms.date: 04/06/2020

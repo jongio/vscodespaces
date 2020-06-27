@@ -1,7 +1,8 @@
 ---
 author: nikmd23
 ms.author: nimolnar
-ms.service: visual-studio-online
+ms.prod: visual-studio-family
+ms.technology: visual-studio-codespaces
 title: Visual Studio Codespaces Frequently Asked Questions
 ms.topic: troubleshooting
 ms.date: 05/29/2020

@@ -36,7 +36,9 @@
   - name: Repository support
     href: reference/repository.md
   - name: Codespaces CLI
-    href: reference/vsonline-cli.md 
+    href: reference/vsonline-cli.md
+  - name: Built-in security controls
+    href: reference/security-controls.md
 - name: Resources
   items:
   - name: Troubleshooting

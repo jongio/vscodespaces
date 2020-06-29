@@ -59,7 +59,7 @@ Visual Studio Codespaces is eligible under the Microsoft Azure Bounty Program. F
 
 ### How do I register the proper Codespaces Azure resource provider if I receive the "needs admin approval" message?
 
-If you've received a "needs admin approval" message while trying to use Visual Studio Codespaces, you'll need to ensure that the Codespaces resource provider is registered with the Azure subscription that you are trying to use. Have your subscription administrator follow the steps outlined on the [Azure resource providers and types](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#azure-portal) documentation, registering the `Microsoft.VSOnline` resource provider.
+If you've received a "needs admin approval" message while trying to use Visual Studio Codespaces, you'll need to ensure that the Codespaces resource provider is registered with the Azure subscription that you are trying to use. Have your subscription administrator follow the steps outlined on the [Azure resource providers and types](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-providers-and-types#azure-portal) documentation, registering the `Microsoft.VSOnline` resource provider.
 
 ## Billing questions
 

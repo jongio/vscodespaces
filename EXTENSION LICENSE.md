@@ -1,8 +1,8 @@
 MICROSOFT PRE-RELEASE SOFTWARE LICENSE TERMS
 ============================================
 
-MICROSOFT VISUAL STUDIO ONLINE
-------------------------------
+MICROSOFT VISUAL STUDIO CODESPACES
+----------------------------------
 
 ---
 

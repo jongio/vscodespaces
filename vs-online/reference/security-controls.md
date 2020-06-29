@@ -38,5 +38,5 @@ A security control is a quality or feature of an Azure service that contributes 
 | ------------------------------------------------------ | ------ | ----- | ------------- |
 | Server-side encryption at rest: Microsoft-managed keys | Yes    |       | [Azure Storage encryption for data at rest](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)
 | Server-side encryption at rest: Customer-managed keys  | No     | Support for customer-managed keys is planned. |
-| Encryption in transit                                  | Yes    | Codespaces service APIs require HTTPS for inbound traffic. |
+| Encryption in transit                                  | Yes    | Codespaces service APIs require HTTPS for inbound traffic. Connections between client and codespace use SSH protocol for E2E encryption. |
 | API calls encrypted                                    | Yes    | Calls from the Codespaces service to Azure Resource Manager and other Azure services use HTTPS. |

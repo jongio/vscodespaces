@@ -183,7 +183,7 @@ VS Code's integrated terminal and all of its features are fully supported in a C
 
 In addition to the integrated terminal features of VS Code, Codespaces also allows for the terminal to be personalized using custom dotfiles. See [Personalizing codespaces](../reference/personalizing.md) for more information.
 
-## Port Forwarding
+## Port forwarding
 
 Visual Studio Codespaces provides access to the applications and services running in the remote environments by means of port forwarding. By default, no ports are forwarded for security concerns. However, there are several ways to open ports in the codespace.
 

@@ -42,8 +42,6 @@ To create a new cloud-hosted codespace in Codespaces, select **Create new Codesp
 
 In the quick pick that appears, you can choose to either take the default settings, set custom setting values, or review pricing information. For this quickstart, take the **Default settings**.
 
-Next you will be prompted to select an Azure subscription. Choose any existing Azure subscription you'd like.
-
 Next you have the option to set a repository. For this quickstart, we'll use the Codespaces quickstart repo `microsoft/vscodespaces-quickstart`. You can refer to the [repository reference](../reference/repository.md) for the supported repository URL types and providers.
 
 Finally you will be prompted to give a name for your codespace, such as "My Quick Codespace". Once you provide a name, Codespaces will begin creating your codespace and you will see a **Creation Log** view displaying progress.

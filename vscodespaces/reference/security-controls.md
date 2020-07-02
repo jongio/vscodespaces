@@ -3,7 +3,7 @@ author: jasongin
 ms.author: jasongin
 ms.service: visual-studio-online
 title: Security controls
-ms.topic: overview
+ms.topic: reference
 ms.date: 06/25/2020
 ---
 

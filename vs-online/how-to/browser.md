@@ -17,7 +17,7 @@ You can sign up for both, as well as receive various Azure incentives at [https:
 
 ## Sign in
 
-To sign into Codespaces, browse to the [login page](https://online.visualstudio.com/login) and click the **Sign in** button.
+To sign into Visual Studio Codespaces, browse to the [login page](https://online.visualstudio.com/login) and click the **Sign in** button.
 
 ![Sign In to Visual Studio Codespaces](../images/sign-in-vso-01.png)
 

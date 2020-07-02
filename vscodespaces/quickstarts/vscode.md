@@ -38,7 +38,7 @@ To create a new cloud-hosted codespace in Codespaces, select **Create new Codesp
 > [!NOTE]
 > If you don't have the [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) extension installed, you will be prompted to install it before proceeding. In the Extensions view, search for 'Azure Account' and select **Install**. You may need to restart VS Code after installing the Azure Account extension.
 
-![Create environment in Visual Studio Code](../images/create-env-vsc-01.png)
+![Create codespace in Visual Studio Code](../images/create-env-vsc-01.png)
 
 In the quick pick that appears, you can choose to either take the default settings, set custom setting values, or review pricing information. For this quickstart, take the **Default settings**.
 

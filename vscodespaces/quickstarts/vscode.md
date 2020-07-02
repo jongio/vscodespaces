@@ -29,7 +29,7 @@ Once installed, you can sign in.
 
 ## 2. Sign in
 
-To sign into Codespaces, you press **F1** and select the **Codespaces: Sign In** command in the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). Follow the prompts in your browser to complete the sign in.
+To sign into Visual Studio Codespaces, you press **F1** and select the **Codespaces: Sign In** command in the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). Follow the prompts in your browser to complete the sign in.
 
 ## 3. Create a codespace
 

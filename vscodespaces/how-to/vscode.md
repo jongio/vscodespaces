@@ -45,7 +45,7 @@ In addition to the panel, VS Code will also show the remote indicator in the Sta
 
 ![Visual Studio Codespaces Remote Indicator](../images/install-vsc-04.png)
 
-## Sign in to Visual Studio Codespaces
+## Sign in
 
 To sign in to Visual Studio Codespaces, you can either press **F1** and select the **Codespaces: Sign In** command in the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or click **Sign in to view Codespaces...** in **Codespaces** panel of the **Remote Explorer** side bar.
 

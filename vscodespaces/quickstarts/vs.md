@@ -21,7 +21,7 @@ This document will walk you through how to install Codespaces, create a cloud-ho
 ## 1. Install
 
 > [!TIP]
-> If you don't have [Visual Studio 2019 Preview](https://aka.ms/vspreview) installed already, you can download it [here](https://aka.ms/vspreview).
+> If you don't have [Visual Studio 2019 Preview](https://aka.ms/vspreview) installed already, you can download it from the [Visual Studio Preview](https://aka.ms/vspreview) page.
 
 Check the **ASP.NET and web development**, **Desktop development with C++**, or both Workloads in the Installer. Then click **Install**.
 
@@ -87,6 +87,6 @@ To delete the newly created Codespace, open the **File** menu and click **Connec
 
 This article covered a typical end-to-end use of Codespaces. For more information, see:
 
-- [What is Codespaces?](../overview/what-is-vsonline.md)
+- [What is Visual Studio Codespaces?](../overview/what-is-vsonline.md)
 - [Codespaces with VS Code quickstart](../quickstarts/vscode.md)
 - [Codespaces with the browser quickstart](../quickstarts/browser.md)

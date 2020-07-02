@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path": "vs-online/index.md",
+      "redirect_url": "overview/what-is-vsonline",
+      "redirect_document_id": false
+    }
+  ]
+}

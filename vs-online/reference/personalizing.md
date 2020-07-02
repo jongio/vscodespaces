@@ -21,13 +21,13 @@ Developers often store dotfiles in a GitHub repository so they can easily synchr
 ## Configure a dotfile repo in Visual Studio Code
 
 To configure a dotfiles repo in Visual Studio Code:
-Press `F1` and select the **Preferences: Open Setting (UI)** command in the [command palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). In the **Settings** tab that opens, select the **Extensions** node in the navigation tree, followed by **Visual Studio Codespaces**. 
+Press **F1** and select the **Preferences: Open Setting (UI)** command in the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). In the **Settings** tab that opens, select the **Extensions** node in the navigation tree, followed by **Visual Studio Codespaces**. 
 
 ![Visual Studio Codespaces Settings in Visual Studio Code](../images/personalizing-dotfiles-vsc.png)
 
 ## Configure a dotfile repo in the portal
 
-You can also configure dotfiles using the [Visual Studio Codespaces portal](https://online.visualstudio.com). Press the **Create environment** button and expand the **Dotfiles (optional)** settings.
+You can also configure dotfiles using the [Visual Studio Codespaces portal](https://online.visualstudio.com). Press the **Create Codespace** button and expand the **Dotfiles (optional)** settings.
 
 [![Visual Studio Codespaces Dotfiles Settings](../images/personalizing-dotfiles-vso-cropped.png)](../images/personalizing-dotfiles-vso.png#lightbox "Visual Studio Codespaces dotfiles settings")
 
@@ -71,7 +71,7 @@ Once the **Dotfiles Repository** is configured in VS Code, any environments crea
 
 [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync) allows you to sync a variety of settings, such as theme, keyboard shortcuts, extensions, and more across your various Visual Studio Code instances to give you tooling consistency whether you're working from a local Visual Studio Code instance or the browser-based editor.
 
-To use settings sync, ensure you're connecting to your environment from within Visual Studio Code Insiders or enable Insiders for the browser based editor:
+To use settings sync, ensure you're connecting to your codespace from within Visual Studio Code Insiders or enable Insiders for the browser based editor:
 
 - Navigate to the **Settings** pane from the user account card.
 
@@ -81,7 +81,7 @@ To use settings sync, ensure you're connecting to your environment from within V
 
   ![Turn on Insiders](../images/settings-pane.png)
 
-Once you're connected to the environment:
+Once you're connected to the codespace:
 
 - Click the **Manage** gear menu at the bottom of the **Activity Bar**.
 - Enable the **Turn On Preferences Sync..** option.

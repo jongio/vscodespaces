@@ -29,7 +29,7 @@ Once installed, you can sign in.
 
 ## 2. Sign in
 
-To sign into Codespaces, you press **F1** and select the **Codespaces: Sign In** command in the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). Follow the prompts in your browser to complete the sign in.
+To sign into Visual Studio Codespaces, you press **F1** and select the **Codespaces: Sign In** command in the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). Follow the prompts in your browser to complete the sign in.
 
 ## 3. Create a codespace
 
@@ -38,11 +38,9 @@ To create a new cloud-hosted codespace in Codespaces, select **Create new Codesp
 > [!NOTE]
 > If you don't have the [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) extension installed, you will be prompted to install it before proceeding. In the Extensions view, search for 'Azure Account' and select **Install**. You may need to restart VS Code after installing the Azure Account extension.
 
-![Create environment in Visual Studio Code](../images/create-env-vsc-01.png)
+![Create codespace in Visual Studio Code](../images/create-env-vsc-01.png)
 
 In the quick pick that appears, you can choose to either take the default settings, set custom setting values, or review pricing information. For this quickstart, take the **Default settings**.
-
-Next you will be prompted to select an Azure subscription. Choose any existing Azure subscription you'd like.
 
 Next you have the option to set a repository. For this quickstart, we'll use the Codespaces quickstart repo `microsoft/vscodespaces-quickstart`. You can refer to the [repository reference](../reference/repository.md) for the supported repository URL types and providers.
 

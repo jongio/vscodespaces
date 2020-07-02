@@ -17,7 +17,7 @@ You can sign up for both, as well as receive various Azure incentives at [https:
 
 ## Sign in
 
-To sign into Codespaces, browse to the [login page](https://online.visualstudio.com/login) and click the **Sign in** button.
+To sign into Visual Studio Codespaces, browse to the [login page](https://online.visualstudio.com/login) and click the **Sign in** button.
 
 ![Sign In to Visual Studio Codespaces](../images/sign-in-vso-01.png)
 
@@ -99,7 +99,7 @@ From there, you can either click on the name of the codespace (**My Codespace** 
 ![Codespace details in Visual Studio Code](../images/connect-env-vsc-03.png)
 
 > [!NOTE]
-> If you are already connected to a codespace in the browser-based editor, you can connect to another codespace using any of the techniques covered in the [Visual Studio Code how-to](vscode.md#connect-to-an-environment) document.
+> If you are already connected to a codespace in the browser-based editor, you can connect to another codespace using any of the techniques covered in the [Visual Studio Code how-to](vscode.md#connect-to-a-codespace) document.
 
 ## Disconnect from a codespace
 
@@ -142,9 +142,9 @@ Codespaces's browser-based version of VS Code includes support for VS Code's int
 
 In addition to the standard integrated terminal features of VS Code, Codespaces also allows for the terminal to be personalized using custom dotfiles. See [Personalizing codespaces](../reference/personalizing.md) for more information.
 
-## Port Forwarding
+## Port forwarding
 
-Codespaces provides access to the applications and services running in remote environments by means of port forwarding. By default, no ports are forwarded for security concerns, however, there are several ways to open ports in the remote environment.
+Visual Studio Codespaces provides access to the applications and services running in remote environments by means of port forwarding. By default, no ports are forwarded for security concerns, however, there are several ways to open ports in the remote environment.
 
 ### Auto port forwarding
 
@@ -162,11 +162,11 @@ Additionally, you can click the **Forward Port** button on the **Forwarded Ports
 
 ![Codespaces port forwarding interface](../images/port-forwarding-interface-vsc-01.png)
 
-### Configured port forwarding
+### Configure port forwarding
 
 If there's one or more ports that should be forwarded by default for a given repository, that can be configured in `devcontainer.json`. See the [configuring codespaces](../reference/configuring.md) reference for more info.
 
-### Accessing forwarded ports
+### Access forwarded ports
 
 Once a port has been forwarded, you can click the **Copy Port URL** button on the port's title bar in the **Codespace Details** panel. This will copy the full URL to the port into your clipboard so you can paste it into a browser, CLI, or the API exploration tool of your choice.
 

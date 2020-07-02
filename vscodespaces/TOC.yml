@@ -1,2 +1,51 @@
-- name: Index
-  href: index.md
+- name: Overview
+  items:
+  - name: What is Visual Studio Codespaces?
+    href: overview/what-is-vsonline.md
+- name: Quickstarts
+  items:
+  - name: Codespaces in the browser
+    href: quickstarts/browser.md
+  - name: Codespaces in VS Code
+    href: quickstarts/vscode.md
+  - name: Codespaces in Visual Studio
+    href: quickstarts/vs.md
+#- name: Tutorials
+#- name: Samples
+#- name: Concepts
+- name: "How-to guides"
+  items:
+  - name: "Use Visual Studio Codespaces in the Browser"
+    href: how-to/browser.md
+  - name: "Use Visual Studio Codespaces in Visual Studio 2019"
+    href: how-to/vside.md
+  - name: "Use Visual Studio Codespaces in Visual Studio Code"
+    href: how-to/vscode.md
+  - name: "Register self-hosted environment in VS Code"
+    href: how-to/self-hosting-vscode.md
+  - name: "Register self-hosted environment with the CLI"
+    href: how-to/self-hosting-cli.md
+- name: Reference
+  items: 
+  - name: Configuring environments
+    href: reference/configuring.md
+  - name: Configuring Windows environments
+    href: reference/configuring-windows.md
+  - name: Personalizing environments
+    href: reference/personalizing.md
+  - name: Repository support
+    href: reference/repository.md
+  - name: Codespaces CLI
+    href: reference/vsonline-cli.md
+  - name: Built-in security controls
+    href: reference/security-controls.md
+- name: Resources
+  items:
+  - name: Troubleshooting
+    href: resources/troubleshooting.md
+  - name: Feedback
+    href: resources/feedback.md
+  - name: FAQ
+    href: resources/faq.md
+  - name: Disaster recovery
+    href: resources/disaster-recovery-guidance.md

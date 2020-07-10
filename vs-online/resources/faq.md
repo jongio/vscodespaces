@@ -34,12 +34,12 @@ Connecting to a Codespace from Visual Studio 2019 is available through a Private
 
 We are actively expanding support for more features and workloads across the Visual Studio clients. Not all clients have been upgraded to support all Codespaces. Here is a summary of the Visual Studio clients and the Codespaces they can support.
 
-|                       | Codespace (Windows) | Codespace (Linux) |
+| Client                | Codespace (Windows) | Codespace (Linux) |
 |-----------------------|:-------------------:|:-----------------:|
-| Visual Studio code    |         ✔         |        ✔         |
-| Browser based editor  |         ✔         |        ✔         |
-| Visual Studio 2019    |         ✔         |        ❌         |
-| Visual Studio for Mac |         ❌         |        ❌         |
+| Visual Studio code    |         ✔          |        ✔         |
+| Browser based editor  |         ✔          |        ✔         |
+| Visual Studio 2019    |         ✔          |        ❌        |
+| Visual Studio for Mac |         ❌         |        ❌        |
 
 ### I'm building a service for developers. Can I integrate Visual Studio Codespaces into my own product's experience?
 

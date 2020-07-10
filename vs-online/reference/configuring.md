@@ -123,7 +123,7 @@ If you'd like to access Docker within a custom container you can add the docker 
 
   ```json
     "runArgs": [
-    "--v", "/var/run/docker.sock:/var/run/docker.sock"],
+    "-v", "/var/run/docker.sock:/var/run/docker.sock"],
   ```
 
 Or

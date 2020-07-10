@@ -57,6 +57,12 @@ Visual Studio Codespaces will clone and utilize the user-provided source and/or 
 
 Visual Studio Codespaces is eligible under the Microsoft Azure Bounty Program. For information, visit <https://www.microsoft.com/msrc/bounty-microsoft-azure>.
 
+### How do I consent to Codespace's Azure AD application if I receive the "needs admin approval" message?
+
+If you've received a "needs admin approval" message while trying to use Visual Studio Codespaces, you'll need to consent to the Codespace's Azure AD application. Have your subscription administrator complete the form at the following two URLs, replacing `{tennant_id}` with [your Azure tennant ID](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+  - https://login.microsoftonline.com/{tennant_id}/adminconsent?client_id=a3037261-2c94-4a2e-b53f-090f6cdd712a&redirect_uri=https://online.visualstudio.com
+  - https://login.microsoftonline.com/{tennant_id}/adminconsent?client_id=9db1d849-f699-4cfb-8160-64bed3335c72&redirect_uri=https://online.visualstudio.com
+
 ## Billing questions
 
 ### What is an environment unit? 

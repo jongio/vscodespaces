@@ -160,7 +160,7 @@ The workspace path. By default, the CLI will use the current working directory a
 The environment name
 
 - **`-v | --service`**
-If supplied, runs the local agent as a service/daemon on this machine (Requires admin/sudo privileges on Windows and OSX)
+If supplied, runs the local agent as a service/daemon on this machine (Requires admin/sudo privileges on Windows and OSX). Only supported on Linux distributions that are using systemd / systemctl, hence this is not supported on Alpine and others.
 
 - **`-? | -h | --help`**
 Show help information

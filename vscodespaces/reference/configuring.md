@@ -1,7 +1,8 @@
 ---
 author: nikmd23
 ms.author: nimolnar
-ms.service: visual-studio-online
+ms.prod: visual-studio-family
+ms.technology: visual-studio-codespaces
 title: Configure Codespace Environments
 ms.topic: reference
 ms.date: 05/13/2020
@@ -122,7 +123,7 @@ If you'd like to access Docker within a custom container you can add the docker 
 
   ```json
     "runArgs": [
-    "--v", "/var/run/docker.sock:/var/run/docker.sock"],
+    "-v", "/var/run/docker.sock:/var/run/docker.sock"],
   ```
 
 Or

@@ -1,7 +1,8 @@
 ---
 author: acangialosi
 ms.author: anthc
-ms.service: visual-studio-online
+ms.prod: visual-studio-family
+ms.technology: visual-studio-codespaces
 title: How to use Visual Studio Codespaces with Visual Studio 2019
 ms.topic: how-to
 ms.date: 05/13/2020

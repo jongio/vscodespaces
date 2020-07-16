@@ -1,5 +1,21 @@
 {
-  "docsets_to_publish": [],
+  "docsets_to_publish": [
+    {
+      "docset_name": "vscodespaces",
+      "build_source_folder": "vscodespaces",
+      "build_output_subfolder": "vscodespaces",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "git_repository_branch_open_to_public_contributors": "master",
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    }
+  ],
   "notification_subscribers": [
     "nimolnar@microsoft.com"
   ],

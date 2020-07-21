@@ -50,7 +50,7 @@ To create a new cloud-hosted Codespace in Visual Studio Codespaces select the **
 Enter the following information then click the **Create** button:
 
 - **Name**: My Quick Codespace
-- **Git Repository**: acangialosi/tictactoe
+- **Git Repository**: https://github.com/dotnet-architecture/eShopOnWeb
 - **Instance type**: Premium (Windows): 8 cores, 16 GB RAM
 - **Suspend idle Codespace after...**: 30 minutes
 

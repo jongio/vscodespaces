@@ -1,7 +1,8 @@
 ---
 author: jasongin
 ms.author: jasongin
-ms.service: visual-studio-online
+ms.prod: visual-studio-family
+ms.technology: visual-studio-codespaces
 title: Security controls
 ms.topic: reference
 ms.date: 06/25/2020

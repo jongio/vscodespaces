@@ -1,7 +1,8 @@
 ---
 author: nikmd23
 ms.author: nimolnar
-ms.service: visual-studio-online
+ms.prod: visual-studio-family
+ms.technology: visual-studio-codespaces
 title: Visual Studio Codespaces Frequently Asked Questions
 ms.topic: troubleshooting
 ms.date: 05/29/2020
@@ -33,12 +34,12 @@ Connecting to a Codespace from Visual Studio 2019 is available through a Private
 
 We are actively expanding support for more features and workloads across the Visual Studio clients. Not all clients have been upgraded to support all Codespaces. Here is a summary of the Visual Studio clients and the Codespaces they can support.
 
-|                       | Codespace (Windows) | Codespace (Linux) |
+| Client                | Codespace (Windows) | Codespace (Linux) |
 |-----------------------|:-------------------:|:-----------------:|
-| Visual Studio code    |         ✔         |        ✔         |
-| Browser based editor  |         ✔         |        ✔         |
-| Visual Studio 2019    |         ✔         |        ❌         |
-| Visual Studio for Mac |         ❌         |        ❌         |
+| Visual Studio code    |         ✔          |        ✔         |
+| Browser based editor  |         ✔          |        ✔         |
+| Visual Studio 2019    |         ✔          |        ❌        |
+| Visual Studio for Mac |         ❌         |        ❌        |
 
 ### I'm building a service for developers. Can I integrate Visual Studio Codespaces into my own product's experience?
 
@@ -55,6 +56,12 @@ Visual Studio Codespaces will clone and utilize the user-provided source and/or 
 ### Where can security issues or concerns be reported?
 
 Visual Studio Codespaces is eligible under the Microsoft Azure Bounty Program. For information, visit <https://www.microsoft.com/msrc/bounty-microsoft-azure>.
+
+### How do I consent to Codespace's Azure AD application if I receive the "needs admin approval" message?
+
+If you've received a "needs admin approval" message while trying to use Visual Studio Codespaces, you'll need to consent to the Codespace's Azure AD application. Have your subscription administrator complete the form at the following two URLs, replacing `{tennant_id}` with [your Azure tennant ID](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+  - https://login.microsoftonline.com/{tennant_id}/adminconsent?client_id=a3037261-2c94-4a2e-b53f-090f6cdd712a&redirect_uri=https://online.visualstudio.com
+  - https://login.microsoftonline.com/{tennant_id}/adminconsent?client_id=9db1d849-f699-4cfb-8160-64bed3335c72&redirect_uri=https://online.visualstudio.com
 
 ## Billing questions
 

@@ -1,7 +1,8 @@
 ---
 author: abuchholtzau
 ms.author: allisb
-ms.service: visual-studio-online
+ms.prod: visual-studio-family
+ms.technology: visual-studio-codespaces
 title: How to use the Codespaces CLI
 ms.topic: reference
 ms.date: 04/06/2020
@@ -159,7 +160,7 @@ The workspace path. By default, the CLI will use the current working directory a
 The environment name
 
 - **`-v | --service`**
-If supplied, runs the local agent as a service/daemon on this machine (Requires admin/sudo privileges on Windows and OSX)
+If supplied, runs the local agent as a service/daemon on this machine (Requires admin/sudo privileges on Windows and OSX). When using this flag on Linux, please note that it requires systemd / systemctl, hence this is not supported on Alpine and others.
 
 - **`-? | -h | --help`**
 Show help information

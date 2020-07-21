@@ -1,7 +1,8 @@
 ---
 author: edgonmsft
 ms.author: edgonmsft
-ms.service: visual-studio-online
+ms.prod: visual-studio-family
+ms.technology: visual-studio-codespaces
 title: Repository Options Visual Studio Codespaces
 ms.topic: reference
 ms.date: 02/25/2020

@@ -10,7 +10,7 @@ ms.date: 05/13/2020
 
 # Visual Studio Codespaces VS Code How-to
 
-This article covers how to get started using VS Code with Visual Studio Codespaces.
+This article covers how to get started using Visual Studio Code with Visual Studio Codespaces.
 
 ## Sign up
 

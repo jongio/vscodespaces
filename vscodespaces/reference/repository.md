@@ -39,4 +39,4 @@ The URL types in the following section are supported.
 | Short form | owner/repo | We also support a short form URL that only contains the owner and repository name. |
 | Branch | `https://github.com/owner/repo/tree/name` | Branches will be checked out. |
 | Commit | `https://github.com/owner/repo/commit/ID` | Commits will be checked out in a DETACHED state. |
-| Pull request | `https://github.com/owner/repo/pull/1` | The repository and branch referenced in a pull request will be cloned and checked out. In addition, the GitHub Pull Request VSCode extension will automatically be configured. |
+| Pull request | `https://github.com/owner/repo/pull/1` | The repository and branch referenced in a pull request will be cloned and checked out. In addition, the GitHub Pull Request VS Code extension will automatically be configured. |

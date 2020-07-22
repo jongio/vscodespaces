@@ -65,7 +65,7 @@ If a `--network` property is included in `runArgs` as part of a **devcontainer.j
 
 Our service implements the DoD (Docker-outside-Docker) model. In default image scenarios, the docker socket is mounted to the container, allowing the user to control docker and create side-by-side containers.
 
-For DiD (Docker in Docker) you must create a devcontainer.json file that references a docker image or Dockerfile with the necessary features like the `docker` image. See: [Docker](https://hub.docker.com/_/docker/)
+For DiD (Docker in Docker), you must create a devcontainer.json file that references a docker image or Dockerfile with the necessary features like the `docker` image. See [Docker](https://hub.docker.com/_/docker/).
 
 ### Temporary SSD mount
 

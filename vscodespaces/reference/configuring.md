@@ -29,7 +29,7 @@ The **devcontainer.json** file can be placed in one of two places in a repositor
 2. **{repository-root}/.devcontainer/devcontainer.json**
 
 > [!WARNING]
-> **devcontainer.json** files are also used to support Visual Studio Code Remote Development, and have additional properties not covered in this document. These additional properties are safe to add to the file, but will be ignored by Codespaces. For more information, see [devcontainer.json reference](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference) on code.visualstudio.com.
+> **devcontainer.json** files are also used to support Visual Studio Code Remote Development, and have additional properties not covered in this document. These additional properties are safe to add to the file, but will be ignored by Codespaces. For more information, see the [devcontainer.json reference](https://code.visualstudio.com/docs/remote/devcontainerjson-reference) on code.visualstudio.com.
 
 A container with a default image will be provided when a **devcontainer.json** file isn't included, or when the `image`,  `dockerFile` or `docker-compose` properties are not specified. The default image has the following tools and SDKs:
 
@@ -65,7 +65,7 @@ If a `--network` property is included in `runArgs` as part of a **devcontainer.j
 
 Our service implements the DoD (Docker-outside-Docker) model. In default image scenarios, the docker socket is mounted to the container, allowing the user to control docker and create side-by-side containers.
 
-For DiD (Docker in Docker) you must create a devcontainer.json file that references a docker image or Dockerfile with the necessary features like the `docker` image. See: [Docker](https://hub.docker.com/_/docker/)
+For DiD (Docker in Docker), you must create a devcontainer.json file that references a docker image or Dockerfile with the necessary features like the `docker` image. See [Docker](https://hub.docker.com/_/docker/).
 
 ### Temporary SSD mount
 
@@ -84,7 +84,7 @@ It can be disabled applying the following to the **devcontainer.json** file:
 
 ## Container requirements
 
-Containers should be able to fulfill requirements of both [VSCode Remote Server](https://code.visualstudio.com/docs/remote/containers#_system-requirements) and [Live Share](/visualstudio/liveshare/reference/linux#install-linux-prerequisites).
+Containers should be able to fulfill requirements of both [VS Code Remote Server](https://code.visualstudio.com/docs/remote/containers#_system-requirements) and [Live Share](/visualstudio/liveshare/reference/linux#install-linux-prerequisites).
 
 ## Container provisioning
 

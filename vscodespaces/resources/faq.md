@@ -36,7 +36,7 @@ We are actively expanding support for more features and workloads across the Vis
 
 | Client                | Codespace (Windows) | Codespace (Linux) |
 |-----------------------|:-------------------:|:-----------------:|
-| Visual Studio code    |         ✔          |        ✔         |
+| Visual Studio Code    |         ✔          |        ✔         |
 | Browser based editor  |         ✔          |        ✔         |
 | Visual Studio 2019    |         ✔          |        ❌        |
 | Visual Studio for Mac |         ❌         |        ❌        |

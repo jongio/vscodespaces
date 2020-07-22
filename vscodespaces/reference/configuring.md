@@ -29,7 +29,7 @@ The **devcontainer.json** file can be placed in one of two places in a repositor
 2. **{repository-root}/.devcontainer/devcontainer.json**
 
 > [!WARNING]
-> **devcontainer.json** files are also used to support Visual Studio Code Remote Development, and have additional properties not covered in this document. These additional properties are safe to add to the file, but will be ignored by Codespaces. For more information, see [devcontainer.json reference](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference) on code.visualstudio.com.
+> **devcontainer.json** files are also used to support Visual Studio Code Remote Development, and have additional properties not covered in this document. These additional properties are safe to add to the file, but will be ignored by Codespaces. For more information, see [devcontainer.json reference](https://code.visualstudio.com/docs/remote/devcontainerjson-reference) on code.visualstudio.com.
 
 A container with a default image will be provided when a **devcontainer.json** file isn't included, or when the `image`,  `dockerFile` or `docker-compose` properties are not specified. The default image has the following tools and SDKs:
 
@@ -84,7 +84,7 @@ It can be disabled applying the following to the **devcontainer.json** file:
 
 ## Container requirements
 
-Containers should be able to fulfill requirements of both [VSCode Remote Server](https://code.visualstudio.com/docs/remote/containers#_system-requirements) and [Live Share](/visualstudio/liveshare/reference/linux#install-linux-prerequisites).
+Containers should be able to fulfill requirements of both [VS Code Remote Server](https://code.visualstudio.com/docs/remote/containers#_system-requirements) and [Live Share](/visualstudio/liveshare/reference/linux#install-linux-prerequisites).
 
 ## Container provisioning
 

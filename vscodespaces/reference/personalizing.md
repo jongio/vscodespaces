@@ -59,7 +59,8 @@ On Linux-based codespaces:
   - `.bashrc` and `.bashprofile` for Bash and other shell
 
 On Windows-based codespaces:
-  - `profile.ps1` for PowerShell, this is not actually sourced as on Linux, but rather copied to `%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1`
+  - `profile.ps1` for PowerShell
+    - **Note:** This file is copied to `%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1` instead of being sourced.
 
 Please note that this last part only happens when you did not specify any install command and none of the pre-configured install scripts listed above are found.
 

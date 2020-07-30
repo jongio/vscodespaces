@@ -25,7 +25,7 @@ Homebrew is the easiest way to manage your CLI install. It provides convenient w
 You can install the CLI by updating your brew repository information, and then running the install command:
 
 ```bash
-brew install microsoft/vsonline/vso
+brew install microsoft/vscodespaces/codespaces
 ```
 
 ### Linux
@@ -108,6 +108,12 @@ curl -L https://aka.ms/install-vso-linux | sudo bash
 
 Codespaces is launched using the following command:
 
+Windows/Mac:
+```bash
+codespaces [options] [command] [[--] <arg>...]
+```
+
+Linux:
 ```bash
 vso [options] [command] [[--] <arg>...]
 ```
@@ -132,6 +138,12 @@ The following **commands** are available:
 
 The **`start`** command begins the interactive process of registering your self-hosted machine:
   
+  Windows/Mac:
+  ```bash
+  codespaces start [args]
+  ```
+
+  Linux:
   ```bash
   vso start [args]
   ```
@@ -139,19 +151,19 @@ The **`start`** command begins the interactive process of registering your self-
 These arguments can be provided to the start command:
 
 > [!NOTE]
-> You can either specify your plan by supplying either the subscription, resource group, and name or the plan id.
+> You can either specify your plan by supplying either the subscription, resource group, and name or the plan ID.
 
 - **`-s | --subscription`**
-The Subscription of the plan this environment should be registered to
+The Subscription of the plan this Codespace should be registered to
 
 - **`-r | --resource-group`**
-The Resource Group of the plan this environment should be registered to
+The Resource Group of the plan this Codespace should be registered to
 
 - **`-p | --plan-name`**
-The existing plan name this environment should be registered to
+The existing plan name this Codespace should be registered to
 
 - **`-i | --plan-id`**
-The fully qualified plan id ('/subscriptions/...')
+The fully qualified plan ID ('/subscriptions/...')
 
 - **`-w | --workspace-path`**
 The workspace path. By default, the CLI will use the current working directory as the landing point when you connect. You will be able to switch folders after connection.
@@ -167,8 +179,13 @@ Show help information
 
 ## Stop Codespaces
 
-The **`stop`** command removes your environment from the Visual Studio Codespaces service:
-  
+The **`stop`** command removes your Codespace from the Visual Studio Codespaces service:
+
+  Windows/Mac:
+  ```bash
+  codespaces stop
+  ```  
+  Linux:
   ```bash
   vso stop
   ```

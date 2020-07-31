@@ -23,7 +23,7 @@ Codespaces CLI tools can be used on [Windows](~/reference/vsonline-cli.md#window
 
 You must create a Codespaces plan before starting the registration process. For more information on creating a plan, see [create a plan](browser.md#create-a-plan) in our browser how-to guide.
 
-Once you've successfully installed the CLI, start the interactive registration process by running the [`vso start`](~/reference/vsonline-cli.md#start-codespaces) command.
+Once you've successfully installed the CLI, start the interactive registration process by running the [`codespaces start`](~/reference/vsonline-cli.md#start-codespaces) command.
 
 > [!NOTE]
 > Be sure you're running the process as the user you'd like to use when accessing the Codespace from other machines after registration.
@@ -63,7 +63,7 @@ You may be prompted for a sudoers password (unless another sudo command has rece
 Register the self-hosted agent as a service by running:
 
 ```bash
-vso start --service
+codespaces start --service
 ```
 
 You will be prompted to confirm if you want to run `loginctl enable-linger` to keep the agent running even when logged off.
@@ -75,14 +75,8 @@ You will be prompted to confirm if you want to run `loginctl enable-linger` to k
 
 Once you've successfully installed the CLI, run the self-hosted agent as a temporary process by running:
 
-Windows/Mac:
 ```bash
 codespaces start
-```
-
-Linux:
-```bash
-vso start
 ```
 
 As part of registration, you will be asked to sign-in with your Codespaces account and provide the existing plan this environment should be registered to.

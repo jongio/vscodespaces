@@ -95,7 +95,7 @@ sudo apt-get update
 Install the Codespaces CLI:
 
 ```bash
-sudo apt-get install vso
+sudo apt-get install codespaces
 ```
 
 For other Linux distributions, run the following script by using curl and pipe directly to bash, or download the script to a file and inspect it before running.
@@ -108,14 +108,8 @@ curl -L https://aka.ms/install-vso-linux | sudo bash
 
 Codespaces is launched using the following command:
 
-Windows/Mac:
 ```bash
 codespaces [options] [command] [[--] <arg>...]
-```
-
-Linux:
-```bash
-vso [options] [command] [[--] <arg>...]
 ```
 
 The following **options** can be provided to Codespaces:
@@ -138,14 +132,8 @@ The following **commands** are available:
 
 The **`start`** command begins the interactive process of registering your self-hosted machine:
   
-  Windows/Mac:
   ```bash
   codespaces start [args]
-  ```
-
-  Linux:
-  ```bash
-  vso start [args]
   ```
 
 These arguments can be provided to the start command:
@@ -181,11 +169,6 @@ Show help information
 
 The **`stop`** command removes your Codespace from the Visual Studio Codespaces service:
 
-  Windows/Mac:
   ```bash
   codespaces stop
   ```  
-  Linux:
-  ```bash
-  vso stop
-  ```

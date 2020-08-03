@@ -55,11 +55,12 @@ By default, Codespaces scans the dotfiles repository and runs one of the followi
 If none of these files are found, any files and folders starting with `.` are symlinked to the home (`~` or `$HOME` on Linux, `%HOMEPATH%` on Windows) directory. In addition, a couple of files are picked up automatically by convention for sourcing.
 
 On Linux-based codespaces:
-  - `sourcer.zsh` for zsh shell
-  - `sourcer.sh` for Bash and other shell
+  - `zshrc` for zsh shell
+  - `.bashrc` and `.bashprofile` for Bash and other shell
 
 On Windows-based codespaces:
   - `profile.ps1` for PowerShell
+    - **Note:** This file is copied to `%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1` instead of being sourced.
 
 Please note that this last part only happens when you did not specify any install command and none of the pre-configured install scripts listed above are found.
 

@@ -14,7 +14,7 @@ The following limits apply when you use Visual Studio Codespaces:
 
 - Plans per subscription: 20
 - Codespaces per plan: 20
-- Active cores per plan is dependent on the [offer category](https://azure.microsoft.com/support/legal/offer-details/):
+- Active cores per subscription is dependent on the [offer category](https://azure.microsoft.com/support/legal/offer-details/):
 
     | Category Type | Limit |
     |----|-----|

@@ -40,11 +40,9 @@ As we move the service over and continue to gather feedback from beta customers,
 
 #### Self-hosted codespaces 
 
-The self-hosted offering for Codespaces will not be moving over to GitHub Codespaces and will be retired on 11/20/2020. We will work to address bugs but will not be making further investments in the self-hosted feature set. 
+Users will not be able to register new self-hosted machines when the service suspends codespace creation on 11/20/2020.
 
-Users will not be able to register new machines or access registered machines after retirement on 11/20/2020. 
-
-Thank you to everyone who tried this feature, logged bugs, and provided insightful feedback!
+Self-hosted is not currently included in the GitHub service, but we will be listening to feedback to inform our roadmap.
 
 ## What happens to Private Preview users in VS and Windows SKU?
 

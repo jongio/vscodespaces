@@ -76,7 +76,7 @@ In the meantime, we want to propose two workarounds that are already possible to
 > The following guidance pertains to customers utilizing Visual Studio Code or the browser experience. For our private preview users in Visual Studio, stay tuned for updates as we continue to iterate on your experience.
 
 ### Utilize the universal image with Codespaces
-If your repository doesn’t require extra [customization](..reference/configuring.md), you can leverage our universal image to get started quickly.
+If your repository doesn’t require extra [customization](../reference/configuring.md), you can leverage our universal image to get started quickly.
 
 1. Sign in to [GitHub](https://github.com/) using the account with Codespaces beta access.
 1. [Create](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository) a new GitHub repository and add at least one file (e.g. README). Codespaces cannot be created off empty repositories.
@@ -85,7 +85,7 @@ If your repository doesn’t require extra [customization](..reference/configuri
 
 ### Mirror your repository to GitHub
 
-This workflow will allow you to leverage [customization](..reference/configuring.md) via a devcontainer.json or Dockerfile in your repository. However, you’ll need to manually re-sync changes between the original and mirrored repositories or setup a CI task to automate the sync process.
+This workflow will allow you to leverage [customization](../reference/configuring.md) via a devcontainer.json or Dockerfile in your repository. However, you’ll need to manually re-sync changes between the original and mirrored repositories or setup a CI task to automate the sync process.
 
 1. Sign in to [GitHub](https://github.com/) using the account with Codespaces beta access.
 1. [Create](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository) a new GitHub repository and add at least one file (e.g. README). Codespaces cannot be created off empty repositories.

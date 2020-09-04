@@ -27,6 +27,7 @@
     href: how-to/self-hosting-cli.md
 - name: Reference
   items: 
+
   - name: Configuring environments
     href: reference/configuring.md
   - name: Configuring Windows environments
@@ -43,6 +44,8 @@
     href: reference/quota-limits.md
 - name: Resources
   items:
+  - name: Consolidation FAQ
+    href: resources/consolidation-faq.md
   - name: Troubleshooting
     href: resources/troubleshooting.md
   - name: Feedback

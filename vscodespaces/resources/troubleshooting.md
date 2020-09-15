@@ -4,6 +4,7 @@ ms.author: nimolnar
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Troubleshooting Visual Studio Codespaces
+description: Troubleshooting guidance for Visual Studio Codespaces
 ms.topic: troubleshooting
 ms.date: 09/20/2019
 ---

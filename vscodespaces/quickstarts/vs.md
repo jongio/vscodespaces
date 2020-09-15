@@ -4,6 +4,7 @@ ms.author: nimolnar
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Visual Studio Codespaces with Visual Studio 2019 Quickstart
+description: Create and connect to Visual Studio Codespaces with Visual Studio.
 ms.topic: quickstart
 ms.date: 05/13/2020
 ---

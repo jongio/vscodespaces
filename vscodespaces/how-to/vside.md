@@ -4,6 +4,7 @@ ms.author: anthc
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: How to use Visual Studio Codespaces with Visual Studio 2019
+description: Learn how to create and connect to Visual Studio Codespaces with Visual Studio.
 ms.topic: how-to
 ms.date: 05/13/2020
 ---

@@ -4,6 +4,7 @@ ms.author: allisb
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Visual Studio Codespaces Consolidation Frequently Asked Questions
+description: Visual Studio Codespaces and GitHub Codespaces consolidation FAQ
 ms.topic: reference
 ms.date: 05/13/2020
 ---

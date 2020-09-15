@@ -4,6 +4,7 @@ ms.author: nimolnar
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Visual Studio Codespaces with a browser Quickstart
+description: Create and connect to Visual Studio Codespaces with the browser-based editor.
 ms.topic: quickstart
 ms.date: 05/13/2020
 ---

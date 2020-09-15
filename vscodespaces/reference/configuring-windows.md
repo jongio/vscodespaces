@@ -4,6 +4,7 @@ ms.author: andster
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Configuring Windows Instance Types in Codespaces
+description: Configuring custom Windows-based Visual Studio Codespaces.
 ms.topic: reference
 ms.date: 05/13/2020
 ---
@@ -81,4 +82,4 @@ If you are using an Azure Active Directory (AAD) identity to authenticate your a
 > az login --use-device-code
 ```
 
-You can learn more on the `az login` command in the Azure CLI [documentation](/cli/azure/reference-index?view=azure-cli-latest#az-login).
+You can learn more on the `az login` command in the Azure CLI [documentation](/cli/azure/reference-index#az-login).

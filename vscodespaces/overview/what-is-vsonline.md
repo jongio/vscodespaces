@@ -4,6 +4,7 @@ ms.author: nimolnar
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: What is Visual Studio Codespaces?
+description: Learn more about Visual Studio Codespaces and how it can help extend your development environment to the cloud.
 ms.topic: overview
 ms.date: 05/13/2020
 ---

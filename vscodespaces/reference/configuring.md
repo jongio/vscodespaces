@@ -4,6 +4,7 @@ ms.author: nimolnar
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Configure Codespace Environments
+description: Configuring custom Visual Studio Codespaces with devcontainer.json.
 ms.topic: reference
 ms.date: 05/13/2020
 ---

@@ -4,6 +4,7 @@ ms.author: allisb
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Register a headless, self-hosted Codespace
+description: Register a self-hosted environment with the Visual Studio Codespaces command line interface (CLI).
 ms.topic: how-to
 ms.date: 04/06/2020
 ---

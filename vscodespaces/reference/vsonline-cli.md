@@ -4,6 +4,7 @@ ms.author: allisb
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: How to use the Codespaces CLI
+description: Visual Studio Codespaces command line interface (CLI) reference
 ms.topic: reference
 ms.date: 04/06/2020
 ---

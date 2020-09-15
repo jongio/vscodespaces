@@ -4,6 +4,7 @@ ms.author: nimolnar
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Visual Studio Codespaces Frequently Asked Questions
+description: Visual Studio Codespaces general, security, and billing frequently asked questions.
 ms.topic: troubleshooting
 ms.date: 05/29/2020
 ---

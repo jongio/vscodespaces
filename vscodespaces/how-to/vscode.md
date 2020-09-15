@@ -4,6 +4,7 @@ ms.author: nimolnar
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: How to use Visual Studio Codespaces with VS Code
+description: Learn how to create and connect to Visual Studio Codespaces with Visual Studio Code.
 ms.topic: how-to
 ms.date: 05/13/2020
 ---

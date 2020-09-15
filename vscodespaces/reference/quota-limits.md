@@ -4,6 +4,7 @@ ms.author: allisb
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Subscription and service limits
+description: Visual Studio Codespaces plan and codespace limits and quotas.
 ms.topic: reference
 ms.date: 04/29/2020
 ---

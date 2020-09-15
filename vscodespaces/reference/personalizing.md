@@ -4,6 +4,7 @@ ms.author: nimolnar
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Personalizing Visual Studio Codespaces
+description: Personalizing Visual Studio Codespaces through dotfiles and Visual Studio Code Settings Sync.
 ms.topic: reference
 ms.date: 04/29/2020
 ---

@@ -4,6 +4,7 @@ ms.author: nimolnar
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Visual Studio Codespaces Feedback
+description: How to provide feedback or request support for Visual Studio Codespaces
 ms.topic: troubleshooting
 ms.date: 09/20/2019
 ---

@@ -4,6 +4,7 @@ ms.author: nimolnar
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: How to use Visual Studio Codespaces with a browser
+description: Learn how to create and connect to Visual Studio Codespaces with the browser-based editor.
 ms.topic: how-to
 ms.date: 09/20/2019
 ---

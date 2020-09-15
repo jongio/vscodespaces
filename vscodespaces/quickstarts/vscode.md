@@ -4,6 +4,7 @@ ms.author: nimolnar
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Visual Studio Codespaces with VS Code Quickstart
+description: Create and connect to Visual Studio Codespaces with Visual Studio Code.
 ms.topic: quickstart
 ms.date: 05/13/2020
 ---

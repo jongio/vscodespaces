@@ -82,4 +82,4 @@ If you are using an Azure Active Directory (AAD) identity to authenticate your a
 > az login --use-device-code
 ```
 
-You can learn more on the `az login` command in the Azure CLI [documentation](/cli/azure/reference-index?view=azure-cli-latest#az-login).
+You can learn more on the `az login` command in the Azure CLI [documentation](/cli/azure/reference-index#az-login).

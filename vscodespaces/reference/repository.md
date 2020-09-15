@@ -1,6 +1,6 @@
 ---
 author: edgonmsft
-ms.author: edgonmsft
+ms.author: edgon
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
 title: Repository Options Visual Studio Codespaces

@@ -36,16 +36,18 @@ If all else fails, feel free to [file an issue](https://github.com/MicrosoftDocs
 
 ## Self-hosted environments
 
-### Restore a self-hosted environment
-
-If your self-hosted environment becomes unavailable, you can attempt to restore it on the registered machine. 
-
-Right-click the self-hosted environment in the **Codespaces** panel to reveal a context menu with a **Restore Local Environment** option. This option is only visible if you are currently working on the machine registered as a self-hosted environment.
-
-Select the **Restore Local Environment** option and wait for a notification toast indicating that the environment has been restored.
+### Administrator permission required (Windows)
+If you are registering a self-hosted Codespace via VS Code, you may see the message "Administrator permission required" under the "Register as a service" option. Administrator privileges are required to create a Windows service, so to enable this feature, you'll need to open a new instance of VS Code using the "Run as Administrator" option and restart the registration process. Alternatively, the "Run as a process" option does not require VS Code to be run as administrator.
 
 ### Incorrect Password for User (Windows)
 If you're recieving an error of "Incorrect password for user" when attempting to register the self-hosted agent as a service, you may not have "Log on as a service" enabled on your user account. You'll need to [grant "Log on as a service"](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/log-on-as-a-service) to your user account before registering the agent as a service.
+
+### Restore a self-hosted Codespace
+If your self-hosted Codespace becomes unavailable, you can attempt to restore it using VS Code on the registered machine. 
+
+Right-click the self-hosted environment in the **Codespaces** panel to reveal a context menu with a **Restore Self-Hosted Codespace** option. This option is only visible if you are currently working on the machine registered as a self-hosted Codespace.
+
+Select the **Restore Self-Hosted Codespace** option and wait for a notification toast indicating that the Codespace has been restored.
 
 ## Partially Supported Browsers
 Due to browser restrictions, you may not get the full set of features in Safari and Firefox.

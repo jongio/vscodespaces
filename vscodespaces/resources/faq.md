@@ -87,12 +87,3 @@ Codespaces, by default, allows users to create 3 environments per plan, and 2 pl
 ### Where can I report an issue with my billing?
 
 Billing support is available online at [https://aka.ms/vso-billing-issues](https://aka.ms/vso-billing-issues).
-
-## Visual Studio questions
-
-### What kinds of apps and projects are supported in Visual Studio and Visual Studio Codespace?
-
-Visual Studio currently supports building .NET Core and C++ applications while connected to a Codespace. In .NET Core you can create Console, Library, and ASP.NET applications. For C++ both CMake and .VCXProj based projects are supported for building Console apps and libraries. We are adding support for many more projects so check back again soon.
-
-> [!NOTE]
-> If .NET Core projects fail to load, check whether you have the appropriate .NET Core SDK version installed.

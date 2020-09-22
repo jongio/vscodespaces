@@ -81,8 +81,6 @@ Complete the form to provide a codespace name, path to Git repository (optional)
   - 30 minutes
   - 2 hours
 
-> [!NOTE]
-> Windows based instance types are available as part of our Codespaces for Visual Studio Private Preview. [Sign up](https://aka.ms/vsfutures-signup) to receive access.
 > [!TIP]
 > The guided codespace creation experience described above supports Git repositories over the HTTP(S) scheme. To use another source control provider, or Git over SSH, simply leave the **Git Repository** setting blank, and use the codespaces's terminal support to clone your source code.
 > [!NOTE]

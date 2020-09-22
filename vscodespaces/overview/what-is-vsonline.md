@@ -13,9 +13,7 @@ ms.date: 05/13/2020
 
 Welcome to Visual Studio Codespaces! We're glad you're here.
 
-Visual Studio Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio 2019 ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Codespaces at no cost.
-
-Additionally, Visual Studio Codespaces brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Codespaces is also personalizable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on.
+Visual Studio Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. Additionally, Visual Studio Codespaces brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Codespaces is also personalizable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on.
 
 This document will explain key concepts and introduce Codespaces features. If you're looking for an abridged version, check out [the quickstarts](../quickstarts/browser.md).
 
@@ -51,7 +49,6 @@ In addition to cloud-hosted environments, Visual Studio Codespaces also allows y
 In addition to "backend" environments, Visual Studio Codespaces supports these "frontend" editors:
 
 - Visual Studio Code
-- Visual Studio 2019 (Private Preview)
 - Visual Studio Code-based editor in the browser
 
 Linux environments (Public Preview) are accessible from Visual Studio Code and our Visual Studio Code-based editor in the browser. Windows environments (Private Preview) are accessible from all three "frontend" editors.
@@ -76,13 +73,11 @@ Environments can be created with a user specific collection of custom dotfiles (
 
 - [Visual Studio Codespaces in the browser](../quickstarts/browser.md)
 - [Visual Studio Codespaces in Visual Studio Code](../quickstarts/vscode.md)
-- [Visual Studio Codespaces in Visual Studio 2019](../quickstarts/vs.md)
 
 ### How-tos
 
 - [Visual Studio Codespaces in the browser](../how-to/browser.md)
 - [Visual Studio Codespaces in Visual Studio Code](../how-to/vscode.md)
-- [Visual Studio Codespaces in Visual Studio 2019](../how-to/vside.md)
 
 ### Reference & Resources
 

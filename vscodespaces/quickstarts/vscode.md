@@ -11,9 +11,7 @@ ms.date: 05/13/2020
 
 # Visual Studio Codespaces VS Code Quickstart
 
-Visual Studio Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. You can work with these environments from Visual Studio Code, Visual Studio 2019 ([sign up for the Private Preview](https://aka.ms/vsfutures-signup)), or a browser-based editor that's accessible anywhere! You can even connect your own self-hosted environments to Visual Studio Codespaces at no cost.
-
-Additionally, Visual Studio Codespaces brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Codespaces is also personalizable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
+Visual Studio Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request.Additionally, Visual Studio Codespaces brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Codespaces is also personalizable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
 
 This document will walk you through how to install the Codespaces extension, create a cloud-hosted environment, connect to it, run and debug the environment's application, disconnect and delete the environment.
 
@@ -84,5 +82,4 @@ To delete the newly created codespace, right-click on **My Quick Codespace** in 
 This article covered a typical end-to-end use of Codespaces. For more information, see:
 
 - [What is Visual Studio Codespaces?](../overview/what-is-vsonline.md)
-- [Codespaces with Visual Studio 2019 quickstart](../quickstarts/vs.md)
 - [Codespaces with the browser quickstart](../quickstarts/browser.md)

@@ -120,9 +120,6 @@ Finally you will be prompted to give a name for your codespace. Once you provide
 
 The guided codespace creation experience described above supports Git repositories over the HTTP(S) scheme. To use another source control provider, or Git over SSH, simply leave the **Git Repository** setting blank, and use the codespace's terminal support to clone your source code.
 
-> [!NOTE]
-> Windows based instance types are available as part of our Codespaces for Visual Studio Private Preview. [Sign up](https://aka.ms/vsfutures-signup) to receive access.
-
 ## Connect to a codespace
 
 If you were already connected to a codespace when you last shut down VS Code, it will automatically try to re-connect to that codespace when you launch it.

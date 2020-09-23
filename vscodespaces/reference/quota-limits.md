@@ -3,7 +3,7 @@ author: 2percentsilk
 ms.author: allisb
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
-title: Subscription and service limits
+title: Subscription and service limits for Codespaces
 description: Visual Studio Codespaces plan and codespace limits and quotas.
 ms.topic: reference
 ms.date: 04/29/2020

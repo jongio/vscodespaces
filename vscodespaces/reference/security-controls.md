@@ -3,7 +3,7 @@ author: jasongin
 ms.author: jasongin
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
-title: Security controls
+title: Security controls in Codespaces
 description: Security measures built into Visual Studio Codespaces.
 ms.topic: reference
 ms.date: 06/25/2020

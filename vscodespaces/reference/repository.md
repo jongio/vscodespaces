@@ -3,7 +3,7 @@ author: edgonmsft
 ms.author: edgon
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
-title: Repository Options Visual Studio Codespaces
+title: Repository Options with Visual Studio Codespaces
 description: Visual Studio Codespaces GitHub repository support.
 ms.topic: reference
 ms.date: 02/25/2020

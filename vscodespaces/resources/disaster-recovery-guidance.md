@@ -3,7 +3,7 @@ author: nikmd23
 ms.author: nimolnar
 ms.prod: visual-studio-family
 ms.technology: visual-studio-codespaces
-title: Disaster recovery scenarios
+title: Disaster recovery scenarios for Codespaces
 description: Visual Studio Codespaces disaster recovery guidance and options.
 ms.topic: troubleshooting
 ms.date: 05/10/2020

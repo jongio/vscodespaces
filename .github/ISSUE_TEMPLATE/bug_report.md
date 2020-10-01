@@ -26,7 +26,8 @@ If applicable, add screenshots to help explain your problem.
 **More details (please complete the following information):**
  - Codespace Instance Type: [Windows / Linux]
  - Client: [Browser-based editor / VS Code / Visual Studio]
-
+ - Are you acessing Codespaces from a tablet, laptop, or deskop? Which one?
+ 
 Brower-based editor details:
 - Browser [e.g. chrome, safari]:
 - Version [e.g. 22]

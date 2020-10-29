@@ -28,6 +28,8 @@
 - name: Reference
   items: 
 
+  - name: Avoiding DockerHub Pull Limits
+    href: reference/dockerhub.md
   - name: Configuring environments
     href: reference/configuring.md
   - name: Configuring Windows environments

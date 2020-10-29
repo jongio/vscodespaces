@@ -11,9 +11,9 @@ ms.date: 10/28/2020
 
 # Avoiding DockerHub Pull Limits
 
-Docker [recently announced](https://www.docker.com/pricing/resource-consumption-updates) that there will be limits on the number of image "pulls" their free tiers provide starting November 2nd, 2020. This includes pulling images from DockerHub as when building an image. Critically, there is a limit of 100 anonymous pulls per-IP every six hours.
+Docker [recently announced](https://www.docker.com/pricing/resource-consumption-updates) that there will be limits on the number of image "pulls" their free tiers provide starting November 2nd, 2020. This includes pulling images from DockerHub when building an a custom image. Critically, there is a limit of **100 anonymous pulls per-IP** every six hours.
 
-Since Visual Studio Codespaces resides in Azure, IPs are not predictable, so this could affect you in two ways:
+Since Visual Studio Codespaces resides in Azure, **IPs are not predictable**, so this could affect you in two ways:
 
 1. If you use a custom image, Dockerfile, or Docker Compose file that referneces a DockerHub image, you may experience throttling when creating a codespace.
 2. Once inside a codespace, you may experience throttling when using the Docker CLI inside the codespace.

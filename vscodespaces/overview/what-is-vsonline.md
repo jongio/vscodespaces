@@ -59,6 +59,8 @@ This array of editor options allows developers to use their preferred tooling fr
 
 Visual Studio Codespaces is built to accommodate the widest variety of projects or tasks. Developers can start with smart-configuration features that provide common defaults, or finely-tune environments with custom JSON and Dockerfile configuration.
 
+> [!WARNING] To avoid [DockerHub pull limits](https://www.docker.com/pricing/resource-consumption-updates), we strongly recommend using images from the Microsoft container registry such as the [.NET images](https://hub.docker.com/_/microsoft-dotnet) or the [pre-built dev container images](https://hub.docker.com/_/microsoft-vscode-devcontainers). You may also push DockerHub images you are using to another public registry like [GitHub Container Registry](https://docs.github.com/en/free-pro-team@latest/packages/getting-started-with-github-container-registry/about-github-container-registry) or transition to [GitHub Codespaces](https://github.com/features/codespaces) which should not experience these issues.
+
 Flexible configuration allows developers to rapidly onboard on projects with unique configuration and requirements that are difficult to apply on a local machine. Additionally, reproducible development environments eliminate "works on my machine" problems.
 
 ### Personal configuration

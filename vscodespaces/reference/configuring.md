@@ -91,6 +91,8 @@ Containers should be able to fulfill requirements of both [VS Code Remote Server
 
 Start provisioning a container by including a **devcontainer.json** file in the project repository. A terminal containing the details of the build process will appear, and can be used to aid in diagnosing creation failures.
 
+> [!WARNING] To avoid [DockerHub pull limits](https://www.docker.com/pricing/resource-consumption-updates), we strongly recommend using images from the Microsoft container registry such as the [.NET images](https://hub.docker.com/_/microsoft-dotnet) or the [pre-built dev container images](https://hub.docker.com/_/microsoft-vscode-devcontainers). You may also push DockerHub images you are using to another public registry like [GitHub Container Registry](https://docs.github.com/en/free-pro-team@latest/packages/getting-started-with-github-container-registry/about-github-container-registry) or transition to [GitHub Codespaces](https://github.com/features/codespaces) which should not experience these issues.
+
 ### Image support
 
 Add the `image` argument and value to a **devcontainer.json** file in the project repository. The image must be in a public repository.

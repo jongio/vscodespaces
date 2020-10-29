@@ -31,9 +31,9 @@ If you need to continue to create new codspaces in VS Codespaces until November 
 
 ## Avoiding throttling when working with Docker inside a codespace
 
-Once inside a codespace, you can avoid these limits by simply [loggig into the Docker CLI](https://docs.docker.com/engine/reference/commandline/login/). A free account and you can raise the pull request limits to 200 every six hours for your user and is not subject to IP limits. There are also [paid tiers](https://www.docker.com/pricing) that lift this limit entirely.
+Once inside a codespace, you can avoid these limits by simply [loggig into the Docker CLI](https://docs.docker.com/engine/reference/commandline/login/). Logging in with free account will give your user 200 pulls every six hours and is not subject to IP limits. There are also [paid tiers](https://www.docker.com/pricing) that lift this limit entirely.
 
-From a terminal, run:
+To log in, start a terminal in your codespace and run:
 
 ```bash
 docker login -u your-user-name-here

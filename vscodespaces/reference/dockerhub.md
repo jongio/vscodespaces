@@ -18,7 +18,8 @@ Since Visual Studio Codespaces resides in Azure, **IPs are not predictable**, so
 1. If you use a custom image, Dockerfile, or Docker Compose file that references a DockerHub image, you may experience throttling when creating a codespace.
 2. Once inside a codespace, you may experience throttling when using the Docker CLI inside the codespace.
 
-> [!NOTE] The default Codespaces image is not affected by these pull limits.
+> [!NOTE]
+> The default Codespaces image is not affected by these pull limits.
 
 ## Avoiding throttling when creating a codespace
 

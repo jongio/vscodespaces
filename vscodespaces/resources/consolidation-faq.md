@@ -17,7 +17,7 @@ ms.date: 05/13/2020
 
 - [Announcement: Visual Studio Codespaces is consolidating into GitHub Codespaces.](https://aka.ms/vscs-moving)
 
-### November 20th, 2020
+### December 16, 2020
 
 - New user sign-ups to Visual Studio Codespaces are suspended.
 

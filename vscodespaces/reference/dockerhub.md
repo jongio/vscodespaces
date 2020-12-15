@@ -11,6 +11,9 @@ ms.date: 10/28/2020
 
 # Avoiding DockerHub Pull Limits
 
+> [!IMPORTANT] 
+> Visual Studio Codespaces is being consolidated into [GitHub Codespaces](https://github.com/features/codespaces). New user signups and codespace creation suspended on December 16th, 2020. The service will be retired and all data deleted on February 17th, 2021. See our [FAQs](https://docs.microsoft.com/visualstudio/codespaces/resources/consolidation-faq#im-a-current-visual-studio-codespaces-user-how-do-i-move-to-the-github-beta) for guidance on your transition to GitHub Codespaces.
+
 Docker [recently announced](https://www.docker.com/pricing/resource-consumption-updates) that there will be limits on the number of image "pulls" their free tiers provide starting November 2nd, 2020. This includes pulling images from DockerHub when building an a custom image. Critically, there is a limit of **100 anonymous pulls per-IP** every six hours.
 
 Since Visual Studio Codespaces resides in Azure, **IPs are not predictable**, so this could affect you in two ways:

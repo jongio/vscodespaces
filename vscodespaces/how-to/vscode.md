@@ -13,7 +13,13 @@ ms.date: 05/13/2020
 
 This article covers how to get started using Visual Studio Code with Visual Studio Codespaces.
 
+> [!IMPORTANT] 
+> Visual Studio Codespaces is being consolidated into GitHub Codespaces. New user signups and codespace creation suspended on December 16th, 2020. The service will be retired and all data deleted on February 17th, 2021. See our [FAQs](https://docs.microsoft.com/visualstudio/codespaces/resources/consolidation-faq#im-a-current-visual-studio-codespaces-user-how-do-i-move-to-the-github-beta) for guidance on your transition to GitHub Codespaces.
+
 ## Sign up
+
+> [IMPORTANT]
+> New user signups suspended on December 16, 2020.
 
 A Microsoft Account and Azure Subscription are required to use Visual Studio Codespaces. You can sign up for both at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/).
 
@@ -60,6 +66,9 @@ Add content for:
 
 ## Create a plan
 
+> [IMPORTANT]
+> New plan creation suspended on December 16, 2020.
+
 Once you've [signed up](#sign-up) and created an Azure subscription, you can access Codespaces by creating a Codespaces Plan. You can create more than one plan, and plans can be used to group related codespaces together. They are also the unit of billing, and as such you'll see a line item on your Azure bill for each plan you create. For more information about plans and pricing, see [Codespaces pricing](https://aka.ms/vso-pricing).
 
 The first time you [create a codespace](#create-a-codespace), VS Code will automatically walk you through the steps required to create a plan. To explicitly create a new plan, you can either use the **Codespaces: Create Plan** command in the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette), or by clicking the **Select Plan** button on the **Codespaces** title bar in the **Remote Explorer** side bar, then selecting **Create new plan...** from the quick pick list.
@@ -86,8 +95,8 @@ Only codespaces contained within the selected plan will be displayed. To select 
 
 ## Create a codespace
 
->[!TIP]
-> If you've already got a configured development environment or need specialized hardware Codespaces doesn't currently support, you can self-host Visual Studio Codespaces. For more information, see [Register a self-hosted Codespaces environment](self-hosting-vscode.md).
+> [IMPORTANT]
+> New codespace creation suspended on December 16, 2020.
 
 Codespace environments are extremely configurable. For advanced information about how to configure your codespace, see [Configure Codespace environments](../reference/configuring.md).
 

@@ -10,6 +10,9 @@ ms.date: 04/06/2020
 ---
 # Register a self-hosted Codespaces environment with Visual Studio Code
 
+> [!IMPORTANT] 
+> Visual Studio Codespaces is being consolidated into [GitHub Codespaces](https://github.com/features/codespaces). Support for self-hosted codespaces in the Visual Studio service has ended and is not currently included in the GitHub service. You can join the conversation by visiting the GitHub Community issue regarding [self-hosted support](https://github.community/t/self-hosted-codespaces/131361).
+
 You can host Codespaces on your own environment using Visual Studio Code. This article describes how to register and connect to a self-hosted Codespaces environment.
 
 If you want to register a machine where interacting with Visual Studio Code UI isn't possible (for example, a server or headless OS), see [Register a headless, self-hosted Codespaces environment](self-hosting-cli.md).

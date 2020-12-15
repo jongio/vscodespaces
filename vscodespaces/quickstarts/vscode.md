@@ -11,12 +11,12 @@ ms.date: 05/13/2020
 
 # Visual Studio Codespaces VS Code Quickstart
 
+> [!IMPORTANT] 
+> Visual Studio Codespaces is being consolidated into [GitHub Codespaces](https://github.com/features/codespaces). New user signups and codespace creation suspended on December 16th, 2020. The service will be retired and all data deleted on February 17th, 2021. See our [FAQs](https://docs.microsoft.com/en-us/visualstudio/codespaces/resources/consolidation-faq#im-a-current-visual-studio-codespaces-user-how-do-i-move-to-the-github-beta) for guidance on your transition to GitHub Codespaces.
+
 Visual Studio Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. Additionally, Visual Studio Codespaces brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Codespaces is also personalizable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
 
 This document will walk you through how to install the Codespaces extension, create a cloud-hosted environment, connect to it, run and debug the environment's application, disconnect and delete the environment.
-
-> [!IMPORTANT]
-> You must sign up for the Private Preview and have an Azure Subscription to try this quickstart. If you don't already have an Azure Subscription, create one at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/).
 
 ## 1. Install
 
@@ -32,6 +32,9 @@ Once installed, you can sign in.
 To sign into Visual Studio Codespaces, you press **F1** and select the **Codespaces: Sign In** command in the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette). Follow the prompts in your browser to complete the sign in.
 
 ## 3. Create a codespace
+
+> [IMPORTANT]
+> New codespace creation suspended on December 16, 2020.
 
 To create a new cloud-hosted codespace in Codespaces, select **Create new Codespace...** in the **Codespaces** view in the **Remote Explorer** side bar. If you have other VS Code Remote Development extensions installed, you may need to select **Codespaces** from the **Remote Explorer** dropdown.
 

@@ -11,6 +11,9 @@ ms.date: 04/06/2020
 
 # Register a headless, self-hosted Codespace
 
+> [!IMPORTANT] 
+> Visual Studio Codespaces is being consolidated into [GitHub Codespaces](https://github.com/features/codespaces). Support for self-hosted codespaces in the Visual Studio service has ended and is not currently included in the GitHub service. You can join the conversation by visiting the GitHub Community issue regarding [self-hosted support](https://github.community/t/self-hosted-codespaces/131361).
+
 You can host a Codespace on your own hardware using the headless CLI. This article describes how to register and connect to a headless Codespaces server.
 
 > [!NOTE]

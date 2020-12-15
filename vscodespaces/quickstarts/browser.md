@@ -11,12 +11,12 @@ ms.date: 05/13/2020
 
 # Visual Studio Codespaces Quickstart
 
+> [!IMPORTANT] 
+> Visual Studio Codespaces is being consolidated into [GitHub Codespaces](https://github.com/features/codespaces). New user signups and codespace creation suspended on December 16th, 2020. The service will be retired and all data deleted on February 17th, 2021. See our [FAQs](https://docs.microsoft.com/en-us/visualstudio/codespaces/resources/consolidation-faq#im-a-current-visual-studio-codespaces-user-how-do-i-move-to-the-github-beta) for guidance on your transition to GitHub Codespaces.
+
 Visual Studio Codespaces provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. Additionally, Visual Studio Codespaces brings many of the benefits of DevOps, like repeatability and reliability, which have typically been reserved for production workloads, to development environments. However, Visual Studio Codespaces is also personalizable to allow developers to leverage the tools, processes and configurations that they have come to love and rely on - truly the best of both worlds!
 
 This document will walk you through how to install Codespaces, create a cloud-hosted environment, connect to it, run and debug the environment's application, disconnect and delete the environment.
-
-> [!IMPORTANT]
-> A Microsoft Account and Azure Subscription are required for this quickstart. You can sign up for both, as well as receive various Azure incentives at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/).
 
 ## 1. Sign in
 
@@ -27,6 +27,9 @@ To sign into Visual Studio Codespaces, browse to the [login page](https://online
 Follow the prompts in the pop-up dialog to complete sign in.
 
 ## 2. Create a plan
+
+> [IMPORTANT]
+> New plan creation suspended on December 16, 2020.
 
 A Codespaces plan is required to create a codespace. To create a new plan, use either the **Create new plan** item in the **Plan Selector** menu in the header bar or the **Create Codespace** button, which will create a new plan as part of the create codespace workflow.
 
@@ -53,6 +56,9 @@ Once a plan is created, it will be the selected plan in the **Plan Selector**.
 > More information about plans and pricing is available on the [Codespaces pricing page](https://aka.ms/vso-pricing).
 
 ## 3. Create a codespace
+
+> [IMPORTANT]
+> New codespace creation suspended on December 16, 2020.
 
 To create a new cloud-hosted codespace, fill in the **Create Codespace** form. The form will be shown after you create a plan if you selected the **Create Codespace** button earlier or by selecting the **Create Codespace** button now in the Codespaces management portal.
 

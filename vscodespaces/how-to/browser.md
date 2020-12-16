@@ -11,7 +11,13 @@ ms.date: 09/20/2019
 
 # Visual Studio Codespaces Browser How-to
 
+> [!IMPORTANT] 
+> Visual Studio Codespaces is being consolidated into [GitHub Codespaces](https://github.com/features/codespaces). New user signups and codespace creation suspended on December 16th, 2020. The service will be retired and all data deleted on February 17th, 2021. See our [FAQs](https://docs.microsoft.com/visualstudio/codespaces/resources/consolidation-faq#im-a-current-visual-studio-codespaces-user-how-do-i-move-to-the-github-beta) for guidance on your transition to GitHub Codespaces.
+
 ## Sign up
+
+> [IMPORTANT]
+> New user signups suspended on December 16, 2020.
 
 A Microsoft Account and Azure Subscription are required to use Visual Studio Codespaces.
 
@@ -26,6 +32,9 @@ To sign into Visual Studio Codespaces, browse to the [login page](https://online
 Follow the prompts in the pop-up dialog to complete sign in.
 
 ## Create a plan
+
+> [IMPORTANT]
+> New plan creation suspended on December 16, 2020.
 
 Once you've [signed up](#sign-up) and created an Azure subscription, you can access Codespaces by creating a Codespaces Plan. You can create more than one plan, and plans can be used to group related codespaces together. They are also the unit of billing, and as such you'll see a line item on your Azure bill for each plan you create.
 
@@ -60,10 +69,8 @@ Only codespaces contained within the selected plan will be displayed. To select 
 
 ## Create a codespace
 
-> [!NOTE]
-> Cloud-hosted codespaces are extremely configurable. See [configuring Codespace environments](../reference/configuring.md) for advanced information about how to configure your codespaces.
->[!TIP]
-> Want to bring your existing development environment or need specialized hardware? Try out our [self-hosted offering](self-hosting-vscode.md)!
+> [IMPORTANT]
+> New codespace creation suspended on December 16, 2020.
 
 To create a new cloud-hosted codespace, fill in the **Create Codespace** form. The form will be shown after you create a plan if you selected the **Create Codespace** button earlier or by selecting the **Create Codespace** button now in the Codespaces management portal.
 

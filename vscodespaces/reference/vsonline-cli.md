@@ -11,6 +11,9 @@ ms.date: 04/06/2020
 
 # Codespaces CLI Reference
 
+> [!IMPORTANT] 
+> Visual Studio Codespaces is being consolidated into [GitHub Codespaces](https://github.com/features/codespaces) New user signups and codespace creation suspended on December 16th, 2020. The service will be retired and all data deleted on February 17th, 2021. See our [FAQs](https://docs.microsoft.com/visualstudio/codespaces/resources/consolidation-faq#im-a-current-visual-studio-codespaces-user-how-do-i-move-to-the-github-beta) for guidance on your transition to GitHub Codespaces.
+
 ## Installation
 
 ### Windows

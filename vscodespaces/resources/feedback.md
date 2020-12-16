@@ -11,6 +11,9 @@ ms.date: 09/20/2019
 
 # Feedback & Support
 
+> [!IMPORTANT] 
+> Visual Studio Codespaces is being consolidated into [GitHub Codespaces](https://github.com/features/codespaces). New user signups and codespace creation suspended on December 16th, 2020. The service will be retired and all data deleted on February 17th, 2021. See our [FAQs](https://docs.microsoft.com/visualstudio/codespaces/resources/consolidation-faq#im-a-current-visual-studio-codespaces-user-how-do-i-move-to-the-github-beta) for guidance on your transition to GitHub Codespaces.
+
 Feedback for Visual Studio Codespaces is collected in [our documentation repository on GitHub](https://github.com/MicrosoftDocs/vsonline/).
 
 - **Issues**: Feel free to search through the list of [open bugs](https://github.com/MicrosoftDocs/vsonline/labels/bug) and [feature enhancements](https://github.com/MicrosoftDocs/vsonline/labels/enhancement), and certainly don't hesitate to [submit your own](https://github.com/MicrosoftDocs/vsonline/issues/new), or up vote one with a 👍🏻 reaction!

@@ -66,7 +66,7 @@ Add content for:
 
 ## Create a plan
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > New plan creation suspended on December 16, 2020.
 
 Once you've [signed up](#sign-up) and created an Azure subscription, you can access Codespaces by creating a Codespaces Plan. You can create more than one plan, and plans can be used to group related codespaces together. They are also the unit of billing, and as such you'll see a line item on your Azure bill for each plan you create. For more information about plans and pricing, see [Codespaces pricing](https://aka.ms/vso-pricing).
@@ -95,7 +95,7 @@ Only codespaces contained within the selected plan will be displayed. To select 
 
 ## Create a codespace
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > New codespace creation suspended on December 16, 2020.
 
 Codespace environments are extremely configurable. For advanced information about how to configure your codespace, see [Configure Codespace environments](../reference/configuring.md).

@@ -28,7 +28,7 @@ Follow the prompts in the pop-up dialog to complete sign in.
 
 ## 2. Create a plan
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > New plan creation suspended on December 16, 2020.
 
 A Codespaces plan is required to create a codespace. To create a new plan, use either the **Create new plan** item in the **Plan Selector** menu in the header bar or the **Create Codespace** button, which will create a new plan as part of the create codespace workflow.
@@ -57,7 +57,7 @@ Once a plan is created, it will be the selected plan in the **Plan Selector**.
 
 ## 3. Create a codespace
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > New codespace creation suspended on December 16, 2020.
 
 To create a new cloud-hosted codespace, fill in the **Create Codespace** form. The form will be shown after you create a plan if you selected the **Create Codespace** button earlier or by selecting the **Create Codespace** button now in the Codespaces management portal.

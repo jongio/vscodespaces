@@ -33,7 +33,7 @@ To sign into Visual Studio Codespaces, you press **F1** and select the **Codespa
 
 ## 3. Create a codespace
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > New codespace creation suspended on December 16, 2020.
 
 To create a new cloud-hosted codespace in Codespaces, select **Create new Codespace...** in the **Codespaces** view in the **Remote Explorer** side bar. If you have other VS Code Remote Development extensions installed, you may need to select **Codespaces** from the **Remote Explorer** dropdown.

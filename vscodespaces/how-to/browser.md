@@ -16,7 +16,7 @@ ms.date: 09/20/2019
 
 ## Sign up
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > New user signups suspended on December 16, 2020.
 
 A Microsoft Account and Azure Subscription are required to use Visual Studio Codespaces.
@@ -33,7 +33,7 @@ Follow the prompts in the pop-up dialog to complete sign in.
 
 ## Create a plan
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > New plan creation suspended on December 16, 2020.
 
 Once you've [signed up](#sign-up) and created an Azure subscription, you can access Codespaces by creating a Codespaces Plan. You can create more than one plan, and plans can be used to group related codespaces together. They are also the unit of billing, and as such you'll see a line item on your Azure bill for each plan you create.
@@ -69,7 +69,7 @@ Only codespaces contained within the selected plan will be displayed. To select 
 
 ## Create a codespace
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > New codespace creation suspended on December 16, 2020.
 
 To create a new cloud-hosted codespace, fill in the **Create Codespace** form. The form will be shown after you create a plan if you selected the **Create Codespace** button earlier or by selecting the **Create Codespace** button now in the Codespaces management portal.

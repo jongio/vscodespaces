@@ -18,7 +18,7 @@ This article covers how to get started using Visual Studio Code with Visual Stud
 
 ## Sign up
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > New user signups suspended on December 16, 2020.
 
 A Microsoft Account and Azure Subscription are required to use Visual Studio Codespaces. You can sign up for both at [https://azure.microsoft.com/free/](https://azure.microsoft.com/free/).
